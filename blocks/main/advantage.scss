@@ -1,0 +1,45 @@
+.advantage {
+	position: relative;
+	padding: 30px;
+	min-height: 100vh;
+	text-align: center;
+	background-image: url("../img/advantage.png"),
+	                    linear-gradient(135deg, #3f3f3f 15%, #3a3a3a 15%, #3a3a3a 55%,
+	                   #454545 55%, #454545 70%, #414141 70%, #414141 80%, #3a3a3a 80%, #3a3a3a 95%);
+	background-repeat: no-repeat;
+	background-position:  center 425px,
+											  center;
+	color: #fff;
+}
+
+.advantage__title {
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.advantage__subtitle {
+	font-size: 36px;
+	font-weight: 400;
+}
+
+.advantage__list {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	list-style: none;
+}
+
+.advantage__item {
+	display: flex;
+	width: 300px;
+}
+
+.advantage__list::after {
+	content: '';
+	position: absolute;
+	width: 200px;
+	height: 250px;
+	bottom: -25px;
+	background-image: url("../img/baby.png");
+}

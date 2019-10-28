@@ -1,0 +1,59 @@
+.banner {
+  width: 695px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner__title {
+  margin-top: 85px;
+  margin-bottom: 10px;
+  color: #343434;
+  font-family: "Gotham Pro";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 68px;
+}
+
+.banner__title_span {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.banner__text {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 10px 0;
+  color: #000;
+}
+
+.banner__text2 {
+  color: #343434;
+  margin-bottom: 30px;
+}
+
+.banner__text_red {
+  color: #e31e24;
+  font-weight: 700;
+}
+
+.banner__btn {
+  display: block;
+  margin: auto;
+  margin-bottom: 135px;
+  padding: 27px 20px;
+  width: 302px;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.46);
+  color: #000000;
+
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+  background-image: linear-gradient(to top, #ebe209 0%, #fff500 100%);
+}
+
+.banner__btn:hover {
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}

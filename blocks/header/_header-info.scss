@@ -1,0 +1,85 @@
+.page-header {
+  padding-bottom: 50px;
+  background-image: url("../img/mouse.svg"),
+                    url("../img/back.jpg");
+  background-size:  auto,
+                    cover;
+  background-repeat: no-repeat;
+  background-position:  center 600px,
+                        center;
+}
+
+.overlay {
+  background-color: rgba(255,255,255,0.7);
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px 30px 14px;  
+}
+
+.logo {
+  width: 198px;
+  height: 43px;
+  margin-right: 20px;
+}
+
+.header-form {
+  margin-right: 20px;
+}
+
+.header-form__label {
+  color: #1c1b17;
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.adres {
+	margin: 0;
+	width: 200px;
+	padding: 10px 0 10px 30px;
+  color: #1c1b17;
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  font-weight: 500;
+  background-image: url("../img/pin.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.phone {
+  margin: 0 20px;
+}
+
+.phone__number {
+  display: block;
+  padding-left: 30px;
+  color: #1c1b17;
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.phone__number1 {
+	background-image: url("../img/phone.svg");
+}
+
+.phone__number2 {
+	background-image: url("../img/phone2.svg");
+	background-position: 4px center;
+}
+
+.social__link:hover .social__svg_fb {
+	fill: #3B5998;
+}
+
+.social__link:hover .social__svg_inst {
+	fill: url(#linear-gradient);
+}

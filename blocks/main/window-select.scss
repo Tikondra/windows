@@ -1,0 +1,45 @@
+.window-select {
+	position: relative;
+	padding-top: 70px;
+	min-height: 100vh;
+	background-image: url("../img/girl.png"),
+	                  linear-gradient(135deg, #f0eed3 15%, #eae8c2 15%, #eae8c2 55%,
+	                   #f0eed3 55%, #f0eed3 70%, #f4f3df 70%, #f4f3df 85%, #f0eed3 85%, #f0eed3 95%);
+	background-repeat: no-repeat;
+	background-position:  center 205px,
+											  center;
+	background-size: auto;
+}
+
+.window-select__title {
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.window-select__text {
+	position: absolute;
+	padding: 35px 0;
+	width: 320px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+	background-color: #fff;
+	box-shadow: 1px 6px 9px 1px rgba(58, 58, 58, 0.29);
+}
+
+.window-select__text1 {
+	top: 32%;
+	left: 13%;
+}
+
+.window-select__text2 {
+	top: 22%;
+	left: 67%;
+}
+
+.window-select__text3 {
+	top: 42%;
+	left: 64%;
+}

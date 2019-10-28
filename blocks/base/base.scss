@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-Medium.woff") format("woff");
+  font-weight: medium; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-Bold.woff") format("woff");
+  font-weight: bold; }
+
+html {
+  width: 100%; }
+
+body {
+  width: 100%;
+  font-family: "Gotham Pro", "Tahoma", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+.container {
+  max-width: 1230px;
+  margin: auto;
+  padding: 0 15px; }

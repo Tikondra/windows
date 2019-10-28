@@ -46,7 +46,7 @@ gulp.src('./*.html')
 });
 
 gulp.task('sass', function() { // Создаем таск Sass
-    return gulp.src('styles/main.scss') // Берем источник
+    return gulp.src('blocks/main.scss') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
         .pipe(gulp.dest('css')) // Выгружаем результата в папку css
