@@ -83,3 +83,14 @@
 .social__link:hover .social__svg_inst {
 	fill: url(#linear-gradient);
 }
+
+@media screen and (max-width: 570px) {
+  .header-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-form {
+    margin-right: 0;
+  }
+}

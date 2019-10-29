@@ -8,8 +8,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
     cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
     rename       = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
     del          = require('del'), // Подключаем библиотеку для удаления файлов и папок
-    imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
-    pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
+    imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями    
     cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
     autoprefixer = require('gulp-autoprefixer'),// Для автоматического добавления префиксов
     pug          = require('gulp-pug'),
@@ -91,8 +90,8 @@ gulp.task('img', function() {
         // .pipe(imagemin({ // Сжимаем изображения без кеширования
             interlaced: true,
             progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
+            svgoPlugins: [{removeViewBox: false}]
+            
         }))/**/)
         .pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
 });

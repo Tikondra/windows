@@ -7,7 +7,7 @@
 	                    linear-gradient(135deg, #3f3f3f 15%, #3a3a3a 15%, #3a3a3a 55%,
 	                   #454545 55%, #454545 70%, #414141 70%, #414141 80%, #3a3a3a 80%, #3a3a3a 95%);
 	background-repeat: no-repeat;
-	background-position:  center 425px,
+	background-position:  right 425px,
 											  center;
 	color: #fff;
 }
@@ -32,6 +32,7 @@
 
 .advantage__item {
 	display: flex;
+	align-items: center;
 	width: 300px;
 }
 
@@ -42,4 +43,18 @@
 	height: 250px;
 	bottom: -25px;
 	background-image: url("../img/baby.png");
+}
+
+.advantage__number {
+	margin: 0;
+	font-size: 53px;
+	font-weight: 400; 
+	text-transform: uppercase;
+}
+
+.advantage__text {
+	text-align: left;
+	margin: 0;
+	font-size: 19px;
+	font-weight: 400;
 }
