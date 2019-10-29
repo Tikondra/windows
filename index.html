@@ -63,7 +63,7 @@
 					<a class="page-nav__link" href="#">Пластиковые окна</a>
 				</li>
 				<li class="page-nav__item">
-					<a class="page-nav__link" href="#">Алюминевые окна</a>
+					<a class="page-nav__link" href="#">Алюминевые конструкции</a>
 				</li>
 				<li class="page-nav__item">
 					<a class="page-nav__link" href="#">Жалюзи/Рольшторы</a>
@@ -123,31 +123,171 @@
 			</div>
 		</section>
 		<section class="catalog">
-			<ul class="catalog__list">
-				<li class="catalog__item">
-					<img src="img/">
-					<h3 class="catalog__title">Деревянные окна</h3>
-					<p class="catalog__text">Это тепло наших рук, годы опыта, репутация каждого из нас.</p>
-				</li>
-				<li class="catalog__item">
-					<img src="img/">
-					<h3 class="catalog__title">дерево-алюминиевые окна</h3>
-					<p class="catalog__text">Это тепло наших рук, годы опыта, репутация каждого из нас.</p>
-				</li>
-				<li class="catalog__item">
-					<img src="img/">
-					<h3 class="catalog__title">Пластиковые окна</h3>
-					<p class="catalog__text">Это тепло наших рук, годы опыта, репутация каждого из нас.</p>
-				</li>
-			</ul>
-			<img src="img/wool.jpg">
+			<h2 class="catalog__main-title">Мы предлагаем</h2>
+			<div class="catalog__box container">
+				<ul class="catalog__list">
+					<li class="catalog__item active">
+						<img class="catalog__img" src="img/cat_item1.png">
+						<div class="catalog__text-box">
+							<h3 class="catalog__title">Деревянные окна</h3>
+							<p class="catalog__text">Это тепло наших рук, годы опыта, репутация каждого из нас.</p>
+						</div>	
+					</li>
+					<li class="catalog__item catalog__item2">
+						<img class="catalog__img" src="img/itemcat2.png">
+						<div class="catalog__text-box">
+							<h3 class="catalog__title">Дерево-алюминиевые окна</h3>
+							<p class="catalog__text">Это тепло наших рук, годы опыта, репутация каждого из нас.</p>
+						</div>	
+					</li>
+					<li class="catalog__item">
+						<img class="catalog__img" src="img/itemcat3.png">
+						<div class="catalog__text-box">
+							<h3 class="catalog__title">Пластиковые окна</h3>
+							<p class="catalog__text">Это тепло наших рук, годы опыта, репутация каждого из нас.</p>
+						</div>	
+					</li>
+				</ul>
+				<div class="catalog__img-fool">
+					<img src="img/wool.jpg">
+				</div>	
+			</div>			
 		</section>
 
 		<section class="price">
-			<h2>Узнайте стоимость вашего окна</h2>
+			<h2>Узнайте стоимость <span class="price__red">вашего окна</h2>
 			<p>Ответьте на несколько вопросов и наш менеджер сообщит Вам итоговую стоимость в течение 30 минут.</p>
+			<div class="status-bar">
+				<p>Вопрос 1 из 3</p>
+			</div>
+			<p>Укажите тип окна</p>
+			<div>
+				<ul>
+					<li>
+						<img src="">
+						<p>Одностворчатое окно</p>
+					</li>
+					<li>
+						<img src="">
+						<p>Двухстворчатое окно</p>
+					</li>
+					<li>
+						<img src="">
+						<p>Трехстворчатое окно</p>
+					</li>
+					<li>
+						<img src="">
+						<p>Балконный блок</p>
+					</li>
+				</ul>
+				<div class="draganddrop"></div>
+			</div>
+		</section>
+		<section class="about">
+			<h2>О нашей компании</h2>
+			<div class="about__content">
+				<img src="img/foto.jpg">
+				<p class="title">Рады приветствовать Вас на нашем сайте!</p>
+				<p class="about__text"> 
+					Мы уже много лет работаем в этом бизнесе, но до сих пор радуемся, когда 
+					видим свет в окнах, которые установила наша компания. 
+					Каждое окно - это не просто конструкция. 
+					Это тепло наших рук, годы опыта, репутация каждого из нас. Именно поэтому 
+					мы так тщательно выбираем поставщиков, бережно относимся к каждому сотруднику, внимательно следим за новыми технологиямии тенденциями. 
+					Каждое установленное окно для нас - это гордость за свою компанию 
+					и благодарность Вам за доверие.
+					Сделайте выбор в пользу нашей компании, и мы обещаем, что окна «Панорама» будут радовать Вас долгие годы!
+				</p>
+			</div>
+		</section>
+		<section class="reviews">
+			<h2 class="reviews__title">Аудио-отзывы наших заказчиков</h2>
+			<ul>
+				<li>
+					<audio></audio>
+					<p>Понравилось, как поставили окна. По работе менеджера - всё замечательно, обслуживание у вас приятное. Если в будущем будем ставить окна, то к вам обратимся.</p>
+					<p>Афонин Сергей Николаевич</p>
+				</li>
+			</ul>
+		</section>
+		<section class="measure">
+			<h2>Вызвать замерщика</h2>
+			<p>Замерщик подстроится под удобное для Вас время. 
+				Замер займет не более 10 минут. 
+				Это БЕСПЛАТНО и ни к чему Вас не обязывает</p>
+				<form>
+					<input type="text" name="name" placeholder="Ваше имя">
+					<input type="text" name="tel" placeholder="+7(___) ___-____">
+					<a href="#">Вызвать замерщика</a>
+				</form>
+		</section>
+		<section class="contacts">
+			<div>
+				<h2>Контакты</h2>
+				<p>Ул. Н. Островского, д. 115 к. 1</p>
+				<p>Пн - Пт: с 8:00 до 18:00
+					Сб: с 9:00 до 17:00</p>
+				<p>okna@panorama30.ru</p>
+				<p>+7(927) 554 02 36
+					+7(8512) 24 25 25</p>
+					<div class="social">
+					<a class="social__link" href="#">
+						<svg class="social__svg_fb" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M10 13h3v-2.8c0-1.1.3-2.7 1.1-3.8.8-1.1 1.8-1.8 3.8-1.8 3.2 0 4.4.5 4.4.5l-.7 3.8s-1.4-.3-2.4-.3S17 9 17 10v3h4.6l-.3 4H17v12h-4V17h-3v-4z"></path></svg>
+					</a>
+					<a class="social__link" href="#">
+						<svg class="social__svg_inst" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+							<linearGradient id="linear-gradient">
+							  <stop offset="0%" stop-color="#ff00cc"/>
+							  <stop offset="100%" stop-color="#333399"/>
+							</linearGradient>
+							<path d="M23.4 4H8.6C6.1 4 4 6.1 4 8.6v14.7C4 25.9 6.1 28 8.6 28h14.7c2.6 0 4.6-2.1 4.6-4.6V8.6c.1-2.5-2-4.6-4.5-4.6zm1.3 2.8h.5v4h-4.1V6.7l3.6.1zm-12.1 6.7c.8-1.1 2-1.8 3.4-1.8s2.7.7 3.4 1.8c.5.7.8 1.5.8 2.5 0 2.3-1.9 4.2-4.2 4.2s-4.2-1.9-4.2-4.2c0-.9.3-1.8.8-2.5zm13.1 9.9c0 1.3-1 2.3-2.3 2.3H8.6c-1.3 0-2.3-1-2.3-2.3v-9.8h3.6c-.3.8-.5 1.6-.5 2.5 0 3.6 2.9 6.6 6.6 6.6 3.6 0 6.6-2.9 6.6-6.6 0-.9-.2-1.7-.5-2.5h3.6v9.8z"></path></svg>
+					</a>
+				</div>
+			</div>
 		</section>
 	</main>
+	<footer>
+		<div class="footer__top">
+			<div class="footer__logo"></div>
+			<p class="footer__info">ИНН 301700612640
+															ОГРН 307301518000014</p>
+			<ul class="footer__menu">
+				<li>
+					<span>Остекление</span>
+					<ul>
+						<li>Остекление квартир</li>
+						<li>Остекление коттеджей</li>
+					</ul>
+				</li>
+				<li>Деревянные окна</li>
+				<li>Пластиковые окна</li>
+				<li>Деревянные окна</li>
+				<li>Пластиковые окна</li>
+			</ul>
+		</div>
+		<div class="footer__info">
+			<p>Политика конфиденциальности</p>
+			<p>Ваш город: Астрахань</p>
+			<p>okna@panorama30.ru</p>
+			<div class="footer__tel">
+				<a href="tel:89275540236">+7(927) 554 02 36</a>
+				<a href="tel:88512242525">+7(8512) 24 25 25</a>
+			</div>
+			<div class="social">
+					<a class="social__link" href="#">
+						<svg class="social__svg_fb" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M10 13h3v-2.8c0-1.1.3-2.7 1.1-3.8.8-1.1 1.8-1.8 3.8-1.8 3.2 0 4.4.5 4.4.5l-.7 3.8s-1.4-.3-2.4-.3S17 9 17 10v3h4.6l-.3 4H17v12h-4V17h-3v-4z"></path></svg>
+					</a>
+					<a class="social__link" href="#">
+						<svg class="social__svg_inst" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+							<linearGradient id="linear-gradient">
+							  <stop offset="0%" stop-color="#ff00cc"/>
+							  <stop offset="100%" stop-color="#333399"/>
+							</linearGradient>
+							<path d="M23.4 4H8.6C6.1 4 4 6.1 4 8.6v14.7C4 25.9 6.1 28 8.6 28h14.7c2.6 0 4.6-2.1 4.6-4.6V8.6c.1-2.5-2-4.6-4.5-4.6zm1.3 2.8h.5v4h-4.1V6.7l3.6.1zm-12.1 6.7c.8-1.1 2-1.8 3.4-1.8s2.7.7 3.4 1.8c.5.7.8 1.5.8 2.5 0 2.3-1.9 4.2-4.2 4.2s-4.2-1.9-4.2-4.2c0-.9.3-1.8.8-2.5zm13.1 9.9c0 1.3-1 2.3-2.3 2.3H8.6c-1.3 0-2.3-1-2.3-2.3v-9.8h3.6c-.3.8-.5 1.6-.5 2.5 0 3.6 2.9 6.6 6.6 6.6 3.6 0 6.6-2.9 6.6-6.6 0-.9-.2-1.7-.5-2.5h3.6v9.8z"></path></svg>
+					</a>
+				</div>
+		</div>	
+	</footer>
 
 	<script src="js/script.js"></script>
 </body>

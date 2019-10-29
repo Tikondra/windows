@@ -1,9 +1,39 @@
+.catalog__main-title {
+	text-align: center;
+}
+
+.catalog__box {
+	display: flex;
+}
+
 .catalog__list {
+	display: flex;
+	flex-direction: column;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
 .catalog__item {
+	display: flex;
 	width: 470px;
+	max-height: 190px;	
+	background-color: #eae8c2;	
+}
+
+.catalog__item2 {
+	margin: 8px 0;
+}
+
+.catalog__item.active {
+	color: #fff;
+	background-color: #3a3a3a;
+}
+
+.catalog__img {
+	width: 200px;	
+}
+
+.catalog__img-fool {
+	margin-left: 20px;
 }
