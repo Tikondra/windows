@@ -1,6 +1,10 @@
-.price {
-	padding: 90px 0;
+.price {	
 	background-image: url("../img/back-price.jpg");	
+}
+
+.price__content {
+	height: 100vh;
+	padding: 90px 0;
 }
 
 .price__title {

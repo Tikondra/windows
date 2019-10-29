@@ -1,5 +1,14 @@
 .about {
+	background-color: #fff;
+}
+
+.about__content {
+	height: 100vh;
 	padding: 80px 15px;
+}
+
+.about__box {
+	display: flex;	
 }
 
 .about__title {
@@ -7,10 +16,6 @@
 	font-size: 36px;
 	font-weight: 700;
 	text-transform: uppercase;
-}
-
-.about__content {
-	display: flex;	
 }
 
 .about__text-title {

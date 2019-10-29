@@ -1,5 +1,14 @@
 .catalog {
-	padding: 80px 15px 100px;
+	background-color: #fff;
+}
+
+.catalog__content {	
+	height: 100vh;
+	padding: 20px;
+}
+
+.catalog__box {
+	display: flex;
 }
 
 .catalog__main-title {
@@ -8,10 +17,6 @@
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
-}
-
-.catalog__box {
-	display: flex;
 }
 
 .catalog__list {

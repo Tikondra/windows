@@ -266,7 +266,7 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100vh; }
+  height: 100vh; }
 
 .replace__item {
   width: 50%; }
@@ -334,16 +334,16 @@ a {
   margin-top: auto; }
 
 .window-select {
-  padding-top: 70px;
   background-image: -o-linear-gradient(315deg, #f0eed3 15%, #eae8c2 15%, #eae8c2 55%, #f0eed3 55%, #f0eed3 70%, #f4f3df 70%, #f4f3df 85%, #f0eed3 85%, #f0eed3 95%);
   background-image: linear-gradient(135deg, #f0eed3 15%, #eae8c2 15%, #eae8c2 55%, #f0eed3 55%, #f0eed3 70%, #f4f3df 70%, #f4f3df 85%, #f0eed3 85%, #f0eed3 95%); }
 
 .window-select__content {
   position: relative;
+  padding: 20px;
   background-image: url("../img/girl.png");
   background-repeat: no-repeat;
   background-position: center bottom;
-  min-height: 700px; }
+  height: 100vh; }
 
 .window-select__title {
   font-size: 36px;
@@ -375,12 +375,14 @@ a {
   left: 65%; }
 
 .advantage {
+  background-image: -o-linear-gradient(315deg, #3f3f3f 15%, #3a3a3a 15%, #3a3a3a 55%, #454545 55%, #454545 70%, #414141 70%, #414141 80%, #3a3a3a 80%, #3a3a3a 95%);
+  background-image: linear-gradient(135deg, #3f3f3f 15%, #3a3a3a 15%, #3a3a3a 55%, #454545 55%, #454545 70%, #414141 70%, #414141 80%, #3a3a3a 80%, #3a3a3a 95%); }
+
+.advantage__content {
   position: relative;
   padding: 30px;
-  min-height: 670px;
+  height: 100vh;
   text-align: center;
-  background-image: -o-linear-gradient(315deg, #3f3f3f 15%, #3a3a3a 15%, #3a3a3a 55%, #454545 55%, #454545 70%, #414141 70%, #414141 80%, #3a3a3a 80%, #3a3a3a 95%);
-  background-image: linear-gradient(135deg, #3f3f3f 15%, #3a3a3a 15%, #3a3a3a 55%, #454545 55%, #454545 70%, #414141 70%, #414141 80%, #3a3a3a 80%, #3a3a3a 95%);
   color: #fff; }
 
 .advantage__title {
@@ -441,7 +443,17 @@ a {
   font-weight: 400; }
 
 .catalog {
-  padding: 80px 15px 100px; }
+  background-color: #fff; }
+
+.catalog__content {
+  height: 100vh;
+  padding: 20px; }
+
+.catalog__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .catalog__main-title {
   margin-bottom: 45px;
@@ -449,12 +461,6 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center; }
-
-.catalog__box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
 
 .catalog__list {
   display: -webkit-box;
@@ -493,8 +499,11 @@ a {
   margin-left: 20px; }
 
 .price {
-  padding: 90px 0;
   background-image: url("../img/back-price.jpg"); }
+
+.price__content {
+  height: 100vh;
+  padding: 90px 0; }
 
 .price__title {
   text-align: center; }
@@ -522,19 +531,23 @@ a {
   background-color: #3a3a3a; }
 
 .about {
+  background-color: #fff; }
+
+.about__content {
+  height: 100vh;
   padding: 80px 15px; }
+
+.about__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .about__title {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase; }
-
-.about__content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
 
 .about__text-title {
   text-align: center;
@@ -548,8 +561,11 @@ a {
   text-indent: 30px; }
 
 .reviews {
-  padding: 90px 15px 100px;
   background-image: url("../img/back-rev.jpg"); }
+
+.reviews__content {
+  height: 100vh;
+  padding: 90px 15px 100px; }
 
 .reviews__title {
   font-size: 36px;
@@ -579,14 +595,39 @@ a {
   background-color: #eae8c2; }
 
 .measure__content {
+  height: 100vh;
+  padding: 50px;
   background-image: url("../img/man.png");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .contacts {
+  background-color: #fff; }
+
+.contacts__content {
+  height: 60vh;
+  padding: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.contacts__box {
+  margin-right: 20px; }
+
+.map {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2; }
 
 .footer-menu__list {
   display: -webkit-box;
@@ -596,3 +637,10 @@ a {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+.footer {
+  background-color: #413f3f; }
+
+.footer__content {
+  height: 40vh;
+  padding: 20px; }

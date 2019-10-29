@@ -1,10 +1,13 @@
-.advantage {
-	position: relative;
-	padding: 30px;
-	min-height: 670px;
-	text-align: center;
+.advantage {	
 	background-image: linear-gradient(135deg, #3f3f3f 15%, #3a3a3a 15%, #3a3a3a 55%,
 	                   #454545 55%, #454545 70%, #414141 70%, #414141 80%, #3a3a3a 80%, #3a3a3a 95%);
+}
+
+.advantage__content {
+	position: relative;
+	padding: 30px;
+	height: 100vh;
+	text-align: center;
 	color: #fff;
 }
 
