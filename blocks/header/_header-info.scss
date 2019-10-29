@@ -1,11 +1,12 @@
 .page-header {
-  padding-bottom: 50px;
+  height: 100vh;
+  padding-bottom: 30px;
   background-image: url("../img/mouse.svg"),
                     url("../img/back.jpg");
   background-size:  auto,
                     cover;
   background-repeat: no-repeat;
-  background-position:  center 600px,
+  background-position:  center bottom,
                         center;
 }
 

@@ -1,4 +1,12 @@
+.catalog {
+	padding: 80px 15px 100px;
+}
+
 .catalog__main-title {
+	margin-bottom: 45px;
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
 	text-align: center;
 }
 
@@ -31,7 +39,7 @@
 }
 
 .catalog__img {
-	width: 200px;	
+	margin: 13px 10px;	
 }
 
 .catalog__img-fool {

@@ -1,0 +1,33 @@
+.reviews {
+	padding: 90px 15px 100px;
+	background-image: url("../img/back-rev.jpg");
+}
+
+.reviews__title {
+	font-size: 36px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.reviews__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.reviews__item {
+	padding: 75px 15px;
+	background-color: #ffffff;
+}
+
+.reviews__text {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.reviews__autor {
+	font-size: 18px;
+	font-weight: 700;
+}

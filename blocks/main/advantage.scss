@@ -1,24 +1,22 @@
 .advantage {
 	position: relative;
 	padding: 30px;
-	min-height: 100vh;
+	min-height: 670px;
 	text-align: center;
-	background-image: url("../img/advantage.png"),
-	                    linear-gradient(135deg, #3f3f3f 15%, #3a3a3a 15%, #3a3a3a 55%,
+	background-image: linear-gradient(135deg, #3f3f3f 15%, #3a3a3a 15%, #3a3a3a 55%,
 	                   #454545 55%, #454545 70%, #414141 70%, #414141 80%, #3a3a3a 80%, #3a3a3a 95%);
-	background-repeat: no-repeat;
-	background-position:  right 425px,
-											  center;
 	color: #fff;
 }
 
 .advantage__title {
+	margin-bottom: 10px;
 	font-size: 36px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
 .advantage__subtitle {
+	margin: 10px 0 45px;
 	font-size: 36px;
 	font-weight: 400;
 }
@@ -33,16 +31,18 @@
 .advantage__item {
 	display: flex;
 	align-items: center;
-	width: 300px;
+	width: 305px;
 }
 
 .advantage__list::after {
 	content: '';
 	position: absolute;
-	width: 200px;
-	height: 250px;
+	width: 100%;
+	height: 350px;
 	bottom: -25px;
-	background-image: url("../img/baby.png");
+	background-image: url("../img/advantage.png");
+	background-repeat: no-repeat;
+	background-position: 150px bottom;
 }
 
 .advantage__number {
@@ -55,6 +55,7 @@
 .advantage__text {
 	text-align: left;
 	margin: 0;
+	padding-left: 10px;
 	font-size: 19px;
 	font-weight: 400;
 }

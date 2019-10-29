@@ -1,0 +1,26 @@
+.price {
+	padding: 90px 0;
+	background-image: url("../img/back-price.jpg");	
+}
+
+.price__title {
+	text-align: center;
+}
+
+.slider-price__list {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.slider-price__text {
+	max-width: 270px;
+	padding: 10px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	background-color: #3a3a3a;
+}

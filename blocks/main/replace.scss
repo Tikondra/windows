@@ -23,6 +23,7 @@
 	text-align: left;
 	background-color: #fff;
 	background-image: url("../img/replace-back.png");
+	background-repeat: no-repeat;
 }
 
 .replace__title {
@@ -42,7 +43,7 @@
 }
 
 .replace__text {
-	width: 585px;
+	max-width: 585px;
 	margin: 5px 0;
 	padding: 0 10px 10px; 
 	text-align: center;

@@ -1,3 +1,27 @@
+.about {
+	padding: 80px 15px;
+}
+
+.about__title {
+	text-align: center;
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
 .about__content {
-	display: flex;
+	display: flex;	
+}
+
+.about__text-title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 23.98px;
+}
+
+.about__text {
+	max-width: 662px;
+	margin-left: 33px;
+	text-indent: 30px;
 }
