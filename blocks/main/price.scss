@@ -14,6 +14,7 @@
 .slider-price__list {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	list-style: none;
 	margin: 0;
 	padding: 0;

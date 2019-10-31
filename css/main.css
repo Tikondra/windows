@@ -13,7 +13,8 @@
   font-weight: bold; }
 
 html {
-  width: 100%; }
+  margin: 0;
+  padding: 0; }
 
 body {
   width: 100%;
@@ -36,7 +37,6 @@ a {
   padding: 0 15px; }
 
 .page-header {
-  height: 100vh;
   padding-bottom: 30px;
   background-image: url("../img/mouse.svg"), url("../img/back.jpg");
   background-size: auto, cover;
@@ -137,7 +137,10 @@ a {
   background-color: #3a3a3a; }
 
 .page-nav__list {
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -171,21 +174,18 @@ a {
   color: #e6e164; }
 
 .page-nav__btn {
-  display: block;
+  display: none;
   width: 100%;
   padding: 10px;
   color: #fff;
   border: none;
   background-color: #3a3a3a; }
 
-@media screen and (min-width: 570px) {
+@media screen and (max-width: 768px) {
   .page-nav__list {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+    display: none; }
   .page-nav__btn {
-    display: none; } }
+    display: block; } }
 
 @media screen and (max-width: 1080px) {
   .page-nav__list {
@@ -200,11 +200,11 @@ a {
   text-align: center; }
 
 .banner__title {
-  margin-top: 85px;
+  margin-top: 4rem;
   margin-bottom: 10px;
   color: #343434;
   font-family: "Gotham Pro";
-  font-size: 48px;
+  font-size: 2em;
   font-weight: 700;
   line-height: 68px; }
 
@@ -422,7 +422,7 @@ a {
 .advantage__list::after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 80%;
   height: 350px;
   bottom: -25px;
   background-image: url("../img/advantage.png");
@@ -517,6 +517,9 @@ a {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -634,6 +637,9 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0; }
