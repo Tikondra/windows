@@ -1,6 +1,10 @@
-.reviews {
-	padding: 90px 15px 100px;
+.reviews {	
 	background-image: url("../img/back-rev.jpg");
+}
+
+.reviews__content {
+	height: 100vh;
+	padding: 90px 15px 100px;
 }
 
 .reviews__title {

@@ -4,7 +4,7 @@
 }
 
 .page-nav__list {
-  display: none;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 60px;  
@@ -35,7 +35,7 @@
 }
 
 .page-nav__btn {
-  display: block;
+  display: none;
   width: 100%;
   padding: 10px;
   color: #fff;
@@ -43,13 +43,13 @@
   background-color: #3a3a3a;
 }
 
-@media screen and (min-width: 570px) {
+@media screen and (max-width: 768px) {
   .page-nav__list {
-    display: flex;
+    display: none;
   }
 
   .page-nav__btn {
-    display: none;
+    display: block;
   }
 }
 

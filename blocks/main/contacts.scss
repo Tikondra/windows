@@ -1,3 +1,19 @@
 .contacts {
+	background-color: #fff;
+}
+
+.contacts__content {
+	height: 60vh;
+	padding: 20px;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contacts__box {
+	margin-right: 20px;
+}
+
+.map {
+	flex-grow: 2;
 }
