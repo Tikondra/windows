@@ -1,12 +1,8 @@
 .page-header {  
-  padding-bottom: 30px;
-  background-image: url("../img/mouse.svg"),
-                    url("../img/back.jpg");
-  background-size:  auto,
-                    cover;
+  background-image: url("../img/back.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position:  center bottom,
-                        center;
+  background-position: -700px;
 }
 
 .overlay {
@@ -15,35 +11,37 @@
 
 .header-info {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 12px 30px 14px;  
+  flex-direction: column;  
+  align-items: center;  
+  padding: 15px 15px 0;  
 }
 
 .logo {
   width: 198px;
   height: 43px;
-  margin-right: 20px;
-}
-
-.header-form {
-  margin-right: 20px;
+  margin-bottom: 25px;
 }
 
 .header-form__label {
-  color: #1c1b17;
-  font-family: "Gotham Pro";
+  color: #1c1b17;  
   font-size: 16px;
   font-weight: 500;
+}
+
+.header-form__select {
+  color: #e31e24;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
 }
 
 .adres {
 	margin: 0;
 	width: 200px;
 	padding: 10px 0 10px 30px;
-  color: #1c1b17;
-  font-family: "Gotham Pro";
+  color: #1c1b17;  
   font-size: 16px;
   font-weight: 500;
   background-image: url("../img/pin.svg");
@@ -59,7 +57,7 @@
   display: block;
   padding-left: 30px;
   color: #1c1b17;
-  font-family: "Gotham Pro";
+  
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
@@ -76,21 +74,56 @@
 	background-position: 4px center;
 }
 
-.social__link:hover .social__svg_fb {
-	fill: #3B5998;
+.social {
+  width: 200px;
+  justify-content: space-around;
+  display: flex;
+  padding: 20px;
 }
 
-.social__link:hover .social__svg_inst {
-	fill: url(#linear-gradient);
+.social__link {
+  height: 32px;
+  background-color: #e31e24;
+  background-image: linear-gradient(to top, rgba(48, 48, 48, 0.9) 0%, rgba(77, 77, 77, 0.9) 100%);
 }
 
-@media screen and (max-width: 570px) {
+.social__svg {
+  fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    background-position: center;
+  }
   .header-info {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;    
+    flex-wrap: wrap;      
   }
 
   .header-form {
-    margin-right: 0;
+    width: 45%;
+    text-align: center;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .header-info {
+    padding: 15px;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .header-form {
+    width: auto;
+  }
+
+  .social {
+    width: 80px;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+

@@ -4,10 +4,13 @@
 }
 
 .page-nav__list {
-  display: flex;
+  position: absolute;
+  display: none;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 60px;  
+  width: 100%;
+  padding: 0 60px;
+  background-color: #3a3a3a;
   list-style: none;  
 }
 
@@ -19,8 +22,7 @@
 .page-nav__link {
   display: block;
   padding: 21px 5px;
-  color: #ffffff;
-  font-family: "Gotham Pro";
+  color: #ffffff;  
   font-size: 16px;
   font-weight: 500;
 }
@@ -35,7 +37,7 @@
 }
 
 .page-nav__btn {
-  display: none;
+  display: block;
   width: 100%;
   padding: 10px;
   color: #fff;
@@ -43,22 +45,14 @@
   background-color: #3a3a3a;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) {
   .page-nav__list {
-    display: none;
+    position: relative;
+    display: flex;
+    padding: 0 15px;
   }
 
   .page-nav__btn {
-    display: block;
+    display: none;
   }
-}
-
-@media screen and (max-width: 1080px) {
-  .page-nav__list {
-    padding: 0 10px;
-  }
-}
-
-.page-nav__list_show {
-  display: block;
 }
