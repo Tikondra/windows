@@ -1,5 +1,5 @@
 .banner { 
-  padding: 30px 15px;
+  padding: 30px 15px 0;
   text-align: center;
 }
 
@@ -54,7 +54,7 @@
 
 @media screen and (min-width: 1024px) {
   .banner {
-    padding: 100px 15px;
+    padding: 100px 15px 30px;
   }  
 }
 
