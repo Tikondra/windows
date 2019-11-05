@@ -74,7 +74,7 @@
 			<p class="banner__text"><span class="banner__text_red">20 лет</span> на рынке</p>
 			<p class="banner__text banner__text2">Нас ценят за надежность и качество</p>
 			<a class="banner__btn" href="#">Узнать стоимость</a>
-			<img src="img/mouse.svg">
+			<img class="mouse" src="img/mouse.svg">
 		</section>
 	</header>
 
@@ -101,24 +101,25 @@
 			</div>
 		</section>
 
-		<!-- <section class="advantage">
+		<section class="advantage">
 			<div class="advantage__content container">
 				<h2 class="advantage__title">Доверьте установку ваших окон специалистам</h2>
 				<p class="advantage__subtitle">Нас ценят за надежность и качество</p>
 				<ul class="advantage__list">
-					<li class="advantage__item">
+					<li class="advantage__item advantage__item1">
 						<p class="advantage__number">01</p>
 						<p class="advantage__text">Нет просрочек и простоев</p>
 					</li>
-					<li class="advantage__item">
+					<li class="advantage__item advantage__item2">
 						<p class="advantage__number">02</p>
 						<p class="advantage__text">У всех специалистов большой стаж работы</p>
 					</li>
-					<li class="advantage__item">
+					<li class="advantage__item advantage__item3">
 						<p class="advantage__number">03</p>
 						<p class="advantage__text">Строгий контроль качества</p>
 					</li>
 				</ul>
+				<div class="advantage__back"></div>
 			</div>
 		</section>
 
@@ -128,29 +129,28 @@
 				<div class="catalog__box">
 					<ul class="catalog__list">
 						<li class="catalog__item active">
-							<img class="catalog__img" src="img/catitem1.png" alt="Деревянные окна">
+							<img class="catalog__img" src="img/catitem1.png" alt="Деревянные окна" width="95px" height="166px">
 							<div class="catalog__text-box">
 								<h3 class="catalog__title">Деревянные окна</h3>
 								<p class="catalog__text">Это тепло наших рук, годы опыта, репутация каждого из нас.</p>
 							</div>	
 						</li>
 						<li class="catalog__item catalog__item2">
-							<img class="catalog__img" src="img/catitem2.png" alt="Дерево-алюминиевые окна">
+							<img class="catalog__img" src="img/catitem2.png" alt="Дерево-алюминиевые окна" width="88px" height="164px">
 							<div class="catalog__text-box">
 								<h3 class="catalog__title">Дерево-алюминиевые окна</h3>
 								<p class="catalog__text">Это тепло наших рук, годы опыта, репутация каждого из нас.</p>
 							</div>	
 						</li>
 						<li class="catalog__item">
-							<img class="catalog__img" src="img/catitem3.png" alt="Пластиковые окна">
+							<img class="catalog__img" src="img/catitem3.png" alt="Пластиковые окна" width="94px" height="172px">
 							<div class="catalog__text-box">
 								<h3 class="catalog__title">Пластиковые окна</h3>
 								<p class="catalog__text">Это тепло наших рук, годы опыта, репутация каждого из нас.</p>
 							</div>	
 						</li>
 					</ul>
-					<div class="catalog__img-fool">
-						<img src="img/wool.jpg" alt="Окно">
+					<div class="catalog__img-fool">						
 					</div>
 				</div>						
 			</div>			
@@ -159,7 +159,7 @@
 		<section class="price">
 			<div class="price__content container">
 				<h2 class="price__title">Узнайте стоимость <span class="price__red">вашего окна</span></h2>
-				<p>Ответьте на несколько вопросов и наш менеджер сообщит Вам итоговую стоимость в течение 30 минут.</p>
+				<p class="price__text">Ответьте на несколько вопросов и наш менеджер сообщит Вам итоговую стоимость в течение 30 минут.</p>
 				<div class="status-bar">
 					<p>Вопрос 1 из 3</p>
 				</div>
@@ -215,9 +215,19 @@
 		<section class="reviews">
 			<div class="reviews__content container">
 				<h2 class="reviews__title">Аудио-отзывы наших заказчиков</h2>
-				<ul class="reviews__list">
+				<ul class="reviews__list owl-carousel owl-theme">
 					<li class="reviews__item">
-						<audio></audio>
+						<button class="reviews__btn" type="button">PLAY</button>
+						<p class="reviews__text">Понравилось, как поставили окна. По работе менеджера - всё замечательно, обслуживание у вас приятное. Если в будущем будем ставить окна, то к вам обратимся.</p>
+						<p class="reviews__autor">Афонин Сергей Николаевич</p>
+					</li>
+					<li class="reviews__item">
+						<button class="reviews__btn" type="button">PLAY</button>
+						<p class="reviews__text">Понравилось, как поставили окна. По работе менеджера - всё замечательно, обслуживание у вас приятное. Если в будущем будем ставить окна, то к вам обратимся.</p>
+						<p class="reviews__autor">Афонин Сергей Николаевич</p>
+					</li>
+					<li class="reviews__item">
+						<button class="reviews__btn" type="button">PLAY</button>
 						<p class="reviews__text">Понравилось, как поставили окна. По работе менеджера - всё замечательно, обслуживание у вас приятное. Если в будущем будем ставить окна, то к вам обратимся.</p>
 						<p class="reviews__autor">Афонин Сергей Николаевич</p>
 					</li>
@@ -269,10 +279,10 @@
 			<div class="map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.7362078814426!2d48.03986571512559!3d46.33493118294169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41a90f8c874495d1%3A0x32180bf12d76fc16!2z0YPQuy4g0J3QuNC60L7Qu9Cw0Y8g0J7RgdGC0YDQvtCy0YHQutC-0LPQviwgMTE1INC60L7RgNC_0YPRgSAxLCDQkNGB0YLRgNCw0YXQsNC90YwsINCQ0YHRgtGA0LDRhdCw0L3RgdC60LDRjyDQvtCx0LsuLCA0MTQwNTc!5e0!3m2!1sru!2sru!4v1572348338589!5m2!1sru!2sru"></iframe>
 			</div>			
-		</section> -->
+		</section>
 	</main>
 
-	<!-- <footer  class="footer">
+	<footer  class="footer">
 		<div class="footer__content container">
 			<div class="footer__top">
 				<div class="footer__logo">
@@ -320,7 +330,7 @@
 				</div>
 			</div>
 		</div>
-	</footer> -->
+	</footer>
 	<script src="js/libs.min.js"></script>
 	<script src="js/script.js"></script>
 </body>

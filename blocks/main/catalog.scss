@@ -3,12 +3,11 @@
 }
 
 .catalog__content {	
-	height: 100vh;
-	padding: 20px;
+	padding: 15px;
 }
 
 .catalog__box {
-	display: flex;
+	display: flex;	
 }
 
 .catalog__main-title {
@@ -22,15 +21,14 @@
 .catalog__list {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
 .catalog__item {
-	display: flex;
-	width: 470px;
-	max-height: 190px;	
+	display: flex;		
 	background-color: #eae8c2;	
 }
 
@@ -43,10 +41,46 @@
 	background-color: #3a3a3a;
 }
 
+.catalog__title {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.catalog__text-box {
+	padding: 10px;
+}
+
+.catalog__text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
 .catalog__img {
-	margin: 13px 10px;	
+	margin: 13px 10px;
 }
 
 .catalog__img-fool {
-	margin-left: 20px;
+	display: none;
+	background-image: url("../img/wool.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+	.catalog__list {
+		max-width: 470px;
+	}
+
+	.catalog__img-fool {
+		display: block;
+		width: 50%;
+		margin-left: 20px;
+	}
+
+	.catalog__content {	
+		padding: 15px 15px 50px;
+	}
 }

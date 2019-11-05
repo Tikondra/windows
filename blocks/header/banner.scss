@@ -1,5 +1,5 @@
 .banner { 
-  padding: 30px 15px 0;
+  padding: 30px 15px;
   text-align: center;
 }
 
@@ -45,6 +45,10 @@
   background-image: linear-gradient(to top, #ebe209 0%, #fff500 100%);
 }
 
+.mouse {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .banner {
     max-width: 695px;
@@ -55,7 +59,12 @@
 @media screen and (min-width: 1024px) {
   .banner {
     padding: 100px 15px 30px;
-  }  
+  } 
+
+  .mouse {
+    display: block;
+    margin: auto;
+  }
 }
 
 .banner__btn:hover {

@@ -2,12 +2,24 @@
 	background-image: url("../img/back-price.jpg");	
 }
 
-.price__content {
-	height: 100vh;
-	padding: 90px 0;
+.price__content {	
+	padding: 20px 15px;
 }
 
 .price__title {
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.price__red {
+	color: #e31e24;
+}
+
+.price__text {
+	font-size: 18px;
+	font-weight: 400;
 	text-align: center;
 }
 

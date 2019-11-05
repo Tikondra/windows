@@ -29,9 +29,9 @@
 
 .owl-theme .owl-nav.disabled + .owl-dots {
     position: absolute;
-    bottom: 10%;
+    bottom: 0;
     left: 50%;
-    margin-left: -85px; }
+    margin-left: -51px; }
 
 .owl-theme .owl-dots {
   text-align: center;
@@ -44,6 +44,7 @@
     .owl-theme .owl-dots .owl-dot span {
       width: 20px;
       height: 20px;
+      border-radius: 50%;
       border: 5px solid #092a5e;
       background-color: #092a5e;
       margin: 5px 7px;      

@@ -3,7 +3,9 @@
 	                   #f0eed3 55%, #f0eed3 70%, #f4f3df 70%, #f4f3df 85%, #f0eed3 85%, #f0eed3 95%);		
 }
 
-.window-select__content {	
+.window-select__content {
+	display: flex;
+	flex-direction: column;
 	padding: 15px;
 	background-image: url("../img/girl.png");
 	background-repeat: no-repeat;
@@ -13,7 +15,7 @@
 }
 
 .window-select__title {
-	font-size: 36px;
+	font-size: 28px;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
@@ -21,25 +23,36 @@
 
 .window-select__text {	
 	padding: 15px;
-	max-width: 320px;
+	margin: 10px 0;
+	max-width: 200px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: 400;
 	background-color: #fff;
 	box-shadow: 1px 6px 9px 1px rgba(58, 58, 58, 0.29);
-}
-
-.window-select__text1 {
-	top: 25%;
-	left: 10%;
+	border-radius: 10px;
 }
 
 .window-select__text2 {
-	top: 15%;
-	left: 23%;
+	align-self: flex-end;
 }
 
-.window-select__text3 {
-	top: 35%;
-	left: 16%;
+@media screen and (min-width: 768px) {
+	.window-select__text1 {
+		margin-left: 50px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.window-select__content {
+		min-height: 630px;
+	}
+
+	.window-select__text {
+		margin: 0;
+	}
+
+	.window-select__text1 {
+		margin-left: 150px;
+	}
 }
