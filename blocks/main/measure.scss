@@ -4,8 +4,36 @@
 
 .measure__content {
 	height: 100vh;
+	
 	padding: 50px;
 	background-image: url("../img/man.png");
 	background-repeat: no-repeat;
-	background-position: center bottom;
+	background-position: right bottom;
+}
+
+.measure__title {
+	color: #363636;	
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.measure__text {
+	max-width: 535px;
+}
+
+.measure__form {
+	max-width: 335px;
+}
+
+.measure__input {
+	display: block;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+.measure__link {
+	margin: 0;
+	padding: 15px;
+	width: 275px;
 }

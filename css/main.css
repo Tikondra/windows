@@ -133,7 +133,8 @@ a {
 
 @media screen and (min-width: 768px) {
   .page-header {
-    background-position: center; }
+    background-position: center;
+    height: 100vh; }
   .header-info {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -279,7 +280,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .banner {
-    padding: 100px 15px 30px; }
+    padding: 5%; }
   .mouse {
     display: block;
     margin: auto; } }
@@ -745,7 +746,18 @@ a {
   padding: 0; }
 
 .reviews__item {
-  padding: 30px 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding: 50px 15px;
   background-color: #ffffff; }
 
 .reviews__text {
@@ -766,6 +778,9 @@ a {
   background-image: linear-gradient(to top, #ebe209 0%, #fff500 100%);
   border-radius: 50%; }
 
+.quote-box {
+  max-width: 70%; }
+
 .measure {
   background-color: #eae8c2; }
 
@@ -774,10 +789,36 @@ a {
   padding: 50px;
   background-image: url("../img/man.png");
   background-repeat: no-repeat;
-  background-position: center bottom; }
+  background-position: right bottom; }
+
+.measure__title {
+  color: #363636;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.measure__text {
+  max-width: 535px; }
+
+.measure__form {
+  max-width: 335px; }
+
+.measure__input {
+  display: block;
+  padding: 10px;
+  margin-bottom: 15px; }
+
+.measure__link {
+  margin: 0;
+  padding: 15px;
+  width: 275px; }
 
 .contacts {
-  background-color: #fff; }
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .contacts__content {
   height: 60vh;
