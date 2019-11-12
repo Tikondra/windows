@@ -1,12 +1,10 @@
 .measure {
-	background-color: #eae8c2;
+	background-color: #faf9ef;
 }
 
-.measure__content {
-	height: 100vh;
-	
+.measure__content {	
 	padding: 50px;
-	background-image: url("../img/man.png");
+	background-image: url("../img/man2.png");
 	background-repeat: no-repeat;
 	background-position: right bottom;
 }
@@ -28,12 +26,17 @@
 
 .measure__input {
 	display: block;
-	padding: 10px;
+	padding: 15px 10px;
 	margin-bottom: 15px;
 }
 
 .measure__link {
 	margin: 0;
-	padding: 15px;
+	padding: 18.5px 10px;
 	width: 275px;
+	text-align: center;
+}
+
+.measure__text--red {
+	color: red;
 }
