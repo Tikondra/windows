@@ -1,0 +1,32 @@
+.wood-advantage {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wood-advantage__title {
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.wood-advantage__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.wood-advantage__item {
+	padding: 15px;
+	flex-basis: 400px;
+	color: #3a3a3a;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.wood-advantage__card-text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+}

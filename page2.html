@@ -9,11 +9,11 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header class="page-header">
+	<header class="page-header page-header--page2">
 		<div class="overlay">
 			<div class="header-info container">
 				<div class="logo">
-					<a href="index.html"><img src="img/logo-panorama.svg" width="198" height="43" alt="Панорама"></a>
+					<img src="img/logo-panorama.svg" width="198" height="43" alt="Панорама">
 				</div>
 
 				<form class="header-form">
@@ -49,13 +49,13 @@
 			<button class="page-nav__btn" type="button">Меню</button>
 			<ul class="page-nav__list container" id="panel">
 				<li class="page-nav__item">
-					<a class="page-nav__link page-nav__link_active">Главная</a>
+					<a class="page-nav__link" href="index.html">Главная</a>
 				</li>
 				<li class="page-nav__item">
 					<a class="page-nav__link" href="#">Остекление</a>
 				</li>
 				<li class="page-nav__item">
-					<a class="page-nav__link" href="page2.html">Деревянные окна</a>
+					<a class="page-nav__link page-nav__link_active" href="#">Деревянные окна</a>
 				</li>
 				<li class="page-nav__item">
 					<a class="page-nav__link" href="#">Пластиковые окна</a>
@@ -69,35 +69,109 @@
 			</ul>			
 		</nav>	
 
-		<section class="banner">
-			<h2 class="banner__title">Собственное производство <span class="banner__title_span">окон</span></h2>
-			<p class="banner__text"><span class="banner__text_red">20 лет</span> на рынке</p>
-			<p class="banner__text banner__text2">Нас ценят за надежность и качество</p>
+		<section class="banner banner--page2">
+			<h2 class="banner__title banner__title--page2">Деревянные <span class="banner__text_red">окна</span><br> по цене цветных пластиковых</h2>
+			<p class="banner__text banner__text--page2">Большой выбор цветов, широкие<br> дизайнерские возможности.</p>
+			
 			<a class="banner__btn" href="#">Узнать стоимость</a>
 		</section>
 	</header>
 
-	<main>		
-		<section class="replace">
-			<div class="replace__item replace__item1">
-				<h2 class="replace__title replace__title1">Меняете окна?</h2>
-				<p class="replace__text replace__text1">Если вам необходимо сменить свои старые окна или некачественные окна и от застройщика</p>
-				<img src="img/window.png" alt="replace window">
+	<main>
+		<section class="select-wood">
+			<div class="container">
+				<h2 class="select-wood__title">Решили поставить <span class="banner__text_red">деревянные окна</span></h2>
+				<p class="select-wood__subtitle">Вам нужно знать несколько вещей!</p>
+				<ul class="select-wood__list">
+					<li class="select-wood__item">Какие бывают?</li>
+					<li class="select-wood__item select-wood__item--yellow">Из чего они состоят?</li>
+					<li class="select-wood__item">Основные отличия?</li>
+					<li class="select-wood__item select-wood__item--yellow">Как правильно выбрать?</li>
+				</ul>
 			</div>
-			<div class="replace__item replace__item2">
-				<h2 class="replace__title replace__title2">Нужно поставить новые?</h2>
-				<p class="replace__text replace__text2">Если Вы построили дом и его необходимо застеклить качественными окнами</p>
-				<img class="replace__img2" src="img/home.png" alt="replace window">
-			</div>				
 		</section>
 
-		<section class="window-select">
-			<div class="window-select__content container">
-				<h2 class="window-select__title">Не знаете какие выбрать?</h2>
-				<p class="window-select__text window-select__text1">Какие лучше?</p>
-				<p class="window-select__text window-select__text2">А какие есть?</p>
-				<p class="window-select__text window-select__text3">В чем разница?</p>
+		<section class="wood-tips">
+			<div class="container">
+				<h2 class="wood-tips__title">Мы используем <span class="banner__text_red">3 породы</span> дерева</h2>
+				<ul class="wood-tips__list">
+					<li class="wood-tips__item">
+						<div class="wood-tips__img-box">						
+							<img class="wood-tips__img" src="img/sosna.png" width="310" height="170" alt="Сосна">
+						</div>
+						<div class="wood-tips__text-box">
+							<h3 class="wood-tips__card-title">Сосна</h3>
+							<p class="wood-tips__card-text">
+								Окна из сосны из-за невысокой плотности древесины можно назвать естественным кондиционером, который способен обеспечить комфортный уровень воздухообмена в Вашем доме.
+							</p>
+						</div>
+					</li>
+					<li class="wood-tips__item wood-tips__item--listvenica">
+						<div class="wood-tips__img-box">
+							<img class="wood-tips__img" src="img/listvenica.png" width="289" height="170" alt="Лиственница">
+						</div>
+						<div class="wood-tips__text-box">
+							<h3 class="wood-tips__card-title">Лиственница</h3>
+							<p class="wood-tips__card-text">
+								Окна из лиственницы обладают высокой плотностью. Эта порода дерева не боится влаги. Окна из лиственницы легко переносят перепады температур, стойки к гниению и к грибку за счёт природного антисептика в своём составе. 
+							</p>
+						</div>
+					</li>
+					<li class="wood-tips__item">
+						<div class="wood-tips__img-box">
+							<img class="wood-tips__img wood-tips__img--dub" src="img/dub.png" width="221" height="239" alt="Дуб">
+						</div>
+						<div class="wood-tips__text-box">
+							<h3 class="wood-tips__card-title wood-tips__card-title--dub">Дуб</h3>
+							<p class="wood-tips__card-text">
+								Окна из дуба - это прекрасное решение для вашего дома. Древесина дуба содержит дубильные вещества, которые значительно продляют срок службы окон, делают окна устойчивыми к биологическому воздействию, влаге и истиранию.
+							</p>
+						</div>	
+					</li>
+				</ul>
 			</div>
+		</section>
+
+		<section class="wood-advantage container">
+			<h2 class="wood-advantage__title">Преимущества <span class="banner__text_red">деревянных</span> конструкций</h2>
+			<ul class="wood-advantage__list">
+				<li class="wood-advantage__item wood-advantage__item--1">
+					<h3>Прочность</h3>
+					<p class="wood-advantage__card-text">
+						Использование древесины из сосны, дуба и лиственницы придает оконным системам особую прочность
+					</p>
+				</li>
+				<li class="wood-advantage__item wood-advantage__item--2">
+					<h3>Долговечность</h3>
+					<p class="wood-advantage__card-text">
+						При покрытии древесины специальным лаком, ее долговечность увеличивается в несколько раз. Используемые нами материалы не разбухают от влаги и не растрекивается от жары
+					</p>
+				</li>
+				<li class="wood-advantage__item wood-advantage__item--3">
+					<h3>Экологичность</h3>
+					<p class="wood-advantage__card-text">
+						Деревянные окна не выделяют в окружающую среду вредных веществ, они станут гарантией экологической безопасности у вас дома.
+					</p>
+				</li>
+				<li class="wood-advantage__item wood-advantage__item--4">
+					<h3>Пожаробезопасность</h3>
+					<p class="wood-advantage__card-text">
+						Древесина является органическим материалом и обладает высокой природной огнестойкостью, за счет содержащейся в дереве воды
+					</p>
+				</li>
+				<li class="wood-advantage__item wood-advantage__item--5">
+					<h3>Простота обслуживания</h3>
+					<p class="wood-advantage__card-text">
+						Деревянные оконные системы не требуют особого ухода и легко переносят воздействие внешней среды
+					</p>
+				</li>
+				<li class="wood-advantage__item wood-advantage__item--6">
+					<h3>Уникальный природный материал</h3>
+					<p class="wood-advantage__card-text">
+						Он отличается долговечностью, надёжностью и способностью дышать. Современные деревянные окна защитят Ваш дом от любой непогоды 
+					</p>
+				</li>
+			</ul>
 		</section>
 
 		<section class="advantage">

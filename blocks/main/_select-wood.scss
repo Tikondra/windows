@@ -1,0 +1,49 @@
+.select-wood {
+	background-image: url("../img/back-select-wood.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 80px 15px 120px;
+}
+
+.select-wood__title {
+	margin: 0;
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.select-wood__subtitle {
+	margin: 0;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.select-wood__list {
+	list-style: none;
+	padding: 0;
+	margin: 50px 0 5px;
+}
+
+.select-wood__item {
+	max-width: 400px;
+	padding: 15px;
+	padding-left: 35px;
+	color: #3c3c3c;
+	font-size: 24px;
+	font-weight: 500;	
+	background-image: url("../img/arrow-right-red.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.select-wood__item--yellow {
+	background-color: #ede408;
+	background-image: url("../img/arrow-right.svg");
+}
+
+@media screen and (min-width: 768px) {
+  .select-wood {
+    background-position: center;
+    min-height: 90vh;
+  }
+}

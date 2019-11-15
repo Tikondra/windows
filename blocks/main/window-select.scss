@@ -44,8 +44,13 @@
 }
 
 @media screen and (min-width: 1024px) {
+	.window-select {
+		padding-top: 70px;
+	}
+
 	.window-select__content {
 		min-height: 630px;
+		padding: 0;
 	}
 
 	.window-select__text {

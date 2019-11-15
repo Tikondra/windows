@@ -10,6 +10,10 @@
   font-weight: 700;
 }
 
+.banner__title--page2 {
+  font-size: 48px;
+}
+
 .banner__title_span {
   font-size: 60px;
   text-transform: uppercase;
@@ -32,11 +36,17 @@
   font-weight: 700;
 }
 
+.banner__text--page2 {
+  color: #343434;  
+  font-size: 30px;
+  font-weight: 400;
+}
+
 .banner__btn {
   display: block;
-  padding: 27px 15px;
+  padding: 20px 15px;
   max-width: 312px;
-  margin: 0 auto;
+  margin: 30px auto;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.46);
   color: #000000;
   font-size: 18px;
@@ -60,6 +70,10 @@
   .banner {
     padding: 5%;
   } 
+
+  .banner--page2 {
+    max-width: 930px;
+  }
 
   .mouse {
     display: block;
