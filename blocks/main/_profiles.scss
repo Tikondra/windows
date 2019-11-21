@@ -1,0 +1,128 @@
+.profiles {
+	padding: 100px 0 0;
+}
+
+.profiles__title {
+	margin: 0;
+	max-width: 525px;
+	color: #3c3b3b;
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.profiles__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.profiles__item {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	width: 50%;
+	padding-right: 25px;
+	padding-bottom: 30px;
+
+	&--1::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: -500px;
+		left: 0;
+		right: -1000px;
+		bottom: 0;
+		background-color: #fff;
+		background-image: linear-gradient(45deg, 
+			rgba(246, 246, 246, 0.5) 0%, 
+			rgba(246, 246, 246, 0.5) 10%, rgba(246, 246, 246, 0.3) 10%,
+		  rgba(246, 246, 246, 0.3) 25%, rgba(246, 246, 246, 0.1) 25%, )
+	} 
+
+	&--2::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: -500px;
+		left: 0;
+		right: -1000px;
+		bottom: 0;
+		background-color: #e7e5c0;
+		background-image: linear-gradient(45deg, 
+			rgba(255, 255, 255, 0.5) 0%, 
+			rgba(255, 255, 255, 0.5) 10%, rgba(255, 255, 255, 0.3) 10%,
+		  rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.1) 25%, )
+	}
+
+	&--3 {
+		color: #fff;
+		padding-top: 30px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: -1000px;
+			right: 0;
+			bottom: 0px;
+			background-color: #424242;
+			background-image: linear-gradient(45deg, 
+					rgba(255, 255, 255, 0.2) 0%, 
+					rgba(255, 255, 255, 0.2) 60%, rgba(255, 255, 255, 0.1) 60%,
+				  rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.05) 75%, )
+		}
+	}		
+
+	&--4 {
+		color: #fff;
+		padding-top: 30px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: -1000px;
+			bottom: 0px;
+			background-color: #2d2d2d;
+			background-image: linear-gradient(45deg, 
+					rgba(255, 255, 255, 0.2) 0%, 
+					rgba(255, 255, 255, 0.2) 10%, rgba(255, 255, 255, 0.1) 10%,
+				  rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.05) 25%, )
+		}
+	}	
+}
+
+.profiles__descrition {
+	margin-left: 25px;
+}
+
+.profiles__item-title {	
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.profiles__descrition-list {
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+}
+
+.profiles__item--2 .profiles__img {
+	padding-left: 10px;
+}
+
+.profiles__img {
+	padding-top: 30px;
+}
+
+.profiles__descrition-item {		
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25.95px;
+}

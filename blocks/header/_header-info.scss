@@ -3,10 +3,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -700px;
-}
 
-.page-header--page2 {
-  background-image: url("../img/back2.jpg");
+  &--page2 {
+    background-image: url("../img/back2.jpg");
+  }
+
+  &--plastic {
+    background-image: url("../img/back_plastic.jpg");
+  }
 }
 
 .overlay {
