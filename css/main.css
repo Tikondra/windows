@@ -1682,3 +1682,29 @@ a {
   margin: 0;
   font-size: 16px;
   font-weight: 500; }
+
+.heat {
+  padding: 70px 0 0;
+  background-image: url("../img/back4s.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.heat__title {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #3a3a3a;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center; }
+
+.heat__mark-list {
+  margin: 50px auto;
+  padding: 0;
+  max-width: 243px;
+  list-style: none;
+  text-align: right; }
+
+.heat__mark-item {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500; }
