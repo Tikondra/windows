@@ -1,8 +1,9 @@
 .heat {
-	padding: 70px 0 0;
+	min-height: 540px;
+	padding-bottom: 70px;
 	background-image: url("../img/back4s.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center -300px;
 }
 
 .heat__title {
@@ -20,10 +21,62 @@
 	max-width: 243px;
 	list-style: none;
 	text-align: right;
+
 }
 
 .heat__mark-item {
-	margin-bottom: 10px;
+	margin-bottom: 28px;
 	font-size: 18px;
 	font-weight: 500;
+}
+
+.heat__diff {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 60px;
+	background-color: #3a3a3a;
+}
+
+.heat__diff-title {
+	padding: 0 25px;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.heat__diagram-list {
+	@include list;
+	flex-basis: 700px;
+}
+
+.heat__diagram-item {
+	display: flex;	
+	align-items: center;
+}
+
+.heat__diagram-title {
+	flex-basis: 105px;
+	margin-right: 20px;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22.01px;
+}
+
+.heat__diagram-data {
+	margin-left: auto;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22.01px;
+}
+
+.heat__diagram {
+	width: 281px;
+	height: 28px;
+	background-color: yellow;
+
+	&--2 {
+		width: 167px;
+	}
 }
