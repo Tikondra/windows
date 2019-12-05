@@ -1,0 +1,37 @@
+.manufacture-image {
+  @include list;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 50%;
+  padding: 50px 0;
+  background-image: url("../img/back_manufacture-image.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-origin: content-box;
+}
+
+.manufacture-image__item {
+  max-width: 210px;
+  margin: 20px 0;
+  margin-left: 90px;
+  font-size: 16px;
+  font-weight: 500;
+
+  &--2 {
+    margin-left: 50px;
+  }
+
+  &--3 {
+    margin-left: 20px;
+  }
+
+  &--4 {
+    margin-left: 0px;
+  }
+
+  &--5 {
+    align-self: flex-end;
+    margin-top: 90px;
+  }
+}
