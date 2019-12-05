@@ -670,7 +670,8 @@ a {
             flex-shrink: 0; }
   .catalog__full-img {
     display: block;
-    margin-left: 20px; }
+    margin-left: 20px;
+    max-height: 509px; }
   .catalog__content {
     padding: 15px 15px 50px; } }
 
@@ -705,12 +706,25 @@ a {
   max-width: 830px;
   border-radius: 10px; }
 
-.status-bar:hover {
+.status-bar.status2 {
   background: -o-linear-gradient(315deg, #FFEB3B 4%, #FFf 4%, #FFf 8%, #FFEB3B 8%, #FFEB3B 12%, #FFF 12%, #FFF 16%, #FFEB3B 16%, #FFEB3B 20%, #FFF 20%, #FFF 24%, #FFEB3B 24%, #FFEB3B 28%, #FFF 28%, #FFF 32%, #FFEB3B 32%, #FFEB3B 36%, #FFf 36%, #FFf 40%, #FFEB3B 40%, #FFEB3B 44%, #FFF 44%, #FFF 48%, #FFEB3B 48%, #FFEB3B 52%, #FFF 52%, #FFF 56%, #FFEB3B 56%, #FFEB3B 60%, #FFF 60%, #FFF 64%, #FFEB3B 64%);
   background: linear-gradient(135deg, #FFEB3B 4%, #FFf 4%, #FFf 8%, #FFEB3B 8%, #FFEB3B 12%, #FFF 12%, #FFF 16%, #FFEB3B 16%, #FFEB3B 20%, #FFF 20%, #FFF 24%, #FFEB3B 24%, #FFEB3B 28%, #FFF 28%, #FFF 32%, #FFEB3B 32%, #FFEB3B 36%, #FFf 36%, #FFf 40%, #FFEB3B 40%, #FFEB3B 44%, #FFF 44%, #FFF 48%, #FFEB3B 48%, #FFEB3B 52%, #FFF 52%, #FFF 56%, #FFEB3B 56%, #FFEB3B 60%, #FFF 60%, #FFF 64%, #FFEB3B 64%); }
 
+.status-bar.status3 {
+  background: -o-linear-gradient(315deg, #FFEB3B 4%, #FFf 4%, #FFf 8%, #FFEB3B 8%, #FFEB3B 12%, #FFF 12%, #FFF 16%, #FFEB3B 16%, #FFEB3B 20%, #FFF 20%, #FFF 24%, #FFEB3B 24%, #FFEB3B 28%, #FFF 28%, #FFF 32%, #FFEB3B 32%, #FFEB3B 36%, #FFf 36%, #FFf 40%, #FFEB3B 40%, #FFEB3B 44%, #FFF 44%, #FFF 48%, #FFEB3B 48%, #FFEB3B 52%, #FFF 52%, #FFF 56%, #FFEB3B 56%, #FFEB3B 60%, #FFF 60%, #FFF 64%, #FFEB3B 64%, #FFEB3B 68%, #FFf 68%, #FFf 72%, #FFEB3B 72%, #FFEB3B 76%, #FFF 76%, #FFF 80%, #FFEB3B 80%, #FFEB3B 84%, #FFF 84%, #FFF 88%, #FFEB3B 88%, #FFEB3B 92%, #FFF 92%, #FFF 96%, #FFEB3B 96%, #FFEB3B 100%, #FFF 100%);
+  background: linear-gradient(135deg, #FFEB3B 4%, #FFf 4%, #FFf 8%, #FFEB3B 8%, #FFEB3B 12%, #FFF 12%, #FFF 16%, #FFEB3B 16%, #FFEB3B 20%, #FFF 20%, #FFF 24%, #FFEB3B 24%, #FFEB3B 28%, #FFF 28%, #FFF 32%, #FFEB3B 32%, #FFEB3B 36%, #FFf 36%, #FFf 40%, #FFEB3B 40%, #FFEB3B 44%, #FFF 44%, #FFF 48%, #FFEB3B 48%, #FFEB3B 52%, #FFF 52%, #FFF 56%, #FFEB3B 56%, #FFEB3B 60%, #FFF 60%, #FFF 64%, #FFEB3B 64%, #FFEB3B 68%, #FFf 68%, #FFf 72%, #FFEB3B 72%, #FFEB3B 76%, #FFF 76%, #FFF 80%, #FFEB3B 80%, #FFEB3B 84%, #FFF 84%, #FFF 88%, #FFEB3B 88%, #FFEB3B 92%, #FFF 92%, #FFF 96%, #FFEB3B 96%, #FFEB3B 100%, #FFF 100%); }
+
 .status-bar__text {
   padding: 5px; }
+
+@media screen and (min-width: 768px) {
+  .price__content {
+    padding: 60px 15px; } }
+
+@media screen and (min-width: 1024px) {
+  .price__title {
+    font-size: 36px;
+    margin-bottom: 0; } }
 
 .slider-price__list {
   display: -webkit-box;
@@ -730,14 +744,11 @@ a {
   width: 0px;
   height: 10px; }
 
-/* Track */
 .slider-price__list::-webkit-scrollbar-track {
   background: #9e9e9e;
   border: 4px solid transparent;
-  background-clip: content-box;
-  /* THIS IS IMPORTANT */ }
+  background-clip: content-box; }
 
-/* Handle */
 .slider-price__list::-webkit-scrollbar-thumb {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, transparent), color-stop(40%, transparent), color-stop(40%, #FFEB3B), color-stop(40%, #FFEB3B), color-stop(45%, #FFEB3B), color-stop(45%, #FFEB3B), color-stop(50%, #FFEB3B), color-stop(50%, #FFEB3B), color-stop(50%, transparent));
   background-image: linear-gradient(90deg, transparent 10%, transparent 40%, #FFEB3B 40%, #FFEB3B 40%, #FFEB3B 45%, #FFEB3B 45%, #FFEB3B 50%, #FFEB3B 50%, transparent 50%);
@@ -793,35 +804,23 @@ a {
 .slider-price__check {
   display: none; }
 
-.price .owl-nav {
+.slider-price {
   display: none; }
 
-@media screen and (min-width: 768px) {
-  .price__content {
-    padding: 60px 15px; } }
+.slider-price1.active {
+  display: block; }
 
-@media screen and (min-width: 1024px) {
-  .price__title {
-    font-size: 36px;
-    margin-bottom: 0; } }
+.slider-price__empty-img {
+  max-height: 300px; }
 
-.drag {
-  position: relative;
-  height: 30px; }
+.slider-price2 {
+  display: none; }
 
-.line {
-  height: 3px;
-  background-color: #c1c1c1; }
+.slider-price2.active {
+  display: block; }
 
-.bl {
-  position: absolute;
-  top: -20%;
-  left: 50%;
-  width: 58px;
-  height: 15px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ebe209), to(#fff500));
-  background-image: -o-linear-gradient(bottom, #ebe209 0%, #fff500 100%);
-  background-image: linear-gradient(to top, #ebe209 0%, #fff500 100%); }
+.slider-price3.active {
+  display: block; }
 
 .about {
   background-color: #fff; }
