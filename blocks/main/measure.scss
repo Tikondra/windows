@@ -2,7 +2,7 @@
 	background-color: #eae8c2;
 }
 
-.measure__content {	
+.measure__content {
 	padding: 50px;
 	background-image: url("../img/man2.png");
 	background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 }
 
 .measure__title {
-	color: #363636;	
+	color: #363636;
 	font-size: 36px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -33,7 +33,6 @@
 .measure__link {
 	margin: 0;
 	padding: 18.5px 10px;
-	width: 275px;
 	text-align: center;
 }
 
@@ -42,7 +41,7 @@
 }
 
 @media screen and (min-width: 768px) {
-	.measure__content {	
+	.measure__content {
 		padding: 50px 150px;
 	}
 }

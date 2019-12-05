@@ -615,6 +615,10 @@ a {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   list-style: none;
   margin: 0;
@@ -625,10 +629,13 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   background-color: #eae8c2; }
-
-.catalog__item2 {
-  margin: 8px 0; }
+  .catalog__item--2 {
+    margin: 20px 0; }
 
 .catalog__item.active {
   color: #fff;
@@ -650,21 +657,19 @@ a {
 .catalog__img {
   margin: 13px 10px; }
 
-.catalog__img-fool {
-  display: none;
-  background-image: url("../img/wool.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
+.catalog__full-img {
+  display: none; }
 
 @media screen and (min-width: 1024px) {
   .catalog {
     padding: 30px 0; }
   .catalog__list {
-    max-width: 470px; }
-  .catalog__img-fool {
+    max-width: 470px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+  .catalog__full-img {
     display: block;
-    width: 50%;
     margin-left: 20px; }
   .catalog__content {
     padding: 15px 15px 50px; } }
@@ -981,7 +986,6 @@ a {
 .measure__link {
   margin: 0;
   padding: 18.5px 10px;
-  width: 275px;
   text-align: center; }
 
 .measure__text--red {
