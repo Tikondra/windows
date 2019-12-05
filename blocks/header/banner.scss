@@ -1,6 +1,10 @@
-.banner { 
+.banner {
   padding: 30px 15px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 75%;
 }
 
 .banner__title {
@@ -28,7 +32,7 @@
 
 .banner__text2 {
   font-size: 32px;
-  color: #343434;  
+  color: #343434;
 }
 
 .banner__text_red {
@@ -37,7 +41,7 @@
 }
 
 .banner__text--page2 {
-  color: #343434;  
+  color: #343434;
   font-size: 30px;
   font-weight: 400;
 }
@@ -63,13 +67,13 @@
   .banner {
     max-width: 695px;
     margin: 0 auto;
-  }  
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .banner {
     padding: 5%;
-  } 
+  }
 
   .banner--page2 {
     max-width: 930px;

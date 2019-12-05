@@ -12,18 +12,43 @@
 }
 
 .manufacture-image__item {
+  position: relative;
   max-width: 210px;
   margin: 20px 0;
   margin-left: 90px;
   font-size: 16px;
   font-weight: 500;
 
+  &::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 215px;
+    height: 46px;
+    background-image: url("../img/line1.png");
+  }
+
   &--2 {
     margin-left: 50px;
+
+    &::after {
+      top: 58px;
+      width: 289px;
+      height: 136px;
+      background-image: url("../img/line2.png");
+    }
   }
 
   &--3 {
     margin-left: 20px;
+
+    &::after {
+      top: 58px;
+      width: 246px;
+      height: 76px;
+      background-image: url("../img/line3.png");
+    }
   }
 
   &--4 {
@@ -33,5 +58,13 @@
   &--5 {
     align-self: flex-end;
     margin-top: 90px;
+
+    &::after {
+      top: -25px;
+      left: -55px;
+      width: 234px;
+      height: 104px;
+      background-image: url("../img/line5.png");
+    }
   }
 }
