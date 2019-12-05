@@ -261,6 +261,7 @@ a {
 
 .banner__title_span {
   font-size: 60px;
+  line-height: 80px;
   text-transform: uppercase; }
 
 .banner__text {
@@ -307,7 +308,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .banner {
-    padding: 5%; }
+    padding: 50px; }
   .banner--page2 {
     max-width: 930px; }
   .mouse {
