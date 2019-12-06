@@ -8,7 +8,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
     cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
     rename       = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
     del          = require('del'), // Подключаем библиотеку для удаления файлов и папок
-    imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями    
+    imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
     cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
     autoprefixer = require('gulp-autoprefixer'),// Для автоматического добавления префиксов
     pug          = require('gulp-pug'),
@@ -23,7 +23,7 @@ gulp.task('pug', function() {
       }))
       .pipe(pug())
       .pipe(htmlbeautify())
-      .pipe(gulp.dest("./"))      
+      .pipe(gulp.dest("./"))
       .pipe(browserSync.stream());
 });
 
@@ -37,7 +37,7 @@ gulp.task('htmlbeautify', function() {
             'object', 'output', 'progress', 'q', 'ruby', 's', 'samp', 'small',
              'strong', 'sub', 'sup', 'template', 'time', 'u', 'var', 'wbr', 'text',
             'acronym', 'address', 'big', 'dt', 'ins', 'strike', 'tt'
-        ] 
+        ]
     };
 gulp.src('./*.html')
     .pipe(htmlbeautify(options))
@@ -71,12 +71,12 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('js')); // Выгружаем в папку app/js
 });
 
-gulp.task('script-min', function() {
-    return gulp.src('js/script.js')        
-        .pipe(uglify()) // Сжимаем JS файл
-        .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-        .pipe(gulp.dest('js')); // Выгружаем в папку js
-});
+// gulp.task('script-min', function() {
+//     return gulp.src('js/script.js')
+//         .pipe(uglify()) // Сжимаем JS файл
+//         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
+//         .pipe(gulp.dest('js')); // Выгружаем в папку js
+// });
 
 gulp.task('code', function() {
     return gulp.src('*.html')
@@ -89,8 +89,8 @@ gulp.task('css-libs', function() {
         'libs/css/owl.carousel.css',
         'libs/css/owl.theme.css'
         ]) // Выбираем файл для минификации
-        .pipe(concat('libs.min.css'))        
-        .pipe(cssnano()) // Сжимаем        
+        .pipe(concat('libs.min.css'))
+        .pipe(cssnano()) // Сжимаем
         .pipe(gulp.dest('css')); // Выгружаем в папку app/css
 });
 
@@ -133,8 +133,8 @@ gulp.task('clear', function (callback) {
 gulp.task('watch', function() {
     gulp.watch(['blocks/**/*.scss', 'styles/**/*.scss'], gulp.parallel('sass')); // Наблюдение за sass файлами
     gulp.watch('*.html', gulp.parallel('code')); // Наблюдение за HTML файлами в корне проекта
-    gulp.watch(['js/script.js', 'libs/**/*.js'], gulp.parallel('scripts', 'script-min')); // Наблюдение за главным JS файлом и за библиотеками
+    gulp.watch(['js/script.js', 'libs/**/*.js'], gulp.parallel('scripts')); // Наблюдение за главным JS файлом и за библиотеками
 });
 
-gulp.task('default', gulp.parallel('sass', 'css-libs', 'css-min', 'scripts', 'script-min', 'browser-sync', 'watch'));
-gulp.task('build', gulp.parallel('sass', 'css-libs', 'css-min', 'scripts', 'script-min', 'clean', 'prebuild'));
+gulp.task('default', gulp.parallel('sass', 'css-libs', 'css-min', 'scripts', 'browser-sync', 'watch'));
+gulp.task('build', gulp.parallel('sass', 'css-libs', 'css-min', 'scripts', 'clean', 'prebuild'));

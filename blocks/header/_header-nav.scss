@@ -1,6 +1,6 @@
 .page-nav {
   box-shadow: 0 0 3px rgba(50, 50, 50, 0.2);
-  background-color: #3a3a3a;  
+  background-color: #3a3a3a;
 }
 
 .page-nav__list {
@@ -11,7 +11,7 @@
   width: 100%;
   padding: 0 60px;
   background-color: #3a3a3a;
-  list-style: none;  
+  list-style: none;
 }
 
 .page-nav__item {
@@ -22,14 +22,14 @@
 .page-nav__link {
   display: block;
   padding: 21px 5px;
-  color: #ffffff;  
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
-}
 
-.page-nav__link_active {
-  color: #e6e164;
-  text-decoration: underline;
+  &--active {
+    color: #e6e164;
+    text-decoration: underline;
+  }
 }
 
 .page-nav__link:hover {

@@ -22,8 +22,6 @@ function catalogSlider() {
   let item = catalog.querySelectorAll('.catalog__item');
   let fullImg = catalog.querySelector('.catalog__full-img');
 
-  console.log(item[2]);
-
   for (let i = 0; i < item.length; i++) {
 
     item[i].addEventListener('click', function () {

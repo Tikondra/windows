@@ -10,6 +10,10 @@
 	font-size: 36px;
 	font-weight: 700;
 	text-transform: uppercase;
+
+  &--al {
+    max-width: 700px;
+  }
 }
 
 .wood-advantage__list {
@@ -22,7 +26,7 @@
 
 .wood-advantage__item {
 	position: relative;
-	z-index: 2;
+	z-index: -1;
 	padding: 0 70px 60px 15px;
 	flex-basis: 400px;
 	color: #3a3a3a;
@@ -38,7 +42,7 @@
 	}
 
 	&--3 {
-		
+
 		padding-right: 100px;
 
 		&::before {
@@ -48,13 +52,13 @@
 			top: -300px;
 			left: 0;
 			right: -1000px;
-			bottom: 0;			
+			bottom: 0;
 			background-color: #eae8c2;
 			background-image: url("../img/item3.png");
 			background-repeat: no-repeat;
 			background-position: 240px bottom;
 		}
-	}	
+	}
 
 	&--4::before {
 		content: "";
@@ -69,13 +73,17 @@
 		background-repeat: no-repeat;
 		background-position: right bottom;
 	}
-	
+
+  &--4al {
+    padding-right: 115px;
+  }
+
 	&--5 {
 		background-color: #424242;
 		background-image: url("../img/item5.png");
 		color: #ffffff;
 	}
-	
+
 	&--6 {
 		color: #ffffff;
 
@@ -93,9 +101,27 @@
 			background-position: 240px bottom;
 		}
 	}
+
+  &--6al {
+    color: #ffffff;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: -1000px;
+      bottom: 0;
+      background-color: #2f2f2f;
+      background-image: url("../img/adv-al6.png");
+      background-repeat: no-repeat;
+      background-position: 240px bottom;
+    }
+  }
 }
 
-.wood-advantage__card-title {		
+.wood-advantage__card-title {
 	font-size: 20px;
 	font-weight: 700;
 }
