@@ -1,4 +1,4 @@
-.page-header {  
+.page-header {
   background-image: url("../img/back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,6 +11,10 @@
   &--plastic {
     background-image: url("../img/back_plastic.jpg");
   }
+
+  &--al {
+    background-image: url("../img/back-al.png");
+  }
 }
 
 .overlay {
@@ -19,9 +23,9 @@
 
 .header-info {
   display: flex;
-  flex-direction: column;  
-  align-items: center;  
-  padding: 15px 15px 0;  
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 15px 0;
 }
 
 .logo {
@@ -31,7 +35,7 @@
 }
 
 .header-form__label {
-  color: #1c1b17;  
+  color: #1c1b17;
   font-size: 16px;
   font-weight: 500;
 }
@@ -49,7 +53,7 @@
 	margin: 0;
 	width: 200px;
 	padding: 10px 0 10px 30px;
-  color: #1c1b17;  
+  color: #1c1b17;
   font-size: 16px;
   font-weight: 500;
   background-image: url("../img/pin.svg");
@@ -65,7 +69,7 @@
   display: block;
   padding-left: 30px;
   color: #1c1b17;
-  
+
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
@@ -106,8 +110,8 @@
   }
   .header-info {
     flex-direction: row;
-    justify-content: space-between;    
-    flex-wrap: wrap;      
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .header-form {

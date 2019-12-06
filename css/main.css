@@ -47,6 +47,8 @@ a {
     background-image: url("../img/back2.jpg"); }
   .page-header--plastic {
     background-image: url("../img/back_plastic.jpg"); }
+  .page-header--al {
+    background-image: url("../img/back-al.png"); }
 
 .overlay {
   background-color: rgba(255, 255, 255, 0.7); }
@@ -2244,3 +2246,84 @@ a {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase; }
+
+.where-al__title {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center; }
+
+.where-al__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.where-al__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+
+.where-al__img {
+  width: 80%;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
+
+.where-al__group-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.where-al__item-title {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  padding: 22px 40px;
+  width: 85%;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #ede408; }
+  .where-al__item-title--1 {
+    margin-bottom: -30px;
+    padding: 10px 40px;
+    width: 88%; }
+  .where-al__item-title--2 {
+    margin-bottom: -90px; }
+  .where-al__item-title--3 {
+    margin-bottom: -100px; }
+  .where-al__item-title--4 {
+    margin-bottom: -85px; }
+  .where-al__item-title--5 {
+    margin-bottom: -55px; }
+  .where-al__item-title--6 {
+    margin-bottom: -30px; }
+  .where-al__item-title--7 {
+    margin-bottom: -30px; }
+  .where-al__item-title--8 {
+    margin-bottom: -55px; }
