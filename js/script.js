@@ -56,5 +56,17 @@ function price() {
   }
 };
 
-catalogSlider();
-price();
+
+
+if(window.location.toString().indexOf('index.html')>0) {
+
+  catalogSlider();
+  price();
+
+} else {
+  price();
+
+};
+
+
+
