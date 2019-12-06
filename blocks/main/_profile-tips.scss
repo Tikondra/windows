@@ -1,0 +1,126 @@
+.profile-tips {
+  position: relative;
+  z-index: -2;
+  max-width: 3200px;
+  margin: auto;
+  padding: 50px 25px 0;
+  background-image: url("../img/back-prof-tips.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.profile-tips__title {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.profile-tips__list {
+  @include list;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-tips__item-title {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  padding-right: 20px;
+  margin: 0;
+  color: #1c385e;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &--2 {
+    color: #6d411a;
+  }
+
+  &--3 {
+    color: #ffffff;
+  }
+}
+
+.profile-tips__item-numb {
+  color: #b4ccec;
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &--2 {
+    color: #6d411a;
+  }
+
+  &--3 {
+    color: #ffffff;
+  }
+}
+
+.profile-tips__subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.profile-tips__text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.profile-tips__item {
+  position: relative;
+  padding: 53px 25px;
+  color: #1c385e;
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+
+  &--2 {
+    flex-basis: 50%;
+    color: #6d411a;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: -1000px;
+      right: 0;
+      bottom: 0;
+      background-color: #efedd0;
+      background-image: url("../img/back-prof-tipsi2.png");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+  }
+
+  &--3 {
+    flex-basis: 50%;
+    color: #ffffff;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -2;
+      top: 0;
+      left: 0;
+      right: -1000px;
+      bottom: 0;
+      background-color: #393939;
+      background-image: url("../img/back-prof-tipsi2.png");
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+  }
+}
+
+.profile-tips__text-box {
+  flex-basis: 325px;
+  margin-right: 25px;
+}
+
+.profile-tips__img {
+  flex-shrink: 0;
+}
