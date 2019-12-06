@@ -49,6 +49,8 @@ a {
     background-image: url("../img/back_plastic.jpg"); }
   .page-header--al {
     background-image: url("../img/back-al.png"); }
+  .page-header--jaluzi {
+    background-image: url("../img/back-jaluzi.jpg"); }
 
 .overlay {
   background-color: rgba(255, 255, 255, 0.7); }
@@ -2247,11 +2249,22 @@ a {
   font-weight: 700;
   text-transform: uppercase; }
 
+.where-al {
+  padding: 50px 25px 0; }
+
 .where-al__title {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center; }
+
+.where-al__title-numb {
+  color: #eae8c2;
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase; }
+  .where-al__title-numb--2 {
+    color: #ffffff; }
 
 .where-al__list {
   margin: 0;
@@ -2271,6 +2284,7 @@ a {
           justify-content: center; }
 
 .where-al__item {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2287,6 +2301,69 @@ a {
   -webkit-flex-basis: 50%;
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; }
+  .where-al__item--2::before {
+    content: "";
+    position: absolute;
+    z-index: -3;
+    top: -300px;
+    left: 0;
+    right: -1000px;
+    bottom: 0;
+    background-color: #eae8c2; }
+  .where-al__item--3::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -1000px;
+    right: 0;
+    bottom: 0;
+    background-color: #424242; }
+  .where-al__item--4::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: -1000px;
+    bottom: 0;
+    background-color: #313131; }
+  .where-al__item--5::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -1000px;
+    right: 0;
+    bottom: 0;
+    background-color: #dddbdb; }
+  .where-al__item--6::before {
+    content: "";
+    position: absolute;
+    z-index: -3;
+    top: -300px;
+    left: 0;
+    right: -1000px;
+    bottom: 0;
+    background-color: #eae8c2; }
+  .where-al__item--7::before {
+    content: "";
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    left: -1000px;
+    right: 0;
+    bottom: 0;
+    background-color: #eae8c2; }
+  .where-al__item--8::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: -1000px;
+    bottom: 0;
+    background-color: #f8f6f6; }
 
 .where-al__img {
   width: 80%;
@@ -2295,11 +2372,22 @@ a {
           align-self: flex-end; }
 
 .where-al__group-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 400px;
+  padding-right: 20px;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase; }
 
 .where-al__item-title {
+  margin-left: 20px;
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
