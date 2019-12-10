@@ -770,7 +770,10 @@ a {
           flex-shrink: 0; }
 
 .slider-price__link {
-  margin: 20px auto; }
+  margin: 20px auto;
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%; }
 
 .slider-price__text {
   padding: 10px;
@@ -819,6 +822,12 @@ a {
 
 .slider-price__empty-img {
   max-height: 300px; }
+
+.slider-price__btn-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .slider-price2 {
   display: none; }

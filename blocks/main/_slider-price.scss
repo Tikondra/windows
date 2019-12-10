@@ -36,6 +36,7 @@
 
 .slider-price__link {
   margin: 20px auto;
+  flex-basis: 20%;
 }
 
 .slider-price__text {
@@ -94,4 +95,8 @@
 
 .slider-price__empty-img {
   max-height: 300px;
+}
+
+.slider-price__btn-box {
+  display: flex;
 }

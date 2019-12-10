@@ -37,7 +37,8 @@ function catalogSlider() {
 function price() {
   let price = document.querySelector('.price');
   let slide = price.querySelectorAll('.slider-price');
-  let next = price.querySelectorAll('.slider-price__link');
+  let next = price.querySelectorAll('.slider-price__link--next');
+  let prew = price.querySelectorAll('.slider-price__link--prew');
   let status = price.querySelector('.status-bar');
   let statusText = price.querySelector('.status-bar__text');
 
@@ -51,7 +52,22 @@ function price() {
 
       slide[i+1].classList.add('active');
       status.classList.add('status'+[i+2]);
-      statusText.textContent = 'Вопрос ' + [i+2] + ' из 3'
+      statusText.textContent = 'Вопрос ' + [i+2] + ' из 3';
+    });
+  }
+
+  for (let i = prew.length-1; i >= 0; i--) {
+
+    prew[i].addEventListener('click', function () {
+
+      for (let i = 0; i < slide.length; i++) {
+        slide[i].classList.remove('active');
+      }
+
+      slide[i].classList.add('active');
+      status.classList.remove('status'+[i+2]);
+      status.classList.add('status'+[i+1]);
+      statusText.textContent = 'Вопрос ' + [i+1] + ' из 3';
     });
   }
 };
