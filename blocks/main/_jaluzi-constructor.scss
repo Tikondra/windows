@@ -1,0 +1,78 @@
+.jaluzi-constructor {
+  padding: 50px 0;
+  background-color: #e4e4e4;
+  background-image: url("../img/back-jac-constr.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.jaluzi-constructor__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jaluzi-constructor__title {
+  flex-basis: 100%;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.jaluzi-constructor__list-box {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+  padding-top: 50px;
+}
+
+.jaluzi-constructor__btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 35px;
+  margin: 5px 0;
+  color: #909090;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #3a3a3a;
+  border: none;
+
+  &--span {
+    text-transform: none;
+    font-weight: 400;
+  }
+
+  &--active {
+    color: #000000;
+    background-color: #ede408;
+  }
+}
+
+.jaluzi-constructor__list {
+  @include list;
+  display: none;
+  flex-wrap: wrap;
+  height: 353px;
+
+  overflow-y: scroll;
+
+  &--open {
+    display: flex;
+  }
+}
+
+.jaluzi-constructor__item {
+  flex-basis: 24%;
+  margin: 10px 0;
+}
+
+.jaluzi-constructor__img-box {
+
+}
+
+.jaluzi-constructor__img {
+  display: block;
+  margin: auto;
+}

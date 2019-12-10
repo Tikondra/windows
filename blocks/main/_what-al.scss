@@ -1,6 +1,7 @@
 .what-al {
   padding: 25px;
   color: #424242;
+  background-color: #fff;
   background-image: url("../img/back-al1s.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -13,14 +14,16 @@
 }
 
 .what-al__title {
+  max-width: 330px;
   padding: 15px 20px;
   background-color: #ede408;
   font-size: 24px;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 30px;
 }
 
 .what-al__bold-text {
+  max-width: 490px;
   font-size: 36px;
   font-weight: 900;
   line-height: 42px;
@@ -28,6 +31,8 @@
 }
 
 .what-al__text {
+  max-width: 400px;
   font-size: 16px;
+  line-height: 22px;
   color: #000000;
 }
