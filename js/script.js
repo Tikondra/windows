@@ -56,17 +56,13 @@ function price() {
   }
 };
 
-
-
-if(window.location.toString().indexOf('index.html')>0) {
+if (document.querySelector('.catalog__box')) {
 
   catalogSlider();
   price();
 
 } else {
+
   price();
 
-};
-
-
-
+}
