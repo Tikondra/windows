@@ -1343,19 +1343,30 @@ a {
   width: 200px; }
 
 .footer-menu {
-  max-width: 80%; }
+  max-width: 75%;
+  margin-left: auto; }
 
 .footer-menu__list {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0; }
+
+.footer-menu__item {
+  -webkit-flex-basis: 33%;
+      -ms-flex-preferred-size: 33%;
+          flex-basis: 33%; }
 
 .footer-menu__link {
   display: block;
@@ -1364,8 +1375,9 @@ a {
   font-weight: 500;
   line-height: 27px;
   text-transform: uppercase;
-  margin: 0 10px;
-  width: 200px; }
+  margin: 0 10px; }
+  .footer-menu__link:hover {
+    color: #e6e164; }
 
 .submenu {
   display: none;
@@ -2549,7 +2561,7 @@ a {
           flex-shrink: 0; }
 
 .what-al {
-  padding: 25px;
+  padding: 69px 25px;
   color: #424242;
   background-color: #fff;
   background-image: url("../img/back-al1s.png");
