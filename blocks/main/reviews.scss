@@ -1,8 +1,8 @@
-.reviews {	
+.reviews {
 	background-image: url("../img/back-rev.jpg");
 }
 
-.reviews__content {	
+.reviews__content {
 	padding: 20px 15px;
 	max-width: 970px;
 }
@@ -40,7 +40,7 @@
 }
 
 .reviews__btn {
-	width: 105px;
+	min-width: 105px;
 	height: 105px;
 	box-shadow: 0 5px 6px rgba(161, 155, 17, 0.91);
 	background-color: yellow;
@@ -61,7 +61,7 @@
 .reviews .owl-nav {
 	position: absolute;
 	top: 20%;
-	display: flex;
+	display: none;
 	justify-content: space-between;
 	align-items: center;
 	width: 115%;
@@ -70,14 +70,17 @@
 	color: #fff;
 }
 
-
 @media screen and (min-width: 768px) {
 	.reviews__title {
 		font-size: 36px;
 	}
 
-	.reviews__content {	
+	.reviews__content {
 		padding: 70px 15px 100px;
 		max-width: 970px;
 	}
+
+  .reviews .owl-nav {
+    display: flex;
+  }
 }

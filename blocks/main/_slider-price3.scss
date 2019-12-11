@@ -39,6 +39,8 @@
 }
 
 .slider-price3__check-box {
+  display: flex;
+  flex-wrap: wrap;
   width: 70%;
   padding: 10px 20px;
   background-color: white;
@@ -66,4 +68,34 @@
   flex-shrink: 0;
   padding: 10px 20px;
   width: 70%;
+}
+
+@media (max-width: 600px) {
+  .slider-price3__item {
+    flex-direction: column;
+  }
+
+  .slider-price3__label {
+    width: 100%;
+  }
+
+  .slider-price3__select {
+    width: 100%;
+  }
+
+  .slider-price3__input {
+    width: 100%;
+  }
+
+  .slider-price3__textarea {
+    width: 100%;
+  }
+
+  .slider-price3__check-box {
+    width: 100%;
+  }
+
+  .slider-price3__item {
+    width: 100%;
+  }
 }

@@ -3,8 +3,7 @@
 }
 
 .measure__content {
-	padding: 50px;
-	background-image: url("../img/man2.png");
+	padding: 50px 25px;
 	background-repeat: no-repeat;
 	background-position: right bottom;
 }
@@ -40,8 +39,9 @@
 	color: red;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 	.measure__content {
 		padding: 50px 150px;
+    background-image: url("../img/man2.png");
 	}
 }

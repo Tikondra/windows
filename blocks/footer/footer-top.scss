@@ -73,3 +73,13 @@
 	font-size: 16px;
 	font-weight: 400;
 }
+
+@media screen and (max-width: 500px) {
+  .footer-menu {
+    max-width: 100%;
+  }
+
+  .footer-menu__item {
+    flex-basis: 100%;
+  }
+}

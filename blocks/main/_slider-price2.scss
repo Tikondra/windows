@@ -43,3 +43,21 @@
   padding: 10px 20px;
   width: 70%;
 }
+
+@media (max-width: 600px) {
+  .slider-price2__item {
+    flex-direction: column;
+  }
+
+  .slider-price2__label {
+    width: 100%;
+  }
+
+  .slider-price2__select {
+    width: 100%;
+  }
+
+  .slider-price2__item {
+    width: 100%;
+  }
+}
