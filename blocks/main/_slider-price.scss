@@ -37,6 +37,11 @@
 .slider-price__link {
   margin: 20px auto;
   flex-basis: 20%;
+  text-align: center;
+
+  &--send {
+    border: none;
+  }
 }
 
 .slider-price__text {
