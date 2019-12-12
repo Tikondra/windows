@@ -181,13 +181,45 @@ function price() {
   });
 };
 
+function geo() {
+
+  let geo = document.querySelector('.header-form__select');
+  let adress = document.querySelectorAll('.adres');
+  let tel = document.querySelectorAll('.phone');
+
+  geo.addEventListener('change', function () {
+
+    var selind = geo.options.selectedIndex;
+    var txt = geo.options[selind].text;
+    var val = geo.options[selind].value;
+
+
+    if (val == 'Astrakhan') {
+
+      adress[0].classList.remove('adres--hide');
+      adress[1].classList.add('adres--hide');
+      tel[0].classList.remove('phone--hide');
+      tel[1].classList.add('phone--hide');
+    };
+
+    if (val == 'Atirau') {
+
+      adress[0].classList.add('adres--hide');
+      adress[1].classList.remove('adres--hide');
+      tel[0].classList.add('phone--hide');
+      tel[1].classList.remove('phone--hide');
+    };
+  });
+};
+
 if (document.querySelector('.catalog__box')) {
 
   catalogSlider();
   price();
+  geo();
 
 } else {
-
+  geo();
   price();
 
 }

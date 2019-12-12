@@ -99,9 +99,13 @@ a {
   background-image: url("../img/pin.svg");
   background-repeat: no-repeat;
   background-position: left center; }
+  .adres--hide {
+    display: none; }
 
 .phone {
   margin: 0 20px; }
+  .phone--hide {
+    display: none; }
 
 .phone__number {
   display: block;
