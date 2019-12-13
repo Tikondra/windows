@@ -1,21 +1,36 @@
 <?php
 
-if(isset($_POST['submit'])){
-$to = "tikondra47@gmail.com";; // Здесь нужно написать e-mail, куда будут приходить письма
-$from = $_POST['communication']; // this is the sender's Email address
-$first_name = $_POST['first_name'];
-$subject = "Форма отправки сообщений с сайта";
-$subject2 = "Copy of your form submission";
-$message = " оставил сообщение:";
-$message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+$to = 'tikondra47@gmail.com'; // адрес получателя
+$subject = 'Заказ обратного звонка'; // тема письма
+if (isset($_POST['solo']))     $message  = "Одностворчатое: {$_POST['solo']}\r\n";
+if (isset($_POST['double']))   $message .= "Двухстворчатое: {$_POST['double']}\r\n";
+if (isset($_POST['triple']))   $message .= "Трехстворчатое: {$_POST['triple']}\r\n";
+if (isset($_POST['balcony']))  $message .= "Балконный блок: {$_POST['balcony']}\r\n";
+if (isset($_POST['material'])) $message .= "Материал: {$_POST['material']}\r\n";
+if (isset($_POST['profile']))  $message .= "Профиль: {$_POST['profile']}\r\n";
+if (isset($_POST['glass']))    $message .= "Стеклопакет: {$_POST['glass']}\r\n";
+if (isset($_POST['color']))    $message .= "Цвет: {$_POST['color']}\r\n";
+if (isset($_POST['wood']))     $message .= "Порода дерева: {$_POST['wood']}\r\n";
+if (isset($_POST['wood-profile'])) $message .= "Профиль: {$_POST['wood-profile']}\r\n";
+if (isset($_POST['al-profile'])) $message .= "Профиль: {$_POST['al-profile']}\r\n";
+if (isset($_POST['al-color'])) $message .= "Цвет: {$_POST['al-color']}\r\n";
+if (isset($_POST['otliv']))    $message .= "Отлив: {$_POST['otliv']}\r\n";
+if (isset($_POST['otkos']))    $message .= "Откос: {$_POST['otkos']}\r\n";
+if (isset($_POST['setka']))    $message .= "Сетка: {$_POST['setka']}\r\n";
+if (isset($_POST['podokonik'])) $message .= "Подоконник: {$_POST['podokonik']}\r\n";
+if (isset($_POST['montage']))   $message .= "Монтаж: {$_POST['montage']}\r\n";
+if (isset($_POST['size'])) $message .= "Размер: {$_POST['size']}\r\n";
+if (isset($_POST['communication'])) $message .= "Способ связи: {$_POST['communication']}\r\n";
+if (isset($_POST['tel'])) $message .= "Мобильный: {$_POST['tel']}\r\n";
+if (isset($_POST['whats'])) $message .= "Whatsap: {$_POST['whats']}\r\n";
+if (isset($_POST['vk'])) $message .= "ВКонтакте: {$_POST['vk']}\r\n";
+if (isset($_POST['inst'])) $message .= "Способ связи: {$_POST['inst']}\r\n";
 
-$headers = "From:" . $from;
-$headers2 = "From:" . $to;
+$headers = 'Content-type: text/plain; charset=utf-8'; // установливаем кодировку
 
-mail($to,$subject,$message,$headers);
 
-echo "Сообщение отправлено. Спасибо Вам, мы скоро свяжемся с Вами.";
-
+if( mail($to, $subject, $message, $headers) ){
+ echo '<p style="color: green;">Сообщение отправлено</p>';
+}else{
+ echo '<p style="color: red;">error</p>';
 }
-
-?>

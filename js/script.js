@@ -212,14 +212,78 @@ function geo() {
   });
 };
 
+function svgColor() {
+  const overlay = document.getElementById("path-constr");
+  const overlay2 = document.getElementById("path-constr2");
+  // Click on a color
+
+  var el = document.getElementsByClassName("jaluzi-constructor__color");
+  for (var i = 0; i < el.length; i++) {
+    el[i].onclick = changeColor;
+  }
+
+  var el = document.getElementsByClassName("jaluzi-constructor__color2");
+  for (var i = 0; i < el.length; i++) {
+    el[i].onclick = changeColor2;
+  }
+
+  function changeColor(e) {
+    // get the hex color
+    let hex = e.target.getAttribute("data-hex");
+    // set the hex color
+    overlay.style.fill = hex;
+  }
+
+  function changeColor2(e) {
+    // get the hex color
+    let hex = e.target.getAttribute("data-hex");
+    // set the hex color
+    overlay2.style.fill = hex;
+  }
+}
+
+function construstor() {
+  let btnJal = document.querySelector(".btn-jal-js");
+  let btnRol = document.querySelector(".btn-rol-js");
+  let fullJal = document.querySelector(".full-jal-js");
+  let fullRol = document.querySelector(".full-rol-js");
+  let listJal = document.querySelector(".list-jal-js");
+  let listRol = document.querySelector(".list-rol-js");
+
+
+  btnJal.addEventListener('click', function () {
+    btnJal.classList.add('jaluzi-constructor__btn--active');
+    btnRol.classList.remove('jaluzi-constructor__btn--active');
+    fullJal.classList.remove('jaluzi-constructor__pic--hide');
+    fullRol.classList.add('jaluzi-constructor__pic--hide');
+    listJal.classList.remove('jaluzi-constructor__list--hide');
+    listRol.classList.add('jaluzi-constructor__list--hide');
+  });
+
+  btnRol.addEventListener('click', function () {
+    btnJal.classList.remove('jaluzi-constructor__btn--active');
+    btnRol.classList.add('jaluzi-constructor__btn--active');
+    fullJal.classList.add('jaluzi-constructor__pic--hide');
+    fullRol.classList.remove('jaluzi-constructor__pic--hide');
+    listJal.classList.add('jaluzi-constructor__list--hide');
+    listRol.classList.remove('jaluzi-constructor__list--hide');
+  });
+
+
+}
+
+geo();
+
 if (document.querySelector('.catalog__box')) {
 
   catalogSlider();
-  price();
-  geo();
+};
 
-} else {
-  geo();
+if (document.querySelector('.price')) {
   price();
+};
 
-}
+if (document.querySelector('.jaluzi-constructor')) {
+  svgColor();
+  construstor()
+};

@@ -17,13 +17,13 @@
 
 .wood-tips__list {
 	display: flex;
-
+  flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.wood-tips__item {	
+.wood-tips__item {
 	flex-basis: 400px;
 	flex-grow: 1;
 	color: #3a3a3a;
@@ -53,13 +53,13 @@
 	padding-top: 0;
 }
 
-.wood-tips__card-title {	
+.wood-tips__card-title {
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
-.wood-tips__card-text {	
+.wood-tips__card-text {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 22px;

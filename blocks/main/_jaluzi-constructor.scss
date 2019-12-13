@@ -38,6 +38,7 @@
   text-transform: uppercase;
   background-color: #3a3a3a;
   border: none;
+  cursor: pointer;
 
   &--span {
     text-transform: none;
@@ -52,14 +53,14 @@
 
 .jaluzi-constructor__list {
   @include list;
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   height: 353px;
 
   overflow-y: scroll;
 
-  &--open {
-    display: flex;
+  &--hide {
+    display: none;
   }
 }
 
@@ -68,11 +69,46 @@
   margin: 10px 0;
 }
 
-.jaluzi-constructor__img-box {
+.jaluzi-constructor__pic {
+  position: relative;
+  width: 614px;
+  height: 700px;
 
+  &--hide {
+    display: none;
+  }
 }
 
-.jaluzi-constructor__img {
-  display: block;
-  margin: auto;
+.jaluzi-constructor__svg {
+  position: relative;
+  z-index: 2;
+  mix-blend-mode: multiply;
+  top: 56px;
+  left: 130px;
+
+  &--2 {
+    top: 0;
+    left: 0;
+  }
+}
+
+.jaluzi-constructor__svg-path {
+  fill: #b2dfdb;
+}
+
+.jaluzi-constructor__full-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+}
+
+.jaluzi-constructor__color {
+  width: 102px;
+  height: 102px;
+}
+
+.jaluzi-constructor__color2 {
+  width: 102px;
+  height: 102px;
 }
