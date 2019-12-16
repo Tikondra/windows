@@ -15,7 +15,7 @@
 }
 
 .banner__title--page2 {
-  font-size: 48px;
+  font-size: 30px;
 }
 
 .banner__title_span {
@@ -65,6 +65,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .banner__title--page2 {
+    font-size: 48px;
+  }
+
   .banner {
     max-width: 695px;
     margin: 0 auto;

@@ -8,7 +8,7 @@
 
 .heat__title {
 	max-width: 650px;
-	margin: 0 auto;	
+	margin: 0 auto;
 	color: #3a3a3a;
 	font-size: 30px;
 	font-weight: 700;
@@ -32,6 +32,7 @@
 
 .heat__diff {
 	display: flex;
+  flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 10px 60px;
 	background-color: #3a3a3a;
@@ -50,7 +51,7 @@
 }
 
 .heat__diagram-item {
-	display: flex;	
+	display: flex;
 	align-items: center;
 }
 
@@ -79,4 +80,10 @@
 	&--2 {
 		width: 167px;
 	}
+}
+
+@media screen and (min-width: 768px) {
+  .heat__diff {
+    flex-wrap: nowrap;
+  }
 }

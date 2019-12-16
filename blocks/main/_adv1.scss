@@ -3,7 +3,7 @@
 	background-image: url('../img/back3s.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
-	min-height: 772px;	
+	min-height: 772px;
 }
 
 .adv1__content {
@@ -14,13 +14,13 @@
 .adv1__title {
 	margin-bottom: 60px;
 	margin-left: -60px;
-	color: #3a3a3a;	
+	color: #3a3a3a;
 	font-size: 36px;
 	font-weight: 700;
 	text-transform: uppercase;
 
 	&--span {
-		color: #ded82e;	
+		color: #ded82e;
 		font-size: 59px;
 		font-weight: 700;
 	}
@@ -63,19 +63,15 @@
 	padding: 25px 25px 0;
 	color: #3a3a3a;
 	background-color: #fff;
-
-	&:nth-child(2n) {
-		margin-left: 320px;
-	}
 }
 
-.adv1__item-title {	
+.adv1__item-title {
 	margin: 0;
 	font-size: 18px;
 	font-weight: 700;
 }
 
-.adv1__item-text {	
+.adv1__item-text {
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -84,7 +80,7 @@
 	position: absolute;
 	bottom: -25px;
 	left: 270px;
-	display: flex;
+	display: none;
 	justify-content: space-between;
 	width: 465px;
 	margin: 0;
@@ -116,4 +112,16 @@
 	margin: 0;
 	font-size: 16px;
 	font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .circle__list {
+    display: flex;
+  }
+
+  .adv1__item {
+    &:nth-child(2n) {
+      margin-left: 320px;
+    }
+  }
 }

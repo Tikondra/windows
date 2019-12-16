@@ -9,10 +9,11 @@
 
 .wood-tips__title {
 	margin: 0 0 70px 0;
-	font-size: 36px;
+	font-size: 34px;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
+  color: #fff;
 }
 
 .wood-tips__list {
@@ -69,5 +70,9 @@
   .wood-tips {
     background-position: center;
     min-height: 90vh;
+  }
+
+  .wood-tips__title {
+    color: #000;
   }
 }

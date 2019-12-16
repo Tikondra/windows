@@ -41,9 +41,9 @@
       content: "";
       position: absolute;
       z-index: -3;
-      top: -300px;
+      top: 0;
       left: 0;
-      right: -1000px;
+      right: 0;
       bottom: 0;
       background-color: #eae8c2;
     }
@@ -54,7 +54,7 @@
     position: absolute;
     z-index: -1;
     top: 0;
-    left: -1000px;
+    left: 0;
     right: 0;
     bottom: 0;
     background-color: #424242;
@@ -68,7 +68,7 @@
       z-index: -2;
       top: 0;
       left: 0;
-      right: -1000px;
+      right: 0;
       bottom: 0;
       background-color: #313131;
     }
@@ -79,7 +79,7 @@
     position: absolute;
     z-index: -1;
     top: 0;
-    left: -1000px;
+    left: 0;
     right: 0;
     bottom: 0;
     background-color: #dddbdb;
@@ -91,9 +91,9 @@
       content: "";
       position: absolute;
       z-index: -3;
-      top: -300px;
+      top: 0;
       left: 0;
-      right: -1000px;
+      right: 0;
       bottom: 0;
       background-color: #eae8c2;
     }
@@ -106,7 +106,7 @@
       position: absolute;
       z-index: -3;
       top: 0;
-      left: -1000px;
+      left: 0;
       right: 0;
       bottom: 0;
       background-color: #eae8c2;
@@ -121,7 +121,7 @@
       z-index: -2;
       top: 0;
       left: 0;
-      right: -1000px;
+      right: 0;
       bottom: 0;
       background-color: #f8f6f6;
     }
@@ -185,5 +185,55 @@
 
   &--8 {
     margin-bottom: -55px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .where-al__item {
+
+    &--2 {
+
+      &::before {
+        top: -300px;
+        right: -1000px;
+      }
+    }
+
+    &--3::before {
+      left: -1000px;
+    }
+
+    &--4 {
+
+      &::before {
+        right: -1000px;
+      }
+    }
+
+    &--5::before {
+      left: -1000px;
+    }
+
+    &--6 {
+
+      &::before {
+        top: -300px;
+        right: -1000px;
+      }
+    }
+
+    &--7 {
+
+      &::before {
+        left: -1000px;
+      }
+    }
+
+    &--8 {
+
+      &::before {
+        right: -1000px;
+      }
+    }
   }
 }
