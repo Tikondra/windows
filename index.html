@@ -88,7 +88,7 @@
 		<section class="replace">
 			<div class="replace__item replace__item1">
 				<h2 class="replace__title replace__title1">Меняете окна?</h2>
-				<p class="replace__text replace__text1">Если вам необходимо сменить свои старые окна или некачественные окна и от застройщика</p>
+				<p class="replace__text replace__text1">Если вам необходимо сменить свои старые окна или некачественные окна от застройщика</p>
 				<img src="img/window.png" alt="replace window">
 			</div>
 			<div class="replace__item replace__item2">
@@ -138,21 +138,28 @@
 							<img class="catalog__img" src="img/catitem1.png" alt="Деревянные окна" width="70px" height="140px">
 							<div class="catalog__text-box">
 								<h3 class="catalog__title">Деревянные окна</h3>
-								<p class="catalog__text">Это тепло наших рук, годы опыта, репутация каждого из нас.</p>
+								<p class="catalog__text">Экологически чистые, они придадут Вашему дому комфортного уюта.</p>
 							</div>
 						</li>
 						<li class="catalog__item catalog__item--2">
 							<img class="catalog__img" src="img/catitem2.png" alt="Дерево-алюминиевые окна" width="74px" height="150px">
 							<div class="catalog__text-box">
 								<h3 class="catalog__title">Дерево-алюминиевые окна</h3>
-								<p class="catalog__text">Это тепло наших рук, годы опыта, репутация каждого из нас.</p>
+								<p class="catalog__text">Более устойчивые к механическим и отмосферным воздействиям.</p>
 							</div>
 						</li>
 						<li class="catalog__item">
 							<img class="catalog__img" src="img/catitem3.png" alt="Пластиковые окна" width="72px" height="150px">
 							<div class="catalog__text-box">
 								<h3 class="catalog__title">Пластиковые окна</h3>
-								<p class="catalog__text">Это тепло наших рук, годы опыта, репутация каждого из нас.</p>
+								<p class="catalog__text">Цена и надежность, а также удобство и практичность в эксплуатации.</p>
+							</div>
+						</li>
+						<li class="catalog__item">
+							<img class="catalog__img" src="img/catitem4.png" alt="Пластиковые окна" width="72px" height="150px">
+							<div class="catalog__text-box">
+								<h3 class="catalog__title">Алюминиевые конструкции</h3>
+								<p class="catalog__text">Надежные и изящные конструкции способны реализовать любые потребности в остеклении.</p>
 							</div>
 						</li>
 					</ul>
@@ -383,7 +390,7 @@
 				<h2 class="about__title">О нашей компании</h2>
 				<div class="about__box">
 					<div class="about__img">
-						<img src="img/foto.jpg" alt="Фото руководителя">
+						<img src="img/logo-panorama.svg">
 					</div>
 					<div class="about__text-box">
 						<p class="about__text-title">Рады приветствовать Вас на нашем сайте!</p>
@@ -405,29 +412,112 @@
 		<section class="reviews">
 			<div class="reviews__content container">
 				<h2 class="reviews__title">Аудио-отзывы наших заказчиков</h2>
-				<ul class="reviews__list owl-carousel owl-theme">
+        <button class="reviews__pagination reviews__pagination--prew" type="button"></button>
+				<ul class="reviews__list">
 					<li class="reviews__item">
+            <audio class="reviews__audio" preload="metadata">
+              <source src="audio/afonin.mp3" type="audio/mpeg">
+            </audio>
 						<button class="reviews__btn" type="button"></button>
 						<div class="quote-box">
-							<p class="reviews__text">Понравилось, как поставили окна. По работе менеджера - всё замечательно, обслуживание у вас приятное. Если в будущем будем ставить окна, то к вам обратимся.</p>
+							<p class="reviews__text">«Сотрудники выполняют свою работу на 5 баллов. Всё приветливо. Качественно и надежно. Установка мне понравилась»</p>
 							<p class="reviews__autor">Афонин Сергей Николаевич</p>
 						</div>
 					</li>
-					<li class="reviews__item">
+					<li class="reviews__item reviews__item--hide">
+            <audio class="reviews__audio" preload="metadata">
+              <source src="audio/donskaya.mp3" type="audio/mpeg">
+            </audio>
 						<button class="reviews__btn" type="button"></button>
 						<div class="quote-box">
-							<p class="reviews__text">Понравилось, как поставили окна. По работе менеджера - всё замечательно, обслуживание у вас приятное. Если в будущем будем ставить окна, то к вам обратимся.</p>
-							<p class="reviews__autor">Афонин Сергей Николаевич</p>
+							<p class="reviews__text">«Понравилось, как поставили окна. По работе менеджера - всё замечательно, обслуживание у вас приятное. Если в будущем будем ставить окна, то к вам обратимся.»</p>
+							<p class="reviews__autor">Донская Людмила Павловна</p>
 						</div>
 					</li>
-					<li class="reviews__item">
+					<li class="reviews__item reviews__item--hide">
+            <audio class="reviews__audio" preload="metadata">
+              <source src="audio/guseva.mp3" type="audio/mpeg">
+            </audio>
 						<button class="reviews__btn" type="button"></button>
 						<div class="quote-box">
-							<p class="reviews__text">Понравилось, как поставили окна. По работе менеджера - всё замечательно, обслуживание у вас приятное. Если в будущем будем ставить окна, то к вам обратимся.</p>
-							<p class="reviews__autor">Афонин Сергей Николаевич</p>
+							<p class="reviews__text">«Работа сотрудников очень хорошая, всё понравилось. Большое спасибо менеджеру Ангелине, даже когда закончился ее рабочий день, она со мной работала.»</p>
+							<p class="reviews__autor">Гусева Галина Викторовна</p>
 						</div>
 					</li>
+          <li class="reviews__item reviews__item--hide">
+            <audio class="reviews__audio" preload="metadata">
+              <source src="audio/kotkov.mp3" type="audio/mpeg">
+            </audio>
+            <button class="reviews__btn" type="button"></button>
+            <div class="quote-box">
+              <p class="reviews__text">«Я благодарен, что мастера старались и качественно делали. Спасибо, молодцы.»</p>
+              <p class="reviews__autor">Котков Валерий Николаевич</p>
+            </div>
+          </li>
+          <li class="reviews__item reviews__item--hide">
+            <audio class="reviews__audio" preload="metadata">
+              <source src="audio/kuzmin.mp3" type="audio/mpeg">
+            </audio>
+            <button class="reviews__btn" type="button"></button>
+            <div class="quote-box">
+              <p class="reviews__text">
+                «Отзывы самые наилучшие! Просто очень рад был столкнуться с такой серьёзной фирмой, как «Панорама». Очень качественно всё сделали. Вопросов нет, одни благодарности. Особенно монтажнику Ивану. Живу не далеко от ТЦ «Александрия», там в вашем офисе очень добродушные девочки... сразу сказали: "Вы всё равно к нам вернётесь и лучше фирмы не найдёте" - так и получилось.»
+              </p>
+              <p class="reviews__autor">Кузьмин Николай Иванович</p>
+            </div>
+          </li>
+          <li class="reviews__item reviews__item--hide">
+            <audio class="reviews__audio" preload="metadata">
+              <source src="audio/romanova.mp3" type="audio/mpeg">
+            </audio>
+            <button class="reviews__btn" type="button"></button>
+            <div class="quote-box">
+              <p class="reviews__text">«Ваши окна я заказываю уже третий раз. Быстро ставят, аккуратно, качественно. Всем советую и рекомендую.»</p>
+              <p class="reviews__autor">Романова Татьяна Викторовна</p>
+            </div>
+          </li>
+          <li class="reviews__item reviews__item--hide">
+            <audio class="reviews__audio" preload="metadata">
+              <source src="audio/shevchenko.mp3" type="audio/mpeg">
+            </audio>
+            <button class="reviews__btn" type="button"></button>
+            <div class="quote-box">
+              <p class="reviews__text">«Окно поставили хорошо. Вот ветра были сильные, ничего не продувает, все путём, сетка работает, замки работают. Все нравится. Пацаны молодцы, хорошо работали, качественно сделали. Я наблюдал за ними. Менеджеры с нами хорошо обращались, и, главное, быстро. Спасибо, если будет необходимость, мы к вам обратимся»</p>
+              <p class="reviews__autor">Шевченко Владимир Михайлович</p>
+            </div>
+          </li>
+          <li class="reviews__item reviews__item--hide">
+            <audio class="reviews__audio" preload="metadata">
+              <source src="audio/shevchenko2.mp3" type="audio/mpeg">
+            </audio>
+            <button class="reviews__btn" type="button"></button>
+            <div class="quote-box">
+              <p class="reviews__text">«Отлично! Превосходно! Монтажнику Косте пять с плюсом. Чистота, порядок. Никаких претензий. Всё за собой собрали и прибрали. У нас еще проблема с проемами была. Они как-то всё это исправили. Ребята молодцы. Виктор-замерщик тоже молодец, всё рассказал, просчитал. Еще осталось два окна поменять. На будущий год у вас закажу. Я уже сестре рекомендовала вас. Очень все хорошо, спасибо большое.»</p>
+              <p class="reviews__autor">Шевченко Татьяна Ивановна</p>
+            </div>
+          </li>
+          <li class="reviews__item reviews__item--hide">
+            <audio class="reviews__audio" preload="metadata">
+              <source src="audio/zelenkova.mp3" type="audio/mpeg">
+            </audio>
+            <button class="reviews__btn" type="button"></button>
+            <div class="quote-box">
+              <p class="reviews__text">«Ой, спасибо. Очень хорошо ребята поставили, всё чисто и аккуратно. Мне есть с чем сравнивать. Очень ваша работа нравится. Я слышала, что в «Панораме» хорошие окна, так и есть. Молодцы ребята»</p>
+              <p class="reviews__autor">Зеленкова Марина</p>
+            </div>
+          </li>
+          <li class="reviews__item reviews__item--hide">
+            <audio class="reviews__audio" preload="metadata">
+              <source src="audio/zhura.mp3" type="audio/mpeg">
+            </audio>
+            <button class="reviews__btn" type="button"></button>
+            <div class="quote-box">
+              <p class="reviews__text">«Всё отлично! Закончили быстро, даже раньше, чем было запланировано. Приехали - поставили. Работники хорошие, трезвые. Придраться не к чему. Менеджеры замечательные, общительные. Всё очень доступно объяснили.»</p>
+              <p class="reviews__autor">Журавлёва Оксана Олеговна</p>
+            </div>
+          </li>
 				</ul>
+        <button class="reviews__pagination reviews__pagination--next" type="button"></button>
 			</div>
 		</section>
 
@@ -464,6 +554,7 @@
 			</div>
 		</section>
 	</main>
+
 	<footer  class="footer">
 		<div class="footer__content container">
 			<div class="footer__top footer-top">

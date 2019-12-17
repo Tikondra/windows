@@ -16,6 +16,7 @@ $(function() {
 function catalogSlider() {
   let img = [
       'img/full-img1.jpg',
+      'img/full-img22.jpg',
       'img/full-img2.jpg',
       'img/full-img3.jpg'];
   let catalog = document.querySelector('.catalog__box');
@@ -268,8 +269,60 @@ function construstor() {
     listJal.classList.add('jaluzi-constructor__list--hide');
     listRol.classList.remove('jaluzi-constructor__list--hide');
   });
+}
 
+function audio() {
+  let reviews = document.querySelector('.reviews');
+  let item = reviews.querySelectorAll('.reviews__item');
+  let btnNext = reviews.querySelector('.reviews__pagination--next');
+  let btnPrew = reviews.querySelector('.reviews__pagination--prew');
+  let audio = reviews.querySelectorAll('.reviews__audio');
+  let play = reviews.querySelectorAll('.reviews__btn');
 
+  var count = 1;
+
+    btnNext.addEventListener('click', function () {
+
+      if (count < item.length) {
+        for (let i = 0; i < item.length; i++) {
+          item[i].classList.add('reviews__item--hide');
+          audio[i].pause();
+        }
+
+        item[count].classList.remove('reviews__item--hide');
+        count += 1;
+      } else {
+
+      }
+    });
+
+    btnPrew.addEventListener('click', function () {
+
+      if (count > 1) {
+        for (let i = 0; i < item.length; i++) {
+          item[i].classList.add('reviews__item--hide');
+          audio[i].pause();
+        }
+
+        item[count-2].classList.remove('reviews__item--hide');
+        count -= 1;
+      } else {
+          count = 1;
+      }
+    });
+
+  for (let i = 0; i < play.length; i++) {
+
+    play[i].addEventListener('click', function () {
+      if (play[i].classList.contains('stop')) {
+        play[i].classList.remove('stop');
+        audio[i].pause();
+      } else {
+        play[i].classList.add('stop');
+        audio[i].play();
+      }
+    });
+  }
 }
 
 geo();
@@ -285,5 +338,9 @@ if (document.querySelector('.price')) {
 
 if (document.querySelector('.jaluzi-constructor')) {
   svgColor();
-  construstor()
+  construstor();
+};
+
+if (document.querySelector('.reviews')) {
+  audio();
 };
