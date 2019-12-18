@@ -1,4 +1,5 @@
 .heat {
+  display: none;
 	min-height: 540px;
 	padding-bottom: 70px;
 	background-image: url("../img/back4s.jpg");
@@ -43,6 +44,10 @@
 	color: #ffffff;
 	font-size: 20px;
 	font-weight: 500;
+
+  &--adv2 {
+    padding-right: 25px;
+  }
 }
 
 .heat__diagram-list {
@@ -73,17 +78,25 @@
 }
 
 .heat__diagram {
-	width: 281px;
+	width: 40%;
 	height: 28px;
 	background-color: yellow;
 
 	&--2 {
-		width: 167px;
+		width: 25%;
 	}
 }
 
 @media screen and (min-width: 768px) {
+  .heat {
+    display: block;
+  }
+
   .heat__diff {
     flex-wrap: nowrap;
+  }
+
+  .heat__diff-title--adv2 {
+    padding-right: 160px;
   }
 }

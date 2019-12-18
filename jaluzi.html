@@ -5,8 +5,8 @@
 	<title>Панорама</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="Панорама">
-	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/libs.min.css?4">
+	<link rel="stylesheet" href="css/main.css?4">
 </head>
 <body>
 	<header class="page-header page-header--jaluzi">
@@ -221,8 +221,8 @@
         </picture>
 
         <div class="jaluzi-constructor__list-box">
-          <button class="jaluzi-constructor__btn btn-jal-js" type="button">Жалюзи<span class="jaluzi-constructor__btn--span">от 900 руб. за шт.</span></button>
-          <button class="jaluzi-constructor__btn btn-rol-js jaluzi-constructor__btn--active" type="button">Рольшторы<span class="jaluzi-constructor__btn--span">от 1900 руб. за шт.</span></button>
+          <button class="jaluzi-constructor__btn btn-jal-js jaluzi-constructor__btn--active" type="button">Жалюзи<span class="jaluzi-constructor__btn--span">от 900 руб. за шт.</span></button>
+          <button class="jaluzi-constructor__btn btn-rol-js" type="button">Рольшторы<span class="jaluzi-constructor__btn--span">от 1900 руб. за шт.</span></button>
           <ul class="jaluzi-constructor__list list-jal-js">
             <li class="jaluzi-constructor__item">
               <div class="jaluzi-constructor__color2" style="background-color: #f06008" data-hex="#f06008"></div>
@@ -489,30 +489,36 @@
 				</p>
 				<form class="measure__form">
 					<input class="measure__input" type="text" name="name" placeholder="Ваше имя">
-					<input class="measure__input" type="text" name="tel" placeholder="+7(___) ___-____">
+					<input class="measure__input measure__input--tel" type="text" name="tel" placeholder="+7(___) - ___ ____">
 					<a class="measure__link banner__btn" href="#">Вызвать замерщика</a>
 				</form>
 			</div>
 		</section>
 
 		<section class="contacts container">
-			<div class="contacts__box">
-				<h2 class="contacts__title">Контакты</h2>
-				<p class="adres">Ул. Н. Островского, д. 115 к. 1</p>
-				<p class="time-work">
-					Пн - Пт: с 8:00 до 18:00 <br>
-					Сб: с 9:00 до 17:00
-				</p>
-				<a class="contacts__email" href="mailto:okna@panorama30.ru">okna@panorama30.ru</a>
-				<p class="contacts__tel-box">
-					<a class="contacts__tel" href="tel:89275540236"> +7(927) 554 02 36</a> <br>
-					<a class="contacts__tel" href="tel:88512242525"> +7(8512) 24 25 25</a>
-				</p>
-			</div>
-			<div class="map">
-				<iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.7362078814426!2d48.03986571512559!3d46.33493118294169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41a90f8c874495d1%3A0x32180bf12d76fc16!2z0YPQuy4g0J3QuNC60L7Qu9Cw0Y8g0J7RgdGC0YDQvtCy0YHQutC-0LPQviwgMTE1INC60L7RgNC_0YPRgSAxLCDQkNGB0YLRgNCw0YXQsNC90YwsINCQ0YHRgtGA0LDRhdCw0L3RgdC60LDRjyDQvtCx0LsuLCA0MTQwNTc!5e0!3m2!1sru!2sru!4v1572348338589!5m2!1sru!2sru"></iframe>
-			</div>
-		</section>
+      <div class="contacts__box">
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="adres">Ул. Н. Островского, д. 115 к. 1</p>
+        <p class="adres adres--hide">ул. Атамбаева 77А</p>
+        <p class="time-work">
+          Пн - Пт: с 8:00 до 18:00 <br>
+          Сб: с 9:00 до 17:00
+        </p>
+        <a class="contacts__email" href="mailto:okna@panorama30.ru">okna@panorama30.ru</a>
+        <p class="phone">
+          <a class="phone__number phone__number1" href="tel:89275540236">+7(927) 554 02 36</a>
+          <a class="phone__number phone__number2" href="tel:88512242525">+7(8512) 24 25 25</a>
+        </p>
+        <p class="phone phone--hide">
+          <a class="phone__number phone__number1" href="tel:87756562311">+7 (775) 656-23-11</a>
+          <a class="phone__number phone__number2" href="tel:87122763580">+7 (7122) 76-35-80</a>
+        </p>
+      </div>
+      <div class="map">
+        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.7362078814426!2d48.03986571512559!3d46.33493118294169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41a90f8c874495d1%3A0x32180bf12d76fc16!2z0YPQuy4g0J3QuNC60L7Qu9Cw0Y8g0J7RgdGC0YDQvtCy0YHQutC-0LPQviwgMTE1INC60L7RgNC_0YPRgSAxLCDQkNGB0YLRgNCw0YXQsNC90YwsINCQ0YHRgtGA0LDRhdCw0L3RgdC60LDRjyDQvtCx0LsuLCA0MTQwNTc!5e0!3m2!1sru!2sru!4v1572348338589!5m2!1sru!2sru"></iframe>
+        <iframe class="iframe iframe--hide" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10866.397839764228!2d51.92001984417968!3d47.08731777666399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41a3ea48f518a89b%3A0x7361f39c769884f8!2z0YPQuy4g0KPRgtC10YjQutCw0LvQuCDQkNGC0LDQvNCx0LDQtdCyIDc3LCDQkNGC0YvRgNCw0YMsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2sru!4v1576647006430!5m2!1sru!2sru"></iframe>
+      </div>
+    </section>
 	</main>
 
 	<footer  class="footer">
@@ -538,7 +544,7 @@
                 Пластиковые окна
               </a>
             </li>
-            <li class="footer-menu__item">
+            <!-- <li class="footer-menu__item">
               <a class="footer-menu__link">
                 Остекление
               </a>
@@ -554,7 +560,7 @@
                   </a>
                 </li>
               </ul>
-            </li>
+            </li> -->
             <li class="footer-menu__item">
               <a class="footer-menu__link" href="al.html">
                 Алюминевые конструкции
@@ -570,12 +576,16 @@
 			</div>
 			<div class="footer__info footer-info">
 				<p>Политика конфиденциальности</p>
-				<p>Ваш город: Астрахань</p>
+				<p class="footer-info__sity">Ваш город: Астрахань</p>
 				<a class="footer-info__email" href="mailto:okna@panorama30.ru">okna@panorama30.ru</a>
-				<p class="contacts__tel-box">
-					<a class="contacts__tel" href="tel:89275540236"> +7(927) 554 02 36</a> <br>
-					<a class="contacts__tel" href="tel:88512242525"> +7(8512) 24 25 25</a>
-				</p>
+				<p class="phone">
+          <a class="phone__number phone__number1" href="tel:89275540236">+7(927) 554 02 36</a>
+          <a class="phone__number phone__number2" href="tel:88512242525">+7(8512) 24 25 25</a>
+        </p>
+        <p class="phone phone--hide">
+          <a class="phone__number phone__number1" href="tel:87756562311">+7 (775) 656-23-11</a>
+          <a class="phone__number phone__number2" href="tel:87122763580">+7 (7122) 76-35-80</a>
+        </p>
 				<div class="footer-info__social social">
 					<a class="social__link" href="#">
 						<svg class="social__svg_fb" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -591,7 +601,8 @@
 			</div>
 		</div>
 	</footer>
-	<script src="js/libs.min.js"></script>
-	<script src="js/script.js"></script>
+  <div id="toTop"></div>
+	<script src="js/libs.min.js?4"></script>
+	<script src="js/script.js?4"></script>
 </body>
 </html>

@@ -22,7 +22,7 @@
 
 html {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 body {
@@ -45,3 +45,21 @@ a {
   max-width: 1230px;
   margin: auto;
   padding: 0 15px; }
+
+#toTop {
+  position:fixed;
+  z-index: 100;
+  bottom:25px;
+  right:10px;
+  width:100px;
+  height: 85px;
+  display:none;
+  padding:5px;
+  background-color: transparent;
+  background-image: url("../img/up.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  cursor:pointer;
+}

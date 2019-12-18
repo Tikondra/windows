@@ -5,8 +5,8 @@
 	<title>Панорама</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="Панорама">
-	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/libs.min.css?4">
+	<link rel="stylesheet" href="css/main.css?4">
 </head>
 <body>
 	<header class="page-header page-header--al">
@@ -236,7 +236,7 @@
   </section>
 
   <section class="price">
-    <form class="price__content container" action="https://echo.htmlacademy.ru" method="post">
+    <form class="price__content container" action="send.php" method="post">
       <h2 class="price__title">Узнайте стоимость <span class="price__red">вашего окна</span></h2>
       <p class="price__text">Ответьте на несколько вопросов и наш менеджер сообщит Вам итоговую стоимость в течение <b>30 минут.</b></p>
       <div class="status-bar">
@@ -245,56 +245,56 @@
       <div class="slider-price slider-price1 active">
         <p>Укажите тип окна</p>
         <ul class="slider-price__list">
-          <li class="slider-price__item">
-            <label class="slider-price__label">
-              <input class="slider-price__check" type="checkbox" name="solo">
-              <img class="slider-price__img" src="img/window1.jpg" alt="Одностворчатое окно">
-              <p class="slider-price__text">Одностворчатое окно</p>
-            </label>
-          </li>
-          <li class="slider-price__item">
-            <label class="slider-price__label">
-              <input class="slider-price__check" type="checkbox" name="double">
-              <img class="slider-price__img" src="img/window2.jpg" alt="Двухстворчатое окно">
-              <p class="slider-price__text">Двухстворчатое окно</p>
-            </label>
-          </li>
-          <li class="slider-price__item">
-            <label class="slider-price__label">
-              <input class="slider-price__check" type="checkbox" name="triple">
-              <img class="slider-price__img" src="img/window3.jpg" alt="Трехстворчатое окно">
-              <p class="slider-price__text">Трехстворчатое окно</p>
-            </label>
-          </li>
-          <li class="slider-price__item">
-            <label class="slider-price__label">
-              <input class="slider-price__check" type="checkbox" name="balcony">
-              <img class="slider-price__img" src="img/window4.jpg" alt="Балконный блок">
-              <p class="slider-price__text">Балконный блок</p>
-            </label>
-          </li>
-          <li class="slider-price__item">
-            <label class="slider-price__label">
-              <input class="slider-price__check" type="checkbox" name="window">
-              <img class="slider-price__img" src="img/window1.jpg" alt="Одностворчатое окно">
-              <p class="slider-price__text">Одностворчатое окно</p>
-            </label>
-          </li>
-          <li class="slider-price__item">
-            <label class="slider-price__label">
-              <input class="slider-price__check" type="checkbox" name="window">
-              <img class="slider-price__img" src="img/window2.jpg" alt="Двухстворчатое окно">
-              <p class="slider-price__text">Двухстворчатое окно</p>
-            </label>
-          </li>
-          <li class="slider-price__item">
-            <label class="slider-price__label">
-              <input class="slider-price__check" type="checkbox" name="window">
-              <img class="slider-price__img" src="img/window3.jpg" alt="Трехстворчатое окно">
-              <p class="slider-price__text">Трехстворчатое окно</p>
-            </label>
-          </li>
-        </ul>
+              <li class="slider-price__item">
+                <label class="slider-price__label">
+                  <input class="slider-price__check" type="checkbox" name="Одностворчатое">
+                  <img class="slider-price__img" src="img/window1.jpg" alt="Одностворчатое окно">
+                  <p class="slider-price__text">Одностворчатое окно</p>
+                </label>
+              </li>
+              <li class="slider-price__item">
+                <label class="slider-price__label">
+                  <input class="slider-price__check" type="checkbox" name="Двухстворчатое">
+                  <img class="slider-price__img" src="img/window2.jpg" alt="Двухстворчатое окно">
+                  <p class="slider-price__text">Двухстворчатое окно</p>
+                </label>
+              </li>
+              <li class="slider-price__item">
+                <label class="slider-price__label">
+                  <input class="slider-price__check" type="checkbox" name="Трехстворчатое">
+                  <img class="slider-price__img" src="img/window3.jpg" alt="Трехстворчатое окно">
+                  <p class="slider-price__text">Трехстворчатое окно с&nbsp;одной поворотно-откидной створкой</p>
+                </label>
+              </li>
+              <li class="slider-price__item">
+                <label class="slider-price__label">
+                  <input class="slider-price__check" type="checkbox" name="Трехстворчатое с двумя створками">
+                  <img class="slider-price__img" src="img/window7.jpg" alt="Трехстворчатое окно">
+                  <p class="slider-price__text">Трехстворчатое окно с&nbsp;двумя поворотно-откидными створками</p>
+                </label>
+              </li>
+              <li class="slider-price__item">
+                <label class="slider-price__label">
+                  <input class="slider-price__check" type="checkbox" name="Четырехстворчатое">
+                  <img class="slider-price__img" src="img/window5.jpg" alt="Одностворчатое окно">
+                  <p class="slider-price__text">Четырехстворчатое окно</p>
+                </label>
+              </li>
+              <li class="slider-price__item">
+                <label class="slider-price__label">
+                  <input class="slider-price__check" type="checkbox" name="Балконный блок">
+                  <img class="slider-price__img" src="img/window4.jpg" alt="Балконный блок">
+                  <p class="slider-price__text">Балконный блок</p>
+                </label>
+              </li>
+              <li class="slider-price__item">
+                <label class="slider-price__label">
+                  <input class="slider-price__check" type="checkbox" name="Балконный блок с створками">
+                  <img class="slider-price__img" src="img/window6.jpg" alt="Двухстворчатое окно">
+                  <p class="slider-price__text">Балконный блок с&nbsp;поворотно-откидными створками</p>
+                </label>
+              </li>
+            </ul>
         <a class="slider-price__link slider-price__link--next banner__btn">Далее</a>
       </div>
       <div class="slider-price slider-price2">
@@ -424,7 +424,7 @@
 
           <li class="slider-price3__item">
             <label class="slider-price3__label">Мобильный</label>
-            <input class="slider-price3__input slider-price3__input--tel js__input" type="tel" name="tel">
+            <input class="slider-price3__input slider-price3__input--tel js__input" type="tel" name="tel" placeholder="+7 (___) - ___ ___">
           </li>
           <li class="slider-price3__item slider-price3__item--hide">
             <label class="slider-price3__label">Whatsapp</label>
@@ -447,35 +447,76 @@
     </form>
   </section>
 
-<section class="reviews">
-      <div class="reviews__content container">
-        <h2 class="reviews__title">Аудио-отзывы наших заказчиков</h2>
-        <button class="reviews__pagination reviews__pagination--prew" type="button"></button>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <audio class="reviews__audio" preload="metadata">
-              <source src="audio/afonin.mp3" type="audio/mpeg">
-            </audio>
-            <button class="reviews__btn" type="button"></button>
-            <div class="quote-box">
-              <p class="reviews__text">«Сотрудники выполняют свою работу на 5 баллов. Всё приветливо. Качественно и надежно. Установка мне понравилась»</p>
-              <p class="reviews__autor">Афонин Сергей Николаевич</p>
-            </div>
-          </li>
-          <li class="reviews__item reviews__item--hide">
-            <audio class="reviews__audio" preload="metadata">
-              <source src="audio/donskaya.mp3" type="audio/mpeg">
-            </audio>
-            <button class="reviews__btn" type="button"></button>
-            <div class="quote-box">
-              <p class="reviews__text">«Понравилось, как поставили окна. По работе менеджера - всё замечательно, обслуживание у вас приятное. Если в будущем будем ставить окна, то к вам обратимся.»</p>
-              <p class="reviews__autor">Донская Людмила Павловна</p>
-            </div>
-          </li>
-          <li class="reviews__item reviews__item--hide">
-            <audio class="reviews__audio" preload="metadata">
-              <source src="audio/guseva.mp3" type="audio/mpeg">
-            </audio>
+  <section class="portfolio">
+      <div class="portfolio__content">
+        <h2 class="portfolio__title">Выполненые <span class="price__red">проекты</span></h2>
+        <div class="portfolio__gallery">
+          <div class="portfolio__full-box">
+            <button class="portfolio__btn portfolio__btn--prew" type="button"></button>
+            <button class="portfolio__btn portfolio__btn--next" type="button"></button>
+            <picture>
+              <img class="portfolio__full-img" src="img/portfolio1.jpg">
+            </picture>
+          </div>
+          <ul class="portfolio__list">
+            <li class="portfolio__item portfolio__item--active">
+              <img src="img/portfolio1.jpg" width="">
+            </li>
+            <li class="portfolio__item">
+              <img src="img/portf2.jpg" width="">
+            </li>
+            <li class="portfolio__item">
+              <img src="img/portf3.jpg" width="">
+            </li>
+            <li class="portfolio__item">
+              <img src="img/portf4.jpg" width="">
+            </li>
+            <li class="portfolio__item">
+              <img src="img/portf5.jpg" width="">
+            </li>
+            <li class="portfolio__item">
+              <img src="img/portf6.jpg" width="">
+            </li>
+            <li class="portfolio__item">
+              <img src="img/portf7.jpg" width="">
+            </li>
+            <li class="portfolio__item">
+              <img src="img/portf8.jpg" width="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  <section class="reviews">
+    <div class="reviews__content container">
+      <h2 class="reviews__title">Аудио-отзывы наших заказчиков</h2>
+      <button class="reviews__pagination reviews__pagination--prew" type="button"></button>
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <audio class="reviews__audio" preload="metadata">
+            <source src="audio/afonin.mp3" type="audio/mpeg">
+          </audio>
+          <button class="reviews__btn" type="button"></button>
+          <div class="quote-box">
+            <p class="reviews__text">«Сотрудники выполняют свою работу на 5 баллов. Всё приветливо. Качественно и надежно. Установка мне понравилась»</p>
+            <p class="reviews__autor">Афонин Сергей Николаевич</p>
+          </div>
+        </li>
+        <li class="reviews__item reviews__item--hide">
+          <audio class="reviews__audio" preload="metadata">
+            <source src="audio/donskaya.mp3" type="audio/mpeg">
+          </audio>
+          <button class="reviews__btn" type="button"></button>
+          <div class="quote-box">
+            <p class="reviews__text">«Понравилось, как поставили окна. По работе менеджера - всё замечательно, обслуживание у вас приятное. Если в будущем будем ставить окна, то к вам обратимся.»</p>
+            <p class="reviews__autor">Донская Людмила Павловна</p>
+          </div>
+        </li>
+        <li class="reviews__item reviews__item--hide">
+          <audio class="reviews__audio" preload="metadata">
+            <source src="audio/guseva.mp3" type="audio/mpeg">
+          </audio>
             <button class="reviews__btn" type="button"></button>
             <div class="quote-box">
               <p class="reviews__text">«Работа сотрудников очень хорошая, всё понравилось. Большое спасибо менеджеру Ангелине, даже когда закончился ее рабочий день, она со мной работала.»</p>
@@ -567,30 +608,36 @@
  </p>
  <form class="measure__form">
    <input class="measure__input" type="text" name="name" placeholder="Ваше имя">
-   <input class="measure__input" type="text" name="tel" placeholder="+7(___) ___-____">
+   <input class="measure__input measure__input--tel" type="text" name="tel" placeholder="+7(___) - ___ ____">
    <a class="measure__link banner__btn" href="#">Вызвать замерщика</a>
  </form>
 </div>
 </section>
 
-<section class="contacts container">
- <div class="contacts__box">
-  <h2 class="contacts__title">Контакты</h2>
-  <p class="adres">Ул. Н. Островского, д. 115 к. 1</p>
-  <p class="time-work">
-   Пн - Пт: с 8:00 до 18:00 <br>
-   Сб: с 9:00 до 17:00
- </p>
- <a class="contacts__email" href="mailto:okna@panorama30.ru">okna@panorama30.ru</a>
- <p class="contacts__tel-box">
-   <a class="contacts__tel" href="tel:89275540236"> +7(927) 554 02 36</a> <br>
-   <a class="contacts__tel" href="tel:88512242525"> +7(8512) 24 25 25</a>
- </p>
-</div>
-<div class="map">
-  <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.7362078814426!2d48.03986571512559!3d46.33493118294169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41a90f8c874495d1%3A0x32180bf12d76fc16!2z0YPQuy4g0J3QuNC60L7Qu9Cw0Y8g0J7RgdGC0YDQvtCy0YHQutC-0LPQviwgMTE1INC60L7RgNC_0YPRgSAxLCDQkNGB0YLRgNCw0YXQsNC90YwsINCQ0YHRgtGA0LDRhdCw0L3RgdC60LDRjyDQvtCx0LsuLCA0MTQwNTc!5e0!3m2!1sru!2sru!4v1572348338589!5m2!1sru!2sru"></iframe>
-</div>
-</section>
+    <section class="contacts container">
+      <div class="contacts__box">
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="adres">Ул. Н. Островского, д. 115 к. 1</p>
+        <p class="adres adres--hide">ул. Атамбаева 77А</p>
+        <p class="time-work">
+          Пн - Пт: с 8:00 до 18:00 <br>
+          Сб: с 9:00 до 17:00
+        </p>
+        <a class="contacts__email" href="mailto:okna@panorama30.ru">okna@panorama30.ru</a>
+        <p class="phone">
+          <a class="phone__number phone__number1" href="tel:89275540236">+7(927) 554 02 36</a>
+          <a class="phone__number phone__number2" href="tel:88512242525">+7(8512) 24 25 25</a>
+        </p>
+        <p class="phone phone--hide">
+          <a class="phone__number phone__number1" href="tel:87756562311">+7 (775) 656-23-11</a>
+          <a class="phone__number phone__number2" href="tel:87122763580">+7 (7122) 76-35-80</a>
+        </p>
+      </div>
+      <div class="map">
+        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.7362078814426!2d48.03986571512559!3d46.33493118294169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41a90f8c874495d1%3A0x32180bf12d76fc16!2z0YPQuy4g0J3QuNC60L7Qu9Cw0Y8g0J7RgdGC0YDQvtCy0YHQutC-0LPQviwgMTE1INC60L7RgNC_0YPRgSAxLCDQkNGB0YLRgNCw0YXQsNC90YwsINCQ0YHRgtGA0LDRhdCw0L3RgdC60LDRjyDQvtCx0LsuLCA0MTQwNTc!5e0!3m2!1sru!2sru!4v1572348338589!5m2!1sru!2sru"></iframe>
+        <iframe class="iframe iframe--hide" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10866.397839764228!2d51.92001984417968!3d47.08731777666399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41a3ea48f518a89b%3A0x7361f39c769884f8!2z0YPQuy4g0KPRgtC10YjQutCw0LvQuCDQkNGC0LDQvNCx0LDQtdCyIDc3LCDQkNGC0YvRgNCw0YMsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2sru!4v1576647006430!5m2!1sru!2sru"></iframe>
+      </div>
+    </section>
 </main>
 
 <footer  class="footer">
@@ -616,7 +663,7 @@
           Пластиковые окна
         </a>
       </li>
-      <li class="footer-menu__item">
+      <!-- <li class="footer-menu__item">
         <a class="footer-menu__link">
           Остекление
         </a>
@@ -632,7 +679,7 @@
             </a>
           </li>
         </ul>
-      </li>
+      </li> -->
       <li class="footer-menu__item">
         <a class="footer-menu__link" href="al.html">
           Алюминевые конструкции
@@ -646,15 +693,19 @@
     </ul>
   </nav>
 </div>
-<div class="footer__info footer-info">
-  <p>Политика конфиденциальности</p>
-  <p>Ваш город: Астрахань</p>
-  <a class="footer-info__email" href="mailto:okna@panorama30.ru">okna@panorama30.ru</a>
-  <p class="contacts__tel-box">
-   <a class="contacts__tel" href="tel:89275540236"> +7(927) 554 02 36</a> <br>
-   <a class="contacts__tel" href="tel:88512242525"> +7(8512) 24 25 25</a>
- </p>
- <div class="footer-info__social social">
+      <div class="footer__info footer-info">
+        <p>Политика конфиденциальности</p>
+        <p class="footer-info__sity">Ваш город: Астрахань</p>
+        <a class="footer-info__email" href="mailto:okna@panorama30.ru">okna@panorama30.ru</a>
+        <p class="phone">
+          <a class="phone__number phone__number1" href="tel:89275540236">+7(927) 554 02 36</a>
+          <a class="phone__number phone__number2" href="tel:88512242525">+7(8512) 24 25 25</a>
+        </p>
+        <p class="phone phone--hide">
+          <a class="phone__number phone__number1" href="tel:87756562311">+7 (775) 656-23-11</a>
+          <a class="phone__number phone__number2" href="tel:87122763580">+7 (7122) 76-35-80</a>
+        </p>
+      <div class="footer-info__social social">
    <a class="social__link" href="#">
     <svg class="social__svg_fb" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
      <path d="M10 13h3v-2.8c0-1.1.3-2.7 1.1-3.8.8-1.1 1.8-1.8 3.8-1.8 3.2 0 4.4.5 4.4.5l-.7 3.8s-1.4-.3-2.4-.3S17 9 17 10v3h4.6l-.3 4H17v12h-4V17h-3v-4z"></path>
@@ -669,7 +720,8 @@
 </div>
 </div>
 </footer>
-<script src="js/libs.min.js"></script>
-<script src="js/script.js"></script>
+<div id="toTop"></div>
+<script src="js/libs.min.js?4"></script>
+<script src="js/script.js?4"></script>
 </body>
 </html>

@@ -64,7 +64,8 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
         'libs/js/jquery.js',
-        'libs/js/owl.carousel.js'
+        'libs/js/owl.carousel.js',
+        'libs/js/jquery.inputmask.js'
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл

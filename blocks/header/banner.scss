@@ -43,7 +43,7 @@
 
 .banner__text--page2 {
   color: #343434;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 400;
 }
 
@@ -72,6 +72,10 @@
   .banner {
     max-width: 695px;
     margin: 0 auto;
+  }
+
+  .banner__text--page2 {
+    font-size: 30px;
   }
 }
 

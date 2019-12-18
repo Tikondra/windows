@@ -4,8 +4,8 @@
 	text-align: center;
 	background-image: url('../img/back2s.jpg');
 	background-repeat: no-repeat;
-	background-position: center;
-	min-height: 723px;
+	background-position: left -620px top -13px;
+	min-height: 550px;
 }
 
 .what__title {
@@ -23,5 +23,11 @@
 @media screen and (min-width: 768px) {
   .what {
     padding: 100px;
+    color: #000000;
+    text-align: center;
+    background-image: url('../img/back2s.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 723px;
   }
 }

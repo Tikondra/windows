@@ -5,7 +5,7 @@
 }
 
 .manufacture__title {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
 
@@ -20,6 +20,7 @@
 
 .manufacture__item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 50px;
 }
@@ -34,4 +35,10 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .manufacture__title {
+    font-size: 36px;
+  }
 }

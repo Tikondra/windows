@@ -1,6 +1,6 @@
 <?php
 
-$to = 'tikondra47@gmail.com'; // адрес получателя
+$to = 'tikondra47@gmail.com, info@bzcekh.ru'; // адрес получателя
 $subject = 'Заказ обратного звонка'; // тема письма
 if (isset($_POST['solo']))     $message  = "Одностворчатое: {$_POST['solo']}\r\n";
 if (isset($_POST['double']))   $message .= "Двухстворчатое: {$_POST['double']}\r\n";

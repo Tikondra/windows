@@ -2,7 +2,7 @@
   padding: 50px 0;
 	background-image: url('../img/back-adv2.png');
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: left -345px top;
 }
 
 .adv2__content {
@@ -15,7 +15,7 @@
 	flex-basis: 100%;
 	margin-bottom: 60px;
 	color: #3a3a3a;
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
 
@@ -24,10 +24,6 @@
 		font-size: 59px;
 		font-weight: 700;
 	}
-}
-
-.heat__diff-title--adv2 {
-	padding-right: 160px;
 }
 
 .adv2__text-square {
@@ -69,6 +65,7 @@
 .adv2__formula {
 	display: flex;
 	justify-content: space-between;
+  flex-wrap: wrap;
 	max-width: 600px;
 	margin: auto;
 	margin-bottom: 50px;
@@ -76,16 +73,17 @@
 
 .adv2__formula-block {
 	position: relative;
-	flex-basis: 170px;
+	flex-basis: 90%;
 	background-color: #e6e6e6;
 	text-align: center;
-	padding: 0 25px;
+	padding: 0 10% 20px;
+  margin: 20px auto;
 
 	&--1::after {
 		content: '';
 		position: absolute;
-		top: 53px;
-		right: -35px;
+		top: 185px;
+		right: 48%;
 		display: block;
 		width: 25px;
 		height: 9px;
@@ -98,8 +96,8 @@
 		&::after {
 			content: '';
 			position: absolute;
-			top: 48px;
-			right: -33px;
+			top: 180px;
+			right: 48%;
 			display: block;
 			width: 25px;
 			height: 8px;
@@ -126,10 +124,45 @@
 	color: #3a3a3a;
 	font-size: 16px;
 	font-weight: 500;
+  max-width: 205px;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
+  .adv2 {
+    padding: 50px 0;
+    background-image: url('../img/back-adv2.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
   .adv2__text {
     display: flex;
+  }
+
+  .adv2__title {
+    font-size: 36px;
+  }
+
+  .adv2__formula-block {
+    flex-basis: 170px;
+    padding: 0 25px;
+    margin: 0;
+
+    &--1::after {
+      top: 53px;
+      right: -35px;
+    }
+
+    &--2 {
+
+      &::after {
+        top: 48px;
+        right: -33px;
+      }
+    }
+  }
+
+  .adv2__formula-text {
+    margin: 0;
   }
 }

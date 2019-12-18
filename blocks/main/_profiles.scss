@@ -96,10 +96,6 @@
 	}
 }
 
-.profiles__descrition {
-	margin-left: 25px;
-}
-
 .profiles__item-title {
 	font-size: 20px;
 	font-weight: 700;
@@ -109,7 +105,7 @@
 .profiles__descrition-list {
 	border-bottom: 1px solid;
 	border-top: 1px solid;
-  min-height: 280px;
+  min-height: 330px;
 }
 
 .profiles__item--2 .profiles__img {
@@ -118,6 +114,7 @@
 
 .profiles__img {
 	padding-top: 30px;
+  flex-basis: 72%;
 }
 
 .profiles__descrition-item {
@@ -132,7 +129,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1240px) {
   .profiles__list {
     display: flex;
     flex-wrap: wrap;

@@ -1,6 +1,6 @@
 .manufacture__image {
   @include list;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   flex-basis: 50%;
@@ -111,5 +111,11 @@
       height: 104px;
       background-image: url("../img/line5.png");
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .manufacture__image {
+    display: flex;
   }
 }

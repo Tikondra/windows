@@ -29,6 +29,10 @@
 	width: 100%;
 	height: 100%;
 	border: 1px solid #a7a7a7ab;
+
+  &--hide {
+    display: none;
+  }
 }
 
 .contacts__title {

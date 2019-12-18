@@ -28,7 +28,7 @@
 	position: relative;
 	z-index: -1;
 	padding: 0 70px 60px 15px;
-	flex-basis: 400px;
+	flex-basis: 100%;
 	color: #3a3a3a;
 	font-size: 20px;
 	font-weight: 700;
@@ -131,6 +131,107 @@
 	font-weight: 400;
 	line-height: 22px;
 }
+
+@media screen and (min-width: 768px) {
+  .wood-advantage__item {
+    position: relative;
+    z-index: -1;
+    padding: 0 70px 60px 15px;
+    flex-basis: 400px;
+    color: #3a3a3a;
+    font-size: 20px;
+    font-weight: 700;
+    background-image: url("../img/item1.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    &--2 {
+      padding: 0 110px 60px 15px;
+      background-image: url("../img/item2.png");
+    }
+
+    &--3 {
+
+      padding-right: 100px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -3;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #eae8c2;
+        background-image: url("../img/item3.png");
+        background-repeat: no-repeat;
+        background-position: 240px bottom;
+      }
+    }
+
+    &--4::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #eae8c2;
+      background-image: url("../img/item4.png");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+
+    &--4al {
+      padding-right: 115px;
+    }
+
+    &--5 {
+      background-color: #424242;
+      background-image: url("../img/item5.png");
+      color: #ffffff;
+    }
+
+    &--6 {
+      color: #ffffff;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #2f2f2f;
+        background-image: url("../img/item6.png");
+        background-repeat: no-repeat;
+        background-position: 240px bottom;
+      }
+    }
+
+    &--6al {
+      color: #ffffff;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #2f2f2f;
+        background-image: url("../img/adv-al6.png");
+        background-repeat: no-repeat;
+        background-position: 240px bottom;
+      }
+    }
+  }
+}
+
+
 
 @media screen and (min-width: 1024px) {
   .wood-advantage {
