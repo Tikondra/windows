@@ -1,7 +1,8 @@
 <?php
 
-$to = 'tikondra47@gmail.com, info@bzcekh.ru'; // адрес получателя
-$subject = 'Заказ обратного звонка'; // тема письма
+$to  = 'tikondra47@gmail.com' . ', ';
+$to .= 'makarovt_t@mail.ru';
+$subject = 'Заказ обратного звонка';
 if (isset($_POST['solo']))     $message  = "Одностворчатое: {$_POST['solo']}\r\n";
 if (isset($_POST['double']))   $message .= "Двухстворчатое: {$_POST['double']}\r\n";
 if (isset($_POST['triple']))   $message .= "Трехстворчатое: {$_POST['triple']}\r\n";
@@ -25,6 +26,9 @@ if (isset($_POST['tel'])) $message .= "Мобильный: {$_POST['tel']}\r\n";
 if (isset($_POST['whats'])) $message .= "Whatsap: {$_POST['whats']}\r\n";
 if (isset($_POST['vk'])) $message .= "ВКонтакте: {$_POST['vk']}\r\n";
 if (isset($_POST['inst'])) $message .= "Способ связи: {$_POST['inst']}\r\n";
+if (isset($_POST['name'])) $message .= "Имя: {$_POST['name']}\r\n";
+if (isset($_POST['phone'])) $message .= "Телефон: {$_POST['phone']}\r\n";
+
 
 $headers = 'Content-type: text/plain; charset=utf-8'; // установливаем кодировку
 

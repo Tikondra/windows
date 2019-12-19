@@ -32,6 +32,28 @@ $(function() {
  });
 });
 
+var distance = 111,
+  box = $('.portfolio__list');
+$('.portfolio__btn').on('click', function() {
+  box.stop().animate({
+    scrollTop: '+=' + (distance * $(this).data('factor'))
+  });
+});
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function(event) {
+        event.preventDefault();
+        const blockID = anchor.getAttribute('href');
+        document.querySelector('' + blockID ).scrollIntoView({
+            behavior: 'smooth',
+            block: "start"
+        });
+    });
+}
+
+
 function catalogSlider() {
   let img = [
       'img/full-img1.jpg',
@@ -414,7 +436,6 @@ function portfolio() {
     if (count < item.length) {
       for (let i = 0; i < item.length; i++) {
         item[i].classList.remove('portfolio__item--active');
-        item[i].style.transform = 'translateY(' + (count * -111) + 'px)';
       }
 
       item[count].classList.add('portfolio__item--active');
@@ -428,7 +449,6 @@ function portfolio() {
       if (count > 1) {
         for (let i = 0; i < item.length; i++) {
           item[i].classList.remove('portfolio__item--active');
-          item[i].style.transform = 'translateY(' + ((count * -111) + 222) + 'px)';
         };
 
         item[count-2].classList.add('portfolio__item--active');

@@ -5,8 +5,8 @@
 	<title>Панорама</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="Панорама">
-	<link rel="stylesheet" href="css/libs.min.css?4">
-	<link rel="stylesheet" href="css/main.css?4">
+	<link rel="stylesheet" href="css/libs.min.css?5">
+	<link rel="stylesheet" href="css/main.css?5">
 </head>
 <body>
 	<header class="page-header page-header--page2">
@@ -38,12 +38,12 @@
         </p>
 
 				<div class="social">
-					<a class="social__link" href="#">
+					<a class="social__link" href="https://www.facebook.com/panorama30/" target="_blank">
 						<svg class="social__svg_fb social__svg" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 							<path d="M10 13h3v-2.8c0-1.1.3-2.7 1.1-3.8.8-1.1 1.8-1.8 3.8-1.8 3.2 0 4.4.5 4.4.5l-.7 3.8s-1.4-.3-2.4-.3S17 9 17 10v3h4.6l-.3 4H17v12h-4V17h-3v-4z"></path>
 						</svg>
 					</a>
-					<a class="social__link" href="#">
+					<a class="social__link" href="https://www.instagram.com/panorama30/" target="_blank">
 						<svg class="social__svg_inst social__svg" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 							<path d="M23.4 4H8.6C6.1 4 4 6.1 4 8.6v14.7C4 25.9 6.1 28 8.6 28h14.7c2.6 0 4.6-2.1 4.6-4.6V8.6c.1-2.5-2-4.6-4.5-4.6zm1.3 2.8h.5v4h-4.1V6.7l3.6.1zm-12.1 6.7c.8-1.1 2-1.8 3.4-1.8s2.7.7 3.4 1.8c.5.7.8 1.5.8 2.5 0 2.3-1.9 4.2-4.2 4.2s-4.2-1.9-4.2-4.2c0-.9.3-1.8.8-2.5zm13.1 9.9c0 1.3-1 2.3-2.3 2.3H8.6c-1.3 0-2.3-1-2.3-2.3v-9.8h3.6c-.3.8-.5 1.6-.5 2.5 0 3.6 2.9 6.6 6.6 6.6 3.6 0 6.6-2.9 6.6-6.6 0-.9-.2-1.7-.5-2.5h3.6v9.8z"></path>
 						</svg>
@@ -80,7 +80,7 @@
 			<h2 class="banner__title banner__title--page2">Деревянные <span class="banner__text_red">окна</span><br>Экологичность природного материала</h2>
 			<p class="banner__text banner__text--page2">надежные, удобные, практичные<br>создают особую атмосферу</p>
 
-			<a class="banner__btn" href="#">Узнать стоимость</a>
+			<a class="banner__btn" href="#price">Узнать стоимость</a>
 		</section>
 	</header>
 
@@ -252,7 +252,7 @@
 			<ul class="profiles__list">
 				<li class="profiles__item">
 					<div class="profiles__img">
-						<img src="img/standart.png">
+						<img src="img/standart1.png">
 					</div>
 					<div class="profiles__descrition">
 						<h3 class="profiles__item-title">Стандарт</h3>
@@ -277,7 +277,7 @@
 				</li>
 				<li class="profiles__item profiles__item--2">
 					<div class="profiles__img">
-						<img src="img/optima.png">
+						<img src="img/optima1.png">
 					</div>
 					<div class="profiles__descrition">
 						<h3 class="profiles__item-title">Оптима</h3>
@@ -308,7 +308,7 @@
 				</li>
 				<li class="profiles__item profiles__item--3">
 					<div class="profiles__img">
-						<img src="img/premium.png">
+						<img src="img/premium1.png">
 					</div>
 					<div class="profiles__descrition">
 						<h3 class="profiles__item-title">Премиум</h3>
@@ -339,7 +339,7 @@
 				</li>
 				<li class="profiles__item profiles__item--4">
 					<div class="profiles__img">
-						<img src="img/elite.png">
+						<img src="img/elit1.png">
 					</div>
 					<div class="profiles__descrition">
 						<h3 class="profiles__item-title">Элит</h3>
@@ -372,7 +372,7 @@
 		</section>
 
 		<section class="price">
-      <form class="price__content container" action="send.php" method="post">
+      <form class="price__content container" action="send.php" method="post" id="price">
         <h2 class="price__title">Узнайте стоимость <span class="price__red">вашего окна</span></h2>
         <p class="price__text">Ответьте на несколько вопросов и наш менеджер сообщит Вам итоговую стоимость в течение <b>30 минут.</b></p>
         <div class="status-bar">
@@ -588,8 +588,8 @@
         <h2 class="portfolio__title">Выполненые <span class="price__red">проекты</span></h2>
         <div class="portfolio__gallery">
           <div class="portfolio__full-box">
-            <button class="portfolio__btn portfolio__btn--prew" type="button"></button>
-            <button class="portfolio__btn portfolio__btn--next" type="button"></button>
+            <button class="portfolio__btn portfolio__btn--prew" type="button" data-factor="-1"></button>
+            <button class="portfolio__btn portfolio__btn--next" type="button" data-factor="1"></button>
             <picture>
               <img class="portfolio__full-img" src="img/portfolio1.jpg">
             </picture>
@@ -737,18 +737,18 @@
     </section>
 
 		<section class="measure">
-			<div class="measure__content container">
-				<h2 class="measure__title">Вызвать замерщика</h2>
-				<p class="measure__text">Замерщик подстроится под удобное для Вас время. Замер займет не более 10 минут.
-					Это <span class="measure__text--red">БЕСПЛАТНО</span> и ни к чему Вас не обязывает
-				</p>
-				<form class="measure__form">
-					<input class="measure__input" type="text" name="name" placeholder="Ваше имя">
-					<input class="measure__input measure__input--tel" type="text" name="tel" placeholder="+7(___) - ___ ____">
-					<a class="measure__link banner__btn" href="#">Вызвать замерщика</a>
-				</form>
-			</div>
-		</section>
+      <div class="measure__content container">
+        <h2 class="measure__title">Вызвать замерщика</h2>
+        <p class="measure__text">Замерщик подстроится под удобное для Вас время. Замер займет не более 10 минут.
+          Это <span class="measure__text--red">БЕСПЛАТНО</span> и ни к чему Вас не обязывает
+        </p>
+        <form class="measure__form" action="send.php" method="post">
+          <input class="measure__input" type="text" name="name" placeholder="Ваше имя" required>
+          <input class="measure__input measure__input--tel" type="text" name="phone" placeholder="+7 (___) - ___ ____" required>
+          <button type="submit" class="measure__btn banner__btn">Вызвать замерщика</button>
+        </form>
+      </div>
+    </section>
 
 		<section class="contacts container">
       <div class="contacts__box">
@@ -842,12 +842,12 @@
           <a class="phone__number phone__number2" href="tel:87122763580">+7 (7122) 76-35-80</a>
         </p>
 				<div class="footer-info__social social">
-					<a class="social__link" href="#">
+					<a class="social__link" href="https://www.facebook.com/panorama30/" target="_blank">
 						<svg class="social__svg_fb" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 							<path d="M10 13h3v-2.8c0-1.1.3-2.7 1.1-3.8.8-1.1 1.8-1.8 3.8-1.8 3.2 0 4.4.5 4.4.5l-.7 3.8s-1.4-.3-2.4-.3S17 9 17 10v3h4.6l-.3 4H17v12h-4V17h-3v-4z"></path>
 						</svg>
 					</a>
-					<a class="social__link" href="#">
+					<a class="social__link" href="https://www.instagram.com/panorama30/" target="_blank">
 						<svg class="social__svg_inst" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 							<path d="M23.4 4H8.6C6.1 4 4 6.1 4 8.6v14.7C4 25.9 6.1 28 8.6 28h14.7c2.6 0 4.6-2.1 4.6-4.6V8.6c.1-2.5-2-4.6-4.5-4.6zm1.3 2.8h.5v4h-4.1V6.7l3.6.1zm-12.1 6.7c.8-1.1 2-1.8 3.4-1.8s2.7.7 3.4 1.8c.5.7.8 1.5.8 2.5 0 2.3-1.9 4.2-4.2 4.2s-4.2-1.9-4.2-4.2c0-.9.3-1.8.8-2.5zm13.1 9.9c0 1.3-1 2.3-2.3 2.3H8.6c-1.3 0-2.3-1-2.3-2.3v-9.8h3.6c-.3.8-.5 1.6-.5 2.5 0 3.6 2.9 6.6 6.6 6.6 3.6 0 6.6-2.9 6.6-6.6 0-.9-.2-1.7-.5-2.5h3.6v9.8z"></path>
 						</svg>
@@ -857,7 +857,7 @@
 		</div>
 	</footer>
   <div id="toTop"></div>
-	<script src="js/libs.min.js?4"></script>
-	<script src="js/script.js?4"></script>
+	<script src="js/libs.min.js?5"></script>
+	<script src="js/script.js?5"></script>
 </body>
 </html>

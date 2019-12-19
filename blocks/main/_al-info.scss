@@ -5,27 +5,30 @@
   background-image: url("../img/back__al-info.png");
   background-repeat: no-repeat;
   background-position: right;
+  background-size: cover;
 }
 
 .al-info__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 80px 25px;
+  background-color: #ffffffad;
+  padding: 0 20px;
 }
 
 .al-info__title {
   align-self: center;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .al-info__text {
   max-width: 565px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  margin: 5px 0;
 
   &--yellow {
     padding: 10px 20px;
@@ -40,4 +43,20 @@
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .al-info__title {
+    font-size: 36px;
+  }
+
+  .al-info__content {
+    padding: 80px 25px;
+    background-color: transparent;
+  }
+
+  .al-info__text {
+    font-size: 18px;
+    margin: 18px 0;
+  }
 }

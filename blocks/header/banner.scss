@@ -25,14 +25,14 @@
 }
 
 .banner__text {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 400;
   margin: 15px 0;
   color: #000;
 }
 
 .banner__text2 {
-  font-size: 32px;
+  font-size: 28px;
   color: #343434;
 }
 
@@ -74,8 +74,19 @@
     margin: 0 auto;
   }
 
+  .banner__text {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 15px 0;
+    color: #000;
+  }
+
   .banner__text--page2 {
     font-size: 30px;
+  }
+
+  .banner__text2 {
+    font-size: 32px;
   }
 }
 

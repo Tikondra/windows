@@ -1,5 +1,5 @@
 .manufacture {
-  padding: 50px 0;
+  padding: 50px 0 30px;
   color: #fff;
   background-color: #2d2d2d;
 }
@@ -23,6 +23,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 50px;
+  // background-image: url("../img/back-rehau.jpg");
+  // background-repeat: no-repeat;
+  // background-position: center;
+
+  // &--brusbox {
+  //   background-image: url("../img/back-brusbox.jpg");
+  // }
 }
 
 .manufacture__description {
