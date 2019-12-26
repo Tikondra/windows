@@ -53,7 +53,6 @@ for (let anchor of anchors) {
     });
 }
 
-
 function catalogSlider() {
   let img = [
       'img/full-img1.jpg',
@@ -277,6 +276,8 @@ function geo() {
 function svgColor() {
   const overlay = document.getElementById("path-constr");
   const overlay2 = document.getElementById("path-constr2");
+  const overlay1 = document.getElementById("path-constr1");
+  const overlay22 = document.getElementById("path-constr22");
   // Click on a color
 
   var el = document.getElementsByClassName("jaluzi-constructor__color");
@@ -294,6 +295,7 @@ function svgColor() {
     let hex = e.target.getAttribute("data-hex");
     // set the hex color
     overlay.style.fill = hex;
+    overlay1.style.fill = hex;
   }
 
   function changeColor2(e) {
@@ -301,6 +303,7 @@ function svgColor() {
     let hex = e.target.getAttribute("data-hex");
     // set the hex color
     overlay2.style.fill = hex;
+    overlay22.style.fill = hex;
   }
 }
 
@@ -406,14 +409,45 @@ function material() {
 
 function portfolio() {
   let img = [
-      'img/portfolio1.jpg',
-      'img/portf2.jpg',
-      'img/portf3.jpg',
-      'img/portf4.jpg',
-      'img/portf5.jpg',
-      'img/portf6.jpg',
-      'img/portf7.jpg',
-      'img/portf8.jpg',
+      'img/porf/a1.jpg',
+      'img/porf/a2.jpg',
+      'img/porf/a3.jpg',
+      'img/porf/a4.jpeg',
+      'img/porf/a5.jpeg',
+      'img/porf/a6.jpeg',
+      'img/porf/a7.jpeg',
+      'img/porf/a8.jpg',
+      'img/porf/a9.jpg',
+      'img/porf/a10.jpg',
+      'img/porf/a11.jpeg',
+      'img/porf/a12.jpeg',
+      'img/porf/a13.jpeg',
+      'img/porf/a14.jpeg',
+      'img/porf/a15.jpeg',
+      'img/porf/a16.jpeg',
+      'img/porf/a17.jpg',
+      'img/porf/a18.jpg',
+      'img/porf/a19.jpg',
+      'img/porf/a20.jpg',
+      'img/porf/a21.jpg',
+      'img/porf/a22.jpg',
+      'img/porf/a23.jpg',
+      'img/porf/a24.jpg',
+      'img/porf/a25.jpg',
+      'img/porf/a26.jpg',
+      'img/porf/a27.jpg',
+      'img/porf/a28.jpg',
+      'img/porf/a29.jpg',
+      'img/porf/a30.jpg',
+      'img/porf/a31.jpg',
+      'img/porf/a32.jpg',
+      'img/porf/a33.jpg',
+      'img/porf/a34.jpg',
+      'img/porf/a35.jpg',
+      'img/porf/a36.jpeg',
+      'img/porf/a37.jpeg',
+      'img/porf/a38.jpeg',
+      'img/porf/a39.jpeg',
       ];
 
   let portfolio = document.querySelector('.portfolio');
@@ -471,7 +505,22 @@ function portfolio() {
   }
 };
 
+function popup () {
+  let open = document.querySelector('.footer__popup-btn');
+  let close = document.querySelector('.popup__close');
+  let popup = document.querySelector('.popup');
+
+  open.addEventListener('click', function () {
+    popup.classList.toggle('popup--show');
+  });
+
+  close.addEventListener('click', function () {
+    popup.classList.remove('popup--show');
+  });
+};
+
 geo();
+popup();
 
 if (document.querySelector('.catalog__box')) {
 
@@ -498,3 +547,4 @@ if (document.querySelector('.material')) {
 if (document.querySelector('.portfolio')) {
   portfolio()
 };
+

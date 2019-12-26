@@ -3,6 +3,7 @@
 }
 
 .reviews__content {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
 	padding: 20px 15px;
@@ -19,7 +20,7 @@
 }
 
 .reviews__list {
-  flex-basis: 90%;
+  flex-basis: 100%;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -29,6 +30,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+  flex-direction: column;
 	padding: 40px 15px;
 	background-color: #ffffff;
   min-height: 300px;
@@ -60,7 +62,7 @@
 }
 
 .quote-box {
-  max-width: 70%;
+  max-width: 100%;
 }
 
 .reviews__audio {
@@ -69,27 +71,29 @@
 }
 
 .reviews__pagination {
+  position: absolute;
+  bottom: 20px;
+  height: 50px;
+  width: 60px;
   flex-basis: 5%;
   background-repeat: no-repeat;
   background-position: center;
   border: none;
-  background-color: transparent;
+  background-color: #3f3f3f;
   outline: none;
   cursor: pointer;
 
   &--next {
     background-image: url("../img/right-arrow.svg");
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px 0 0 0;
+    right: 14px;
 
   }
 
   &--prew {
     background-image: url("../img/left-arrow.svg");
-    border-radius: 10px 0 0 10px;
-  }
-
-  &:hover {
-    background-color: #0000002b;
+    border-radius: 0 10px 0 0;
+    left: 14px;
   }
 }
 
@@ -105,5 +109,36 @@
 
   .reviews .owl-nav {
     display: flex;
+  }
+
+  .quote-box {
+    max-width: 70%;
+  }
+
+  .reviews__item {
+    flex-direction: row;
+  }
+
+  .reviews__pagination {
+    position: static;
+    background-color: transparent;
+    height: auto;
+
+    &--next {
+      border-radius: 0 10px 10px 0;
+
+    }
+
+    &--prew {
+      border-radius: 10px 0 0 10px;
+    }
+
+    &:hover {
+      background-color: #0000002b;
+    }
+  }
+
+  .reviews__list {
+    flex-basis: 90%;
   }
 }

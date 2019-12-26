@@ -73,3 +73,9 @@
 		padding: 60px 15px;
 	}
 }
+
+@media screen and (min-width: 1024px) {
+  .contacts__box .phone {
+    margin: 20px 0 0;
+  }
+}

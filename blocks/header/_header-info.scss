@@ -70,7 +70,7 @@
 }
 
 .phone {
-  margin: 0 20px;
+  margin: 10px 15px 0 0;
 
   &--hide {
     display: none;
@@ -149,6 +149,10 @@
     width: 80px;
     justify-content: space-between;
     padding: 0;
+  }
+
+  .phone {
+    margin: 0 20px;
   }
 }
 

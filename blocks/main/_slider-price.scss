@@ -40,15 +40,15 @@
 }
 
 .slider-price__text {
-  min-height: 80px;
+  min-height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   max-width: 270px;
-  margin: 20px auto;
+  margin: 5px auto;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   background-color: #3a3a3a;
   cursor: pointer;
@@ -103,4 +103,13 @@
 
 .slider-price__btn-box {
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .slider-price__text {
+    min-height: 80px;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 18px;
+  }
 }

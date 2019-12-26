@@ -33,7 +33,7 @@
 }
 
 .manufacture__description {
-  flex-basis: 50%;
+  flex-basis: 100%;
   padding: 0 10px 0 25px;
   border-left: 1px solid;
 }
@@ -47,5 +47,9 @@
 @media screen and (min-width: 768px) {
   .manufacture__title {
     font-size: 36px;
+  }
+
+  .manufacture__description {
+    flex-basis: 50%;
   }
 }

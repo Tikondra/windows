@@ -74,9 +74,6 @@
 
 .adv3__path2 {
   padding: 60px 0;
-  background-image: url("../img/back-adv3-2.png");
-  background-repeat: no-repeat;
-  background-position: left bottom;
 }
 
 .adv3__subtitle2 {
@@ -142,6 +139,12 @@
 @media screen and (min-width: 768px) {
   .adv3__path1 {
     padding: 25px 505px 25px 25px;
+  }
+
+  .adv3__path2 {
+    background-image: url("../img/back-adv3-2.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
   }
 
   .adv3__path2-content {

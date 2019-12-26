@@ -2,6 +2,7 @@
   display: none;
 	min-height: 540px;
 	padding-bottom: 70px;
+  margin-top: 70px;
 	background-image: url("../img/back4s.jpg");
 	background-repeat: no-repeat;
 	background-position: center -300px;
@@ -35,7 +36,7 @@
 	display: flex;
   flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 10px 60px;
+	padding: 10px;
 	background-color: #3a3a3a;
 }
 
@@ -58,10 +59,11 @@
 .heat__diagram-item {
 	display: flex;
 	align-items: center;
+  flex-direction: column;
 }
 
 .heat__diagram-title {
-	flex-basis: 105px;
+	flex-basis: 25px;
 	margin-right: 20px;
 	color: #ffffff;
 	font-size: 16px;
@@ -70,7 +72,6 @@
 }
 
 .heat__diagram-data {
-	margin-left: auto;
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 500;
@@ -94,9 +95,23 @@
 
   .heat__diff {
     flex-wrap: nowrap;
+    padding: 10px 60px;
   }
 
   .heat__diff-title--adv2 {
     padding-right: 160px;
   }
+
+  .heat__diagram-title {
+    flex-basis: 105px;
+  }
+
+  .heat__diagram-item {
+    flex-direction: row;
+  }
+
+  .heat__diagram-data {
+    margin-left: auto;
+  }
+
 }

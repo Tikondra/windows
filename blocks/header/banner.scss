@@ -5,17 +5,14 @@
   flex-direction: column;
   justify-content: center;
   height: 75%;
+  background-color: #ffffff8f;
 }
 
 .banner__title {
   margin: 0;
   color: #343434;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-}
-
-.banner__title--page2 {
-  font-size: 30px;
 }
 
 .banner__title_span {
@@ -32,7 +29,7 @@
 }
 
 .banner__text2 {
-  font-size: 28px;
+  font-size: 20px;
   color: #343434;
 }
 
@@ -43,7 +40,7 @@
 
 .banner__text--page2 {
   color: #343434;
-  font-size: 26px;
+  font-size: 17px;
   font-weight: 400;
 }
 
@@ -60,18 +57,15 @@
   background-image: linear-gradient(to top, #ebe209 0%, #fff500 100%);
 }
 
-.mouse {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
-  .banner__title--page2 {
-    font-size: 48px;
-  }
-
   .banner {
     max-width: 695px;
     margin: 0 auto;
+    background-color: transparent;
+  }
+
+  .banner__title {
+    font-size: 48px;
   }
 
   .banner__text {

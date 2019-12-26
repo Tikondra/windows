@@ -16,18 +16,18 @@
 }
 
 .what__text {
-	font-size: 30px;
+	font-size: 26px;
 	font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
   .what {
     padding: 100px;
-    color: #000000;
-    text-align: center;
-    background-image: url('../img/back2s.jpg');
-    background-repeat: no-repeat;
     background-position: center;
     min-height: 723px;
+  }
+
+  .what__text {
+    font-size: 30px;
   }
 }

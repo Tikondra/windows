@@ -4,12 +4,12 @@
 	background-image: url("../img/wood-tips-back.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 100px 15px 120px;
+	padding: 50px 20px;
 }
 
 .wood-tips__title {
-	margin: 0 0 70px 0;
-	font-size: 34px;
+	margin: 0 0 50px 0;
+	font-size: 24px;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
@@ -50,7 +50,7 @@
 }
 
 .wood-tips__text-box {
-	padding: 30px;
+	padding: 20px;
 	padding-top: 0;
 }
 
@@ -68,11 +68,24 @@
 
 @media screen and (min-width: 768px) {
   .wood-tips {
+    padding: 100px 15px 120px;
     background-position: center;
     min-height: 90vh;
   }
 
+  .wood-tips__content {
+    max-width: 1230px;
+    margin: auto;
+    padding: 0 15px;
+  }
+
   .wood-tips__title {
+    margin: 0 0 70px 0;
+    font-size: 34px;
     color: #000;
+  }
+
+  .wood-tips__text-box {
+    padding: 30px;
   }
 }

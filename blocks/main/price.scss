@@ -3,7 +3,7 @@
 }
 
 .price__content {
-	padding: 20px 15px;
+	padding: 1px 15px;
 	text-align: center;
 }
 
@@ -21,7 +21,7 @@
 .price__text {
 	max-width: 615px;
 	margin: auto;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: 400;
 	text-align: center;
 }
@@ -99,6 +99,10 @@
 	.price__content {
 		padding: 60px 15px;
 	}
+
+  .price__text {
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 1024px) {

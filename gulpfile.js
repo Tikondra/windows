@@ -39,9 +39,9 @@ gulp.task('htmlbeautify', function() {
             'acronym', 'address', 'big', 'dt', 'ins', 'strike', 'tt'
         ]
     };
-gulp.src('./*.html')
-    .pipe(htmlbeautify(options))
-    .pipe(gulp.dest('./'))
+    gulp.src('./*.html')
+      .pipe(htmlbeautify(options))
+      .pipe(gulp.dest('./'))
 });
 
 gulp.task('sass', function() { // Создаем таск Sass
