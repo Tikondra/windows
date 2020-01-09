@@ -10,4 +10,4 @@ npm-debug.*
 Thumbs.db
 .bowerrc
 *.json
-dist/
+build/

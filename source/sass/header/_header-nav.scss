@@ -14,12 +14,12 @@
   list-style: none;
 }
 
-.page-nav__item {
+.page-nav__list li {
   flex-grow: 1;
   text-align: center;
 }
 
-.page-nav__link {
+.page-nav__list a {
   display: block;
   padding: 21px 5px;
   color: #ffffff;
@@ -32,7 +32,7 @@
   }
 }
 
-.page-nav__link:hover {
+.page-nav__list a:hover {
   color: #e6e164;
 }
 

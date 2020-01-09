@@ -3888,7 +3888,7 @@ a {
   display: none;
   position: absolute;
   z-index: 15;
-  top: -601px;
+  top: -442px;
   left: 50%;
   margin-left: -500px;
   width: 1000px;
@@ -3924,5 +3924,15 @@ a {
   .footer__popup-btn:hover {
     text-decoration: underline; }
 
-.footer__info {
+.footer {
   position: relative; }
+
+.overlay-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .overlay-popup--hide {
+    display: none; }

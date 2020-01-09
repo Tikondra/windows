@@ -509,13 +509,21 @@ function popup () {
   let open = document.querySelector('.footer__popup-btn');
   let close = document.querySelector('.popup__close');
   let popup = document.querySelector('.popup');
+  let overlay = document.querySelector('.overlay-popup')
 
   open.addEventListener('click', function () {
     popup.classList.toggle('popup--show');
+    overlay.classList.remove('overlay-popup--hide');
   });
 
   close.addEventListener('click', function () {
     popup.classList.remove('popup--show');
+    overlay.classList.add('overlay-popup--hide');
+  });
+
+  overlay.addEventListener('click', function () {
+    popup.classList.remove('popup--show');
+    overlay.classList.add('overlay-popup--hide');
   });
 };
 
