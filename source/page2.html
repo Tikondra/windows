@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>Панорама</title>
+  <meta charset="UTF-8">
+	<title>Собственное производство деревянных окон в Астрахани и Атырау. Продажа и установка деревянных окон — компания «Панорама»</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="Панорама">
 	<link rel="stylesheet" href="css/libs.min.css?8">
-	<link rel="stylesheet" href="css/main.css?15">
+  <link rel="stylesheet" href="css/style.min.css?14">
 </head>
 <body>
 	<header class="page-header page-header--page2">
@@ -74,10 +75,12 @@
 		</nav>
 
 		<section class="banner banner--page2">
-			<h2 class="banner__title banner__title--page2">Деревянные <span class="banner__text_red">окна</span><br>Экологичность природного материала</h2>
-			<p class="banner__text banner__text--page2">надежные, удобные, практичные<br>создают особую атмосферу</p>
+      <div class="banner__content">
+  			<h2 class="banner__title banner__title--page2">Деревянные <span class="banner__text_red">окна</span><br>Экологичность природного материала</h2>
+  			<p class="banner__text banner__text--page2">надежные, удобные, практичные<br>создают особую атмосферу</p>
 
-			<a class="banner__btn" href="#price">Узнать стоимость</a>
+  			<a class="banner__btn" href="#price">Узнать стоимость</a>
+      </div>
 		</section>
 	</header>
 
@@ -369,501 +372,532 @@
 		</section>
 
 		<section class="price">
-      <form class="price__content container" action="send.php" method="post" id="price">
-        <h2 class="price__title">Узнайте стоимость <span class="price__red">вашего окна</span></h2>
-        <p class="price__text">Ответьте на несколько вопросов и наш менеджер сообщит Вам итоговую стоимость в течение <b>30 минут.</b></p>
-        <div class="status-bar">
-          <p class="status-bar__text">Вопрос 1 из 3</p>
-        </div>
-          <div class="slider-price slider-price1 active">
-            <p>Укажите тип окна</p>
-            <ul class="slider-price__list">
-              <li class="slider-price__item">
-                <label class="slider-price__label">
-                  <input class="slider-price__check" type="checkbox" name="Одностворчатое">
-                  <img class="slider-price__img" src="img/window1.jpg" alt="Одностворчатое окно">
-                  <p class="slider-price__text">Одностворчатое окно</p>
-                </label>
-              </li>
-              <li class="slider-price__item">
-                <label class="slider-price__label">
-                  <input class="slider-price__check" type="checkbox" name="Двухстворчатое">
-                  <img class="slider-price__img" src="img/window2.jpg" alt="Двухстворчатое окно">
-                  <p class="slider-price__text">Двухстворчатое окно</p>
-                </label>
-              </li>
-              <li class="slider-price__item">
-                <label class="slider-price__label">
-                  <input class="slider-price__check" type="checkbox" name="Трехстворчатое">
-                  <img class="slider-price__img" src="img/window3.jpg" alt="Трехстворчатое окно">
-                  <p class="slider-price__text">Трехстворчатое окно с&nbsp;одной поворотно-откидной створкой</p>
-                </label>
-              </li>
-              <li class="slider-price__item">
-                <label class="slider-price__label">
-                  <input class="slider-price__check" type="checkbox" name="Трехстворчатое с двумя створками">
-                  <img class="slider-price__img" src="img/window7.jpg" alt="Трехстворчатое окно">
-                  <p class="slider-price__text">Трехстворчатое окно с&nbsp;двумя поворотно-откидными створками</p>
-                </label>
-              </li>
-              <li class="slider-price__item">
-                <label class="slider-price__label">
-                  <input class="slider-price__check" type="checkbox" name="Четырехстворчатое">
-                  <img class="slider-price__img" src="img/window5.jpg" alt="Одностворчатое окно">
-                  <p class="slider-price__text">Четырехстворчатое окно</p>
-                </label>
-              </li>
-              <li class="slider-price__item">
-                <label class="slider-price__label">
-                  <input class="slider-price__check" type="checkbox" name="Балконный блок">
-                  <img class="slider-price__img" src="img/window4.jpg" alt="Балконный блок">
-                  <p class="slider-price__text">Балконный блок</p>
-                </label>
-              </li>
-              <li class="slider-price__item">
-                <label class="slider-price__label">
-                  <input class="slider-price__check" type="checkbox" name="Балконный блок с створками">
-                  <img class="slider-price__img" src="img/window6.jpg" alt="Двухстворчатое окно">
-                  <p class="slider-price__text">Балконный блок с&nbsp;поворотно-откидными створками</p>
-                </label>
-              </li>
-            </ul>
-            <a class="slider-price__link slider-price__link--next banner__btn">Далее</a>
-          </div>
-          <div class="slider-price slider-price2">
-            <ul class="slider-price2__list">
-              <li class="slider-price2__item">
-                <label class="slider-price2__label">Материал</label>
-                <select class="slider-price2__select slider-price2__select--material" name="material" id="material">
-                  <option value="wood">Дерево</option>
-                  <option value="PVH" selected>ПВХ</option>
-                  <option value="wood-al">Дерево-алюминий</option>
-                  <option value="al">Алюминий</option>
-                </select>
-              </li>
+			<div class="in_block_price">
+				<h2 class="price__title">Узнайте стоимость <span class="price__red">вашего окна</span></h2>
+				<div id="price_form">
+					<form class="price__content container" action="" method="post" id="price">
+						<p class="price__text">Ответьте на несколько вопросов и наш менеджер сообщит Вам итоговую стоимость в течение <b>30 минут.</b></p>
+						<div class="status-bar">
+							<p class="status-bar__text">Вопрос 1 из 3</p>
+						</div>
+							<div class="slider-price slider-price1 active">
+								<p>Укажите тип окна</p>
+								<ul class="slider-price__list">
+									<li class="slider-price__item">
+										<label class="slider-price__label">
+											<input class="slider-price__check" type="checkbox" name="solo" id="solo">
+											<img class="slider-price__img" src="img/window1.jpg" alt="Одностворчатое окно">
+											<p class="slider-price__text">Одностворчатое окно</p>
+										</label>
+									</li>
+									<li class="slider-price__item">
+										<label class="slider-price__label">
+											<input class="slider-price__check" type="checkbox" name="double" id="double">
+											<img class="slider-price__img" src="img/window2.jpg" alt="Двухстворчатое окно">
+											<p class="slider-price__text">Двухстворчатое окно</p>
+										</label>
+									</li>
+									<li class="slider-price__item">
+										<label class="slider-price__label">
+											<input class="slider-price__check" type="checkbox" name="triple" id="triple">
+											<img class="slider-price__img" src="img/window3.jpg" alt="Трехстворчатое окно с одной поворотно-откидной створкой">
+											<p class="slider-price__text">Трехстворчатое окно с&nbsp;одной поворотно-откидной створкой</p>
+										</label>
+									</li>
+					<li class="slider-price__item">
+						<label class="slider-price__label">
+						<input class="slider-price__check" type="checkbox" name="triple-with-two-stvorki" id="tripleWithTwoStvorki">
+						<img class="slider-price__img" src="img/window7.jpg" alt="Трехстворчатое окно с двумя поворотно-откидными створками">
+						<p class="slider-price__text">Трехстворчатое окно с&nbsp;двумя поворотно-откидными створками</p>
+						</label>
+					</li>
+					<li class="slider-price__item">
+						<label class="slider-price__label">
+						<input class="slider-price__check" type="checkbox" name="four" id="four">
+						<img class="slider-price__img" src="img/window5.jpg" alt="Четырехстворчатое окно">
+						<p class="slider-price__text">Четырехстворчатое окно</p>
+						</label>
+					</li>
+									<li class="slider-price__item">
+										<label class="slider-price__label">
+											<input class="slider-price__check" type="checkbox" name="balcony" id="balcony">
+											<img class="slider-price__img" src="img/window4.jpg" alt="Балконный блок">
+											<p class="slider-price__text">Балконный блок</p>
+										</label>
+									</li>
+									<li class="slider-price__item">
+										<label class="slider-price__label">
+											<input class="slider-price__check" type="checkbox" name="balcony-with-stvorki" id="balconyWithStvorki">
+											<img class="slider-price__img" src="img/window6.jpg" alt="Балконный блок с поворотно-откидными створками">
+											<p class="slider-price__text">Балконный блок с&nbsp;поворотно-откидными створками</p>
+										</label>
+									</li>
+								</ul>
+					<a class="slider-price__link slider-price__link--next banner__btn">Далее</a>
+							</div>
+					<div class="slider-price slider-price2">
+						<ul class="slider-price2__list">
+						<li class="slider-price2__item">
+							<label class="slider-price2__label">Материал</label>
+							<select class="slider-price2__select slider-price2__select--material" name="material" id="material">
+							<option value="wood">Дерево</option>
+							<option value="PVH" selected>ПВХ</option>
+							<option value="wood-al">Дерево-алюминий</option>
+							<option value="al">Алюминий</option>
+							</select>
+						</li>
 
-              <li class="slider-price2__item">
-                <label class="slider-price2__label">Профиль</label>
-                <select class="slider-price2__select slider-price2__select--profile" name="profile" id="profile">
-                  <option value="KRAUSS 58">KRAUSS 58</option>
-                  <option value="BRUSBOX 60">BRUSBOX 60</option>
-                  <option value="BRUSBOX 70">BRUSBOX 70</option>
-                  <option value="REHAU BLITZ">REHAU BLITZ</option>
-                  <option value="REHAU GRAZIO">REHAU GRAZIO</option>
-                </select>
-              </li>
+						<li class="slider-price2__item">
+							<label class="slider-price2__label">Профиль</label>
+							<select class="slider-price2__select slider-price2__select--profile" name="profile" id="profile">
+								<option value="">Выбрать</option>
+								<option value="KRAUSS 58">KRAUSS 58</option>
+								<option value="BRUSBOX 60">BRUSBOX 60</option>
+								<option value="BRUSBOX 70">BRUSBOX 70</option>
+								<option value="REHAU BLITZ">REHAU BLITZ</option>
+								<option value="REHAU GRAZIO">REHAU GRAZIO</option>
+							</select>
+						</li>
 
-              <li class="slider-price2__item">
-                <label class="slider-price2__label">Стеклопакет</label>
-                <select class="slider-price2__select slider-price2__select--glass" name="glass" id="glass">
-                  <option value="обычный">обычный</option>
-                  <option value="энергосберегающий">энергосберегающий</option>
-                  <option value="солнцезащитный">солнцезащитный</option>
-                  <option value="антивандальный">антивандальный</option>
-                </select>
-              </li>
+						<li class="slider-price2__item">
+							<label class="slider-price2__label">Стеклопакет</label>
+							<select class="slider-price2__select slider-price2__select--glass" name="glass" id="glass">
+								<option value="">Выбрать</option>
+								<option value="обычный">обычный</option>
+								<option value="энергосберегающий">энергосберегающий</option>
+								<option value="солнцезащитный">солнцезащитный</option>
+								<option value="антивандальный">антивандальный</option>
+							</select>
+						</li>
 
-              <li class="slider-price2__item">
-                <label class="slider-price2__label">Цвет</label>
-                <select class="slider-price2__select slider-price2__select--color" name="color" id="color">
-                  <option value="белый">белый</option>
-                  <option value="ламинация с 2-х сторон">ламинация с 2-х сторон</option>
-                  <option value="ламинация снаружи">ламинация снаружи</option>
-                  <option value="ламинация изнутри">ламинация изнутри</option>
-                </select>
-              </li>
+						<li class="slider-price2__item">
+							<label class="slider-price2__label">Цвет</label>
+							<select class="slider-price2__select slider-price2__select--color" name="color" id="color">
+								<option value="">Выбрать</option>
+								<option value="белый">белый</option>
+								<option value="ламинация с 2-х сторон">ламинация с 2-х сторон</option>
+								<option value="ламинация снаружи">ламинация снаружи</option>
+								<option value="ламинация изнутри">ламинация изнутри</option>
+							</select>
+						</li>
 
-              <li class="slider-price2__item slider-price2__item--hide">
-                <label class="slider-price2__label">Порода дерева</label>
-                <select class="slider-price2__select slider-price2__select--wood" name="wood" id="wood" disabled>
-                  <option value="Сосна">Сосна</option>
-                  <option value="Лиственница">Лиственница</option>
-                  <option value="Дуб">Дуб</option>
-                </select>
-              </li>
+						<li class="slider-price2__item slider-price2__item--hide">
+							<label class="slider-price2__label">Порода дерева</label>
+							<select class="slider-price2__select slider-price2__select--wood" name="wood" id="wood" disabled>
+								<option value="">Выбрать</option>
+								<option value="Сосна">Сосна</option>
+								<option value="Лиственница">Лиственница</option>
+								<option value="Дуб">Дуб</option>
+							</select>
+						</li>
 
-              <li class="slider-price2__item slider-price2__item--hide">
-                <label class="slider-price2__label">Профильная система</label>
-                <select class="slider-price2__select slider-price2__select--wood-profile" name="wood-profile" id="wood-profile" disabled>
-                  <option value="Стандарт">Стандарт</option>
-                  <option value="Оптима">Оптима</option>
-                  <option value="Премиум">Премиум</option>
-                </select>
-              </li>
+						<li class="slider-price2__item slider-price2__item--hide">
+							<label class="slider-price2__label">Профильная система</label>
+							<select class="slider-price2__select slider-price2__select--wood-profile" name="wood-profile" id="woodProfile" disabled>
 
-              <li class="slider-price2__item slider-price2__item--hide">
-                <label class="slider-price2__label">Профиль</label>
-                <select class="slider-price2__select slider-price2__select--al-profile" name="al-profile" id="al-profile" disabled>
-                  <option value="СИАЛ КП45">СИАЛ КП45 (холодный)</option>
-                  <option value="СИАЛ КПТ60">СИАЛ КПТ60 (теплый)</option>
-                </select>
-              </li>
+								<option value="">Выбрать</option>
+								<option value="Стандарт">Стандарт</option>
+								<option value="Оптима">Оптима</option>
+								<option value="Премиум">Премиум</option>
+							</select>
+						</li>
 
-              <li class="slider-price2__item slider-price2__item--hide">
-                <label class="slider-price2__label">Цвет</label>
-                <select class="slider-price2__select slider-price2__select--al-color" name="al-color" id="al-color" disabled>
-                  <option value="белый">белый</option>
-                  <option value="коричневый">коричневый</option>
-                  <option value="другой">другой</option>
-                </select>
-              </li>
-            </ul>
-            <div class="slider-price__btn-box">
-              <a class="slider-price__link slider-price__link--prew banner__btn">Назад</a>
-              <a class="slider-price__link slider-price__link--next banner__btn">Далее</a>
-            </div>
-          </div>
-          <div class="slider-price slider-price3">
-            <ul class="slider-price3__list">
-              <li class="slider-price3__item">
-                <label class="slider-price3__label">Дополнения</label>
-                <div class="slider-price3__check-box">
-                  <input class="slider-price3__check" type="checkbox" name="otliv" id="otliv">
-                  <label for="otliv">отлив</label>
+						<li class="slider-price2__item slider-price2__item--hide">
+							<label class="slider-price2__label">Профиль</label>
+							<select class="slider-price2__select slider-price2__select--al-profile" name="al-profile" id="alProfile" disabled>
+								<option value="">Выбрать</option>
+								<option value="СИАЛ КП45">СИАЛ КП45 (холодный)</option>
+								<option value="СИАЛ КПТ60">СИАЛ КПТ60 (теплый)</option>
+							</select>
+						</li>
 
-                  <input class="slider-price3__check" type="checkbox" name="otkos" id="otkos">
-                  <label for="otkos">откос</label>
+						<li class="slider-price2__item slider-price2__item--hide">
+							<label class="slider-price2__label">Цвет</label>
+							<select class="slider-price2__select slider-price2__select--al-color" name="al-color" id="alColor" disabled>
+								<option value="">Выбрать</option>
+								<option value="белый">белый</option>
+								<option value="коричневый">коричневый</option>
+								<option value="другой">другой</option>
+							</select>
+						</li>
+						</ul>
+						<div class="slider-price__btn-box">
+						<a class="slider-price__link slider-price__link--prew banner__btn">Назад</a>
+						<a class="slider-price__link slider-price__link--next banner__btn">Далее</a>
+						</div>
+					</div>
+					<div class="slider-price slider-price3">
+						<ul class="slider-price3__list">
+						<li class="slider-price3__item">
+							<label class="slider-price3__label">Дополнения</label>
+							<div class="slider-price3__check-box">
+							<div>
+								<input class="slider-price3__check" type="checkbox" name="otliv" id="otliv">
+								<label for="otliv">отлив</label>
+							</div>
+							<div>
+								<input class="slider-price3__check" type="checkbox" name="otkos" id="otkos">
+								<label for="otkos">откос</label>
+							</div>
+							<div>
+								<input class="slider-price3__check" type="checkbox" name="setka" id="setka">
+								<label for="setka">сетка</label>
+							</div>
+							<div>
+								<input class="slider-price3__check" type="checkbox" name="podokonik" id="podokonik">
+								<label for="podokonik">подоконник</label>
+							</div>
+							</div>
+						</li>
 
-                  <input class="slider-price3__check" type="checkbox" name="setka" id="setka">
-                  <label for="setka">сетка</label>
+						<li class="slider-price3__item">
+							<label class="slider-price3__label">Монтаж</label>
+							<select class="slider-price3__select slider-price3__select--montage" name="montage" id="montage">
+							<option value="yes">Да</option>
+							<option value="no">Нет</option>
+							</select>
+						</li>
 
-                  <input class="slider-price3__check" type="checkbox" name="podokonik" id="podokonik">
-                  <label for="podokonik">подоконник</label>
-                </div>
-              </li>
+						<li class="slider-price3__item">
+							<label class="slider-price3__label">Размер</label>
+							<textarea class="slider-price3__textarea" placeholder="Высоту на ширину, например, 1200х1500 мм" rows="1"
+							 name="size" id="size"></textarea>
+						</li>
 
-              <li class="slider-price3__item">
-                <label class="slider-price3__label">Монтаж</label>
-                <select class="slider-price3__select slider-price3__select--montage" name="montage" id="montage">
-                  <option value="yes">Да</option>
-                  <option value="no">Нет</option>
-                </select>
-              </li>
+						<li class="slider-price3__item">
+							<label class="slider-price3__label">Способ связи</label>
+							<select class="slider-price3__select slider-price3__select--communication" name="communication" id="communication">
+							<option value="mob">Мобильный</option>
+							<option value="whats">Whatsapp</option>
+							<option value="vk">ВКонтакте</option>
+							<option value="inst">Инстаграм</option>
+							</select>
+						</li>
 
-              <li class="slider-price3__item">
-                <label class="slider-price3__label">Размер</label>
-                <textarea class="slider-price3__textarea" placeholder="Высоту на ширину, например, 1200х1500 мм" rows="1" name="size"></textarea>
-              </li>
-
-              <li class="slider-price3__item">
-                <label class="slider-price3__label">Способ связи</label>
-                <select class="slider-price3__select slider-price3__select--communication" name="communication" id="communication">
-                  <option value="mob">Мобильный</option>
-                  <option value="whats">Whatsapp</option>
-                  <option value="vk">ВКонтакте</option>
-                  <option value="inst">Инстаграм</option>
-                </select>
-              </li>
-
-              <li class="slider-price3__item">
-                <label class="slider-price3__label">Мобильный</label>
-                <input class="slider-price3__input slider-price3__input--tel js__input" type="tel" name="tel" placeholder="+7 (___) - ___ ___">
-              </li>
-              <li class="slider-price3__item slider-price3__item--hide">
-                <label class="slider-price3__label">Whatsapp</label>
-                <input class="slider-price3__input slider-price3__input--whats js__input" type="text" name="whats">
-              </li>
-              <li class="slider-price3__item slider-price3__item--hide">
-                <label class="slider-price3__label">Вконтакте</label>
-                <input class="slider-price3__input slider-price3__input--vk js__input" type="text" name="vk">
-              </li>
-              <li class="slider-price3__item slider-price3__item--hide">
-                <label class="slider-price3__label">Инстаграм</label>
-                <input class="slider-price3__input slider-price3__input--inst js__input" type="text" name="inst" disabled>
-              </li>
-            </ul>
-            <div class="slider-price__btn-box">
-              <a class="slider-price__link slider-price__link--prew banner__btn">Назад</a>
-              <button class="slider-price__link slider-price__link--send banner__btn" type="submit">Готово</button>
-            </div>
-          </div>
-      </form>
-    </section>
+						<li class="slider-price3__item">
+							<label class="slider-price3__label">Мобильный</label>
+							<input class="slider-price3__input slider-price3__input--tel js__input" type="tel" name="tel" id="tel"
+							 placeholder="+7 (___) - ___ ___">
+						</li>
+						<li class="slider-price3__item slider-price3__item--hide">
+							<label class="slider-price3__label">Whatsapp</label>
+							<input class="slider-price3__input slider-price3__input--whats js__input" type="text" name="whats" id="whats">
+						</li>
+						<li class="slider-price3__item slider-price3__item--hide">
+							<label class="slider-price3__label">Вконтакте</label>
+							<input class="slider-price3__input slider-price3__input--vk js__input" type="text" name="vk" id="vk">
+						</li>
+						<li class="slider-price3__item slider-price3__item--hide">
+							<label class="slider-price3__label">Инстаграм</label>
+							<input class="slider-price3__input slider-price3__input--inst js__input" type="text" name="inst" id="inst" disabled>
+						</li>
+						</ul>
+						<div class="slider-price__btn-box">
+						<a class="slider-price__link slider-price__link--prew banner__btn">Назад</a>
+						<button class="slider-price__link slider-price__link--send banner__btn form_btn" type="submit" id="submit">Готово</button>
+						</div>
+					</div>
+					</form>
+				</div>
+			</div>
+		</section>
 
 		<section class="portfolio">
-      <div class="portfolio__content">
-        <h2 class="portfolio__title">Выполненые <span class="price__red">проекты</span></h2>
-        <div class="portfolio__gallery">
-          <div class="portfolio__full-box">
-            <button class="portfolio__btn portfolio__btn--prew" type="button" data-factor="-1"></button>
-            <button class="portfolio__btn portfolio__btn--next" type="button" data-factor="1"></button>
-            <picture>
-              <img class="portfolio__full-img" src="img/porf/a1.jpg">
-            </picture>
-          </div>
-          <ul class="portfolio__list">
-            <li class="portfolio__item portfolio__item--active">
-              <img src="img/porf/a1.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a2.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a3.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a4.jpeg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a5.jpeg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a6.jpeg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a7.jpeg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a8.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a9.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a10.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a11.jpeg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a12.jpeg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a13.jpeg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a14.jpeg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a15.jpeg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a16.jpeg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a17.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a18.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a19.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a20.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a21.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a22.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a23.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a24.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a25.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a26.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a27.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a28.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a29.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a30.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a31.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a32.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a33.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a34.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a35.jpg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a36.jpeg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a37.jpeg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a38.jpeg">
-            </li>
-            <li class="portfolio__item">
-              <img src="img/porf/a39.jpeg">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+	      <div class="portfolio__content">
+	        <h2 class="portfolio__title">Выполненые <span class="price__red">проекты</span></h2>
+	        <div class="portfolio__gallery">
+	          <div class="portfolio__full-box">
+	            <button class="portfolio__btn portfolio__btn--prew" type="button" data-factor="-1"></button>
+	            <button class="portfolio__btn portfolio__btn--next" type="button" data-factor="1"></button>
+	            <picture>
+	              <img class="portfolio__full-img" src="img/porf/a1.jpg">
+	            </picture>
+	          </div>
+	          <ul class="portfolio__list">
+	            <li class="portfolio__item portfolio__item--active">
+	              <img src="img/porf/a1.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a2.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a3.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a4.jpeg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a5.jpeg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a6.jpeg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a7.jpeg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a8.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a9.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a10.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a11.jpeg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a12.jpeg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a13.jpeg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a14.jpeg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a15.jpeg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a16.jpeg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a17.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a18.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a19.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a20.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a21.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a22.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a23.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a24.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a25.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a26.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a27.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a28.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a29.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a30.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a31.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a32.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a33.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a34.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a35.jpg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a36.jpeg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a37.jpeg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a38.jpeg">
+	            </li>
+	            <li class="portfolio__item">
+	              <img src="img/porf/a39.jpeg">
+	            </li>
+	          </ul>
+	        </div>
+	      </div>
+	    </section>
 
 		<section class="reviews">
-      <div class="reviews__content container">
-        <h2 class="reviews__title">Аудио-отзывы наших заказчиков</h2>
-        <button class="reviews__pagination reviews__pagination--prew" type="button"></button>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <audio class="reviews__audio" preload="metadata">
-              <source src="audio/afonin.mp3" type="audio/mpeg">
-            </audio>
-            <button class="reviews__btn" type="button"></button>
-            <div class="quote-box">
-              <p class="reviews__text">«Сотрудники выполняют свою работу на 5 баллов. Всё приветливо. Качественно и надежно. Установка мне понравилась»</p>
-              <p class="reviews__autor">Афонин Сергей Николаевич</p>
-            </div>
-          </li>
-          <li class="reviews__item reviews__item--hide">
-            <audio class="reviews__audio" preload="metadata">
-              <source src="audio/donskaya.mp3" type="audio/mpeg">
-            </audio>
-            <button class="reviews__btn" type="button"></button>
-            <div class="quote-box">
-              <p class="reviews__text">«Понравилось, как поставили окна. По работе менеджера - всё замечательно, обслуживание у вас приятное. Если в будущем будем ставить окна, то к вам обратимся.»</p>
-              <p class="reviews__autor">Донская Людмила Павловна</p>
-            </div>
-          </li>
-          <li class="reviews__item reviews__item--hide">
-            <audio class="reviews__audio" preload="metadata">
-              <source src="audio/guseva.mp3" type="audio/mpeg">
-            </audio>
-            <button class="reviews__btn" type="button"></button>
-            <div class="quote-box">
-              <p class="reviews__text">«Работа сотрудников очень хорошая, всё понравилось. Большое спасибо менеджеру Ангелине, даже когда закончился ее рабочий день, она со мной работала.»</p>
-              <p class="reviews__autor">Гусева Галина Викторовна</p>
-            </div>
-          </li>
-          <li class="reviews__item reviews__item--hide">
-            <audio class="reviews__audio" preload="metadata">
-              <source src="audio/kotkov.mp3" type="audio/mpeg">
-            </audio>
-            <button class="reviews__btn" type="button"></button>
-            <div class="quote-box">
-              <p class="reviews__text">«Я благодарен, что мастера старались и качественно делали. Спасибо, молодцы.»</p>
-              <p class="reviews__autor">Котков Валерий Николаевич</p>
-            </div>
-          </li>
-          <li class="reviews__item reviews__item--hide">
-            <audio class="reviews__audio" preload="metadata">
-              <source src="audio/kuzmin.mp3" type="audio/mpeg">
-            </audio>
-            <button class="reviews__btn" type="button"></button>
-            <div class="quote-box">
-              <p class="reviews__text">
-                «Отзывы самые наилучшие! Просто очень рад был столкнуться с такой серьёзной фирмой, как «Панорама». Очень качественно всё сделали. Вопросов нет, одни благодарности. Особенно монтажнику Ивану. Живу не далеко от ТЦ «Александрия», там в вашем офисе очень добродушные девочки... сразу сказали: "Вы всё равно к нам вернётесь и лучше фирмы не найдёте" - так и получилось.»
-              </p>
-              <p class="reviews__autor">Кузьмин Николай Иванович</p>
-            </div>
-          </li>
-          <li class="reviews__item reviews__item--hide">
-            <audio class="reviews__audio" preload="metadata">
-              <source src="audio/romanova.mp3" type="audio/mpeg">
-            </audio>
-            <button class="reviews__btn" type="button"></button>
-            <div class="quote-box">
-              <p class="reviews__text">«Ваши окна я заказываю уже третий раз. Быстро ставят, аккуратно, качественно. Всем советую и рекомендую.»</p>
-              <p class="reviews__autor">Романова Татьяна Викторовна</p>
-            </div>
-          </li>
-          <li class="reviews__item reviews__item--hide">
-            <audio class="reviews__audio" preload="metadata">
-              <source src="audio/shevchenko.mp3" type="audio/mpeg">
-            </audio>
-            <button class="reviews__btn" type="button"></button>
-            <div class="quote-box">
-              <p class="reviews__text">«Окно поставили хорошо. Вот ветра были сильные, ничего не продувает, все путём, сетка работает, замки работают. Все нравится. Пацаны молодцы, хорошо работали, качественно сделали. Я наблюдал за ними. Менеджеры с нами хорошо обращались, и, главное, быстро. Спасибо, если будет необходимость, мы к вам обратимся»</p>
-              <p class="reviews__autor">Шевченко Владимир Михайлович</p>
-            </div>
-          </li>
-          <li class="reviews__item reviews__item--hide">
-            <audio class="reviews__audio" preload="metadata">
-              <source src="audio/shevchenko2.mp3" type="audio/mpeg">
-            </audio>
-            <button class="reviews__btn" type="button"></button>
-            <div class="quote-box">
-              <p class="reviews__text">«Отлично! Превосходно! Монтажнику Косте пять с плюсом. Чистота, порядок. Никаких претензий. Всё за собой собрали и прибрали. У нас еще проблема с проемами была. Они как-то всё это исправили. Ребята молодцы. Виктор-замерщик тоже молодец, всё рассказал, просчитал. Еще осталось два окна поменять. На будущий год у вас закажу. Я уже сестре рекомендовала вас. Очень все хорошо, спасибо большое.»</p>
-              <p class="reviews__autor">Шевченко Татьяна Ивановна</p>
-            </div>
-          </li>
-          <li class="reviews__item reviews__item--hide">
-            <audio class="reviews__audio" preload="metadata">
-              <source src="audio/zelenkova.mp3" type="audio/mpeg">
-            </audio>
-            <button class="reviews__btn" type="button"></button>
-            <div class="quote-box">
-              <p class="reviews__text">«Ой, спасибо. Очень хорошо ребята поставили, всё чисто и аккуратно. Мне есть с чем сравнивать. Очень ваша работа нравится. Я слышала, что в «Панораме» хорошие окна, так и есть. Молодцы ребята»</p>
-              <p class="reviews__autor">Зеленкова Марина</p>
-            </div>
-          </li>
-          <li class="reviews__item reviews__item--hide">
-            <audio class="reviews__audio" preload="metadata">
-              <source src="audio/zhura.mp3" type="audio/mpeg">
-            </audio>
-            <button class="reviews__btn" type="button"></button>
-            <div class="quote-box">
-              <p class="reviews__text">«Всё отлично! Закончили быстро, даже раньше, чем было запланировано. Приехали - поставили. Работники хорошие, трезвые. Придраться не к чему. Менеджеры замечательные, общительные. Всё очень доступно объяснили.»</p>
-              <p class="reviews__autor">Журавлёва Оксана Олеговна</p>
-            </div>
-          </li>
-        </ul>
-        <button class="reviews__pagination reviews__pagination--next" type="button"></button>
-      </div>
-    </section>
+	      <div class="reviews__content container">
+	        <h2 class="reviews__title">Аудио-отзывы наших заказчиков</h2>
+	        <button class="reviews__pagination reviews__pagination--prew" type="button"></button>
+	        <ul class="reviews__list">
+	          <li class="reviews__item">
+	            <audio class="reviews__audio" preload="metadata">
+	              <source src="audio/afonin.mp3" type="audio/mpeg">
+	            </audio>
+	            <button class="reviews__btn" type="button"></button>
+	            <div class="quote-box">
+	              <p class="reviews__text">«Сотрудники выполняют свою работу на 5 баллов. Всё приветливо. Качественно и надежно. Установка мне понравилась»</p>
+	              <p class="reviews__autor">Афонин Сергей Николаевич</p>
+	            </div>
+	          </li>
+	          <li class="reviews__item reviews__item--hide">
+	            <audio class="reviews__audio" preload="metadata">
+	              <source src="audio/donskaya.mp3" type="audio/mpeg">
+	            </audio>
+	            <button class="reviews__btn" type="button"></button>
+	            <div class="quote-box">
+	              <p class="reviews__text">«Понравилось, как поставили окна. По работе менеджера - всё замечательно, обслуживание у вас приятное. Если в будущем будем ставить окна, то к вам обратимся.»</p>
+	              <p class="reviews__autor">Донская Людмила Павловна</p>
+	            </div>
+	          </li>
+	          <li class="reviews__item reviews__item--hide">
+	            <audio class="reviews__audio" preload="metadata">
+	              <source src="audio/guseva.mp3" type="audio/mpeg">
+	            </audio>
+	            <button class="reviews__btn" type="button"></button>
+	            <div class="quote-box">
+	              <p class="reviews__text">«Работа сотрудников очень хорошая, всё понравилось. Большое спасибо менеджеру Ангелине, даже когда закончился ее рабочий день, она со мной работала.»</p>
+	              <p class="reviews__autor">Гусева Галина Викторовна</p>
+	            </div>
+	          </li>
+	          <li class="reviews__item reviews__item--hide">
+	            <audio class="reviews__audio" preload="metadata">
+	              <source src="audio/kotkov.mp3" type="audio/mpeg">
+	            </audio>
+	            <button class="reviews__btn" type="button"></button>
+	            <div class="quote-box">
+	              <p class="reviews__text">«Я благодарен, что мастера старались и качественно делали. Спасибо, молодцы.»</p>
+	              <p class="reviews__autor">Котков Валерий Николаевич</p>
+	            </div>
+	          </li>
+	          <li class="reviews__item reviews__item--hide">
+	            <audio class="reviews__audio" preload="metadata">
+	              <source src="audio/kuzmin.mp3" type="audio/mpeg">
+	            </audio>
+	            <button class="reviews__btn" type="button"></button>
+	            <div class="quote-box">
+	              <p class="reviews__text">
+	                «Отзывы самые наилучшие! Просто очень рад был столкнуться с такой серьёзной фирмой, как «Панорама». Очень качественно всё сделали. Вопросов нет, одни благодарности. Особенно монтажнику Ивану. Живу не далеко от ТЦ «Александрия», там в вашем офисе очень добродушные девочки... сразу сказали: "Вы всё равно к нам вернётесь и лучше фирмы не найдёте" - так и получилось.»
+	              </p>
+	              <p class="reviews__autor">Кузьмин Николай Иванович</p>
+	            </div>
+	          </li>
+	          <li class="reviews__item reviews__item--hide">
+	            <audio class="reviews__audio" preload="metadata">
+	              <source src="audio/romanova.mp3" type="audio/mpeg">
+	            </audio>
+	            <button class="reviews__btn" type="button"></button>
+	            <div class="quote-box">
+	              <p class="reviews__text">«Ваши окна я заказываю уже третий раз. Быстро ставят, аккуратно, качественно. Всем советую и рекомендую.»</p>
+	              <p class="reviews__autor">Романова Татьяна Викторовна</p>
+	            </div>
+	          </li>
+	          <li class="reviews__item reviews__item--hide">
+	            <audio class="reviews__audio" preload="metadata">
+	              <source src="audio/shevchenko.mp3" type="audio/mpeg">
+	            </audio>
+	            <button class="reviews__btn" type="button"></button>
+	            <div class="quote-box">
+	              <p class="reviews__text">«Окно поставили хорошо. Вот ветра были сильные, ничего не продувает, все путём, сетка работает, замки работают. Все нравится. Пацаны молодцы, хорошо работали, качественно сделали. Я наблюдал за ними. Менеджеры с нами хорошо обращались, и, главное, быстро. Спасибо, если будет необходимость, мы к вам обратимся»</p>
+	              <p class="reviews__autor">Шевченко Владимир Михайлович</p>
+	            </div>
+	          </li>
+	          <li class="reviews__item reviews__item--hide">
+	            <audio class="reviews__audio" preload="metadata">
+	              <source src="audio/shevchenko2.mp3" type="audio/mpeg">
+	            </audio>
+	            <button class="reviews__btn" type="button"></button>
+	            <div class="quote-box">
+	              <p class="reviews__text">«Отлично! Превосходно! Монтажнику Косте пять с плюсом. Чистота, порядок. Никаких претензий. Всё за собой собрали и прибрали. У нас еще проблема с проемами была. Они как-то всё это исправили. Ребята молодцы. Виктор-замерщик тоже молодец, всё рассказал, просчитал. Еще осталось два окна поменять. На будущий год у вас закажу. Я уже сестре рекомендовала вас. Очень все хорошо, спасибо большое.»</p>
+	              <p class="reviews__autor">Шевченко Татьяна Ивановна</p>
+	            </div>
+	          </li>
+	          <li class="reviews__item reviews__item--hide">
+	            <audio class="reviews__audio" preload="metadata">
+	              <source src="audio/zelenkova.mp3" type="audio/mpeg">
+	            </audio>
+	            <button class="reviews__btn" type="button"></button>
+	            <div class="quote-box">
+	              <p class="reviews__text">«Ой, спасибо. Очень хорошо ребята поставили, всё чисто и аккуратно. Мне есть с чем сравнивать. Очень ваша работа нравится. Я слышала, что в «Панораме» хорошие окна, так и есть. Молодцы ребята»</p>
+	              <p class="reviews__autor">Зеленкова Марина</p>
+	            </div>
+	          </li>
+	          <li class="reviews__item reviews__item--hide">
+	            <audio class="reviews__audio" preload="metadata">
+	              <source src="audio/zhura.mp3" type="audio/mpeg">
+	            </audio>
+	            <button class="reviews__btn" type="button"></button>
+	            <div class="quote-box">
+	              <p class="reviews__text">«Всё отлично! Закончили быстро, даже раньше, чем было запланировано. Приехали - поставили. Работники хорошие, трезвые. Придраться не к чему. Менеджеры замечательные, общительные. Всё очень доступно объяснили.»</p>
+	              <p class="reviews__autor">Журавлёва Оксана Олеговна</p>
+	            </div>
+	          </li>
+	        </ul>
+	        <button class="reviews__pagination reviews__pagination--next" type="button"></button>
+	      </div>
+	    </section>
 
 		<section class="measure">
-      <div class="measure__content container">
-        <h2 class="measure__title">Вызвать замерщика</h2>
-        <p class="measure__text">Замерщик подстроится под удобное для Вас время. Замер займет не более 10 минут.
-          Это <span class="measure__text--red">БЕСПЛАТНО</span> и ни к чему Вас не обязывает
-        </p>
-        <form class="measure__form" action="send.php" method="post">
-          <input class="measure__input" type="text" name="name" placeholder="Ваше имя" required>
-          <input class="measure__input measure__input--tel" type="text" name="phone" placeholder="+7 (___) - ___ ____" required>
-          <button type="submit" class="measure__btn banner__btn">Вызвать замерщика</button>
-        </form>
-      </div>
-    </section>
+			<div class="measure__content container">
+				<h2 class="measure__title">Вызвать замерщика</h2>
+				<p class="measure__text">Замерщик подстроится под удобное для Вас время. Замер займет не более 10 минут.
+					Это <span class="measure__text--red">БЕСПЛАТНО</span> и ни к чему Вас не обязывает
+				</p>
+				<div id="contact_form">
+					<form method="POST" name="contact" action="" class="measure__form">
+
+						<input type="text" id="name" name="name" placeholder="Ваше имя" class="measure__input" required>
+						<label class="error" for="name" id="name_error">Обязательное поле для заполнения.</label>
+
+						<input type="text" id="phone" name="phone"
+						 placeholder="+7 (___) - ___ ____" class="measure__input measure__input--tel" required>
+						<label class="error" for="phone" id="phone_error">Обязательное поле для заполнения.</label>
+
+						<div class="text_police_check">
+							<input type="checkbox" checked disabled>Согласен с политикой конфиденциальности</a>
+						</div>
+
+						<button type="submit" id="submit_btn" name="submit" class="measure__btn banner__btn button">Вызвать замерщика</button>
+					</form>
+				</div>
+			</div>
+		</section>
 
 		<section class="contacts container">
-      <div class="contacts__box">
-        <h2 class="contacts__title">Контакты</h2>
-        <p class="adres">Ул. Н. Островского, д. 115 к. 1</p>
-        <p class="adres adres--hide">ул. Атамбаева 77А</p>
-        <p class="time-work">
-          Пн - Пт: с 8:00 до 18:00 <br>
-          Сб: с 9:00 до 17:00
-        </p>
-        <a class="contacts__email" href="mailto:okna@panorama30.ru">okna@panorama30.ru</a>
-        <p class="phone">
-          <a class="phone__number phone__number1" href="tel:89275540236">+7(927) 554 02 36</a>
-          <a class="phone__number phone__number2" href="tel:88512242525">+7(8512) 24 25 25</a>
-        </p>
-        <p class="phone phone--hide">
-          <a class="phone__number phone__number1" href="tel:87756562311">+7 (775) 656-23-11</a>
-          <a class="phone__number phone__number2" href="tel:87122763580">+7 (7122) 76-35-80</a>
-        </p>
-      </div>
-      <div class="map">
-        <iframe class="iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada54cba6c80409f7b537af6a7c03e7ec7ecbea45702ab714a4596d1dedd9dcfe&amp;source=constructor" width="100%" frameborder="0"></iframe>
-        <iframe class="iframe iframe--hide" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aef914f518ef6c45a742283762cb8aea8c3aa57431240787294dd5ecb0efc9a74&amp;source=constructor" width="100%" frameborder="0"></iframe>
-      </div>
-    </section>
+	      <div class="contacts__box">
+	        <h2 class="contacts__title">Контакты</h2>
+	        <p class="adres">Ул. Н. Островского, д. 115 к. 1</p>
+	        <p class="adres adres--hide">ул. Атамбаева 77А</p>
+	        <p class="time-work">
+	          Пн - Пт: с 8:00 до 18:00 <br>
+	          Сб: с 9:00 до 17:00
+	        </p>
+	        <a class="contacts__email" href="mailto:okna@panorama30.ru">okna@panorama30.ru</a>
+	        <p class="phone">
+	          <a class="phone__number phone__number1" href="tel:89275540236">+7(927) 554 02 36</a>
+	          <a class="phone__number phone__number2" href="tel:88512242525">+7(8512) 24 25 25</a>
+	        </p>
+	        <p class="phone phone--hide">
+	          <a class="phone__number phone__number1" href="tel:87756562311">+7 (775) 656-23-11</a>
+	          <a class="phone__number phone__number2" href="tel:87122763580">+7 (7122) 76-35-80</a>
+	        </p>
+	      </div>
+	      <div class="map">
+	        <iframe class="iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada54cba6c80409f7b537af6a7c03e7ec7ecbea45702ab714a4596d1dedd9dcfe&amp;source=constructor" width="100%" frameborder="0"></iframe>
+	        <iframe class="iframe iframe--hide" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aef914f518ef6c45a742283762cb8aea8c3aa57431240787294dd5ecb0efc9a74&amp;source=constructor" width="100%" frameborder="0"></iframe>
+	      </div>
+	    </section>
 	</main>
 
 	<footer  class="footer">
@@ -920,223 +954,7 @@
         </nav>
 			</div>
 			<div class="footer__info footer-info">
-				<p class="footer__popup-btn">Политика конфиденциальности</p>
-        <div class="footer__popup popup">
-          <button class="popup__close" type="button"></button>
-          <h2>Пользовательское соглашение</h2>
-          <p>
-            Уважаемый пользователь, внимательно ознакомитесь с пользовательским соглашением на использование сайта https://panorama30.ru/. Заходя на этот сайт, вы соглашаетесь с условиями и соглашением, описанными ниже. Если вы не согласны с этими условиями и соглашением, вы не можете использовать услуги этого сайта.
-          </p>
-          <p>
-            Использование Сервиса на нашем сайте означает безоговорочное согласие пользователя с настоящим Пользовательским соглашением и указанными в ней условиями обработки персональной информации о пользователе. В случае несогласия с этими условиями пользователь должен воздержаться от использования сайта.
-          </p>
-          <ol class="popup__list">
-            <li class="popup__item">
-              Предмет пользовательского соглашения.
-              <ol>
-                <li>
-                  Предметом настоящего Пользовательского соглашения являются отношения между компанией «Панорама», и Вами (пользователем сети Интернет). Используя услуги компании «Панорама» пользователь соглашается соблюдать условия, описанные в настоящем Пользовательском соглашении.
-                </li>
-                <li>
-                  Использование данного ресурса компанией «Панорама», регулируется данным Пользовательским соглашением. Администрация сайта имеет полное право в одностороннем порядке изменять данное Пользовательское соглашение, без какого-либо специального уведомления пользователей. Обновленное пользовательское соглашение публикуется на сайте и доступно каждому пользователю для ознакомления.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Термины и определения.
-              <ol>
-                <li>
-                  Сайт – совокупность интегрированных программно-аппаратных и технических средств, а также информации, предназначенной для публикации в сети Интернет и отображаемой в определенной текстовой, графической или звуковой формах, расположенных в доменной зоне https://panorama30.ru/.
-                </li>
-                <li>
-                  Сервисы сайта – определенный перечень услуг (оказание консультационных услуг, информирование пользователей в виде рассылок на электронный адрес, указанный пользователем для получения информации, который может получить любой пользователь веб-сайта, а также функциональные возможности Сайта, предназначенные для использования Пользователями.
-                </li>
-                <li>
-                  Пользователь — любое физическое лицо, обладающее полной дееспособностью в соответствии с действующим законодательством РФ, получающее информацию об услугах компании «Панорама», при оформлении подписки, а также при согласии получения бесплатной консультации.
-                </li>
-                <li>
-                  Администрация сайта – уполномоченные лица компанией «Панорама», устанавливающие порядок использования Сайта, управляющие работой Сайта и контролирующие выполнением Пользователями настоящего Соглашения.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Права на контент
-              <ol>
-                <li>
-                  Все объекты, размещенные на сайте, в том числе элементы дизайна, тексты, фото, графические изображения на сайте являются объектами исключительных прав Администрации сайта. Все права на эти объекты защищены и охраняются в соответствии с Российским законодательством об авторском и смежных правах. Администрация сайта, не предоставляет на использование своих объектов интеллектуальной собственности, кому бы то ни было исключительных, либо не исключительных прав.
-                </li>
-                <li>
-                  Пользователь обязуется не копировать, не изменять, не воспроизводить, не продавать, не распространять материал, не использовать опубликованный в Сайте, целиком либо по частям.
-                </li>
-                <li>
-                  Любое коммерческое использование материалов и публикации размещенных на сайте только с письменного согласия Администрации Сайта. Связаться с Администрацией Сайта можно в разделе контакты.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Информационная защита детей.
-              <ol>
-                <li>
-                  Сайт https://panorama30.ru/ предназначен для широкой аудитории и не предназначен для сбора личной информации от детей.
-                </li>
-                <li>
-                  Компания «Панорама» не предлагает продукты и не предоставляет услуг детям. Мы не делаем никаких преднамеренных запросов личной информации от детей.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Личные данные Пользователя.
-              <ol>
-                <li>
-                  Администрация сайта https://panorama30.ru/, имеет право в случае использования Пользователем сайта для оказания консультационных услуг, а также для ответов на вопросы от Пользователей, для сбора и обработки статистических данных, для того чтобы связаться с Пользователем, для предоставления информационных новостей о компании «Панорама».
-                </li>
-              </ol>
-            </li>
-            <li>
-              Условия обработки информации пользователя и её передачи третьим лицам.
-              <ol>
-                <li>
-                  Для нас ценно Ваше доверие. Мы не раскрываем личную информацию пользователей сайта, организациям и частным лицам, не связанным с оказанием услуг компании «Панорама».
-                </li>
-                <li>
-                  Информация, которую мы собираем на данном сайте, не предоставляется никаким третьим лицам.
-                </li>
-                <li>
-                  Администрация сайта, может без Вашего на то согласия раскрывать персональную информацию третьим сторонам только по одной из следующих причин: во избежание нарушений закона, нормативных правовых актов или постановлений суда; участие в правительственных расследованиях; помощь в предотвращении мошенничества; защита законных прав и интересов компании «Панорама».
-                </li>
-              </ol>
-            </li>
-            <li>
-              Сторонние сайты и услуги.
-              <ol>
-                <li>
-                  Наш Сайт может содержать гиперссылки на другие сайты (принадлежащие третьим сторонам, избранным нами для предложения совместных продуктов или не связанным с нами компаниям), которые, по нашему мнению, могут быть интересны клиентам.
-                </li>
-                <li>
-                  Сайты третьих сторон не регулируются нашим пользовательским соглашением. При посещении сайтов по гиперссылке размещенных на нашем Сайте, мы рекомендуем пользователям знакомиться с его пользовательским соглашением. Администрация сайта компании «Панорама» не несет ответственности за сведения, публикуемые на этих сайтах, и предоставляет ссылки на них только в целях обеспечения удобства для посетителей своего сайта.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Контакты. Обратная связь. Вопросы и предложения.
-              <ol>
-                <li>
-                  Любые вопросы, предложения о доступе к своей информации или ее изменение, а также вопросы относительно данной политики следует отправлять по адресу электронной почты: okna@panorama30.ru , номер для связи:+7 (8512) 24-25-25, либо по адресу: 414004, г. Астрахань, ул. 3-я Зеленгинская, 56.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Дата вступления в силу пользовательского соглашения.
-              <ol>
-                <li>
-                  Данное пользовательское соглашение действует с «01» марта 2016 года. Мы оставляем за собой право в любое время вносить в нее изменения по своему усмотрению. Использование Вами Сайта https://panorama30.ru/ подразумевает Ваше согласие с изложенными выше пунктами Пользовательского соглашения.
-                </li>
-              </ol>
-            </li>
-          </ol>
-          <h2>Соглашение о конфиденциальности</h2>
-          <p>
-            Настоящее Соглашение о конфиденциальности персональной информации (далее — Соглашение) действует в отношении всей информации, которую компания «Панорама» (https://panorama30.ru/) может получить об интернет-пользователе (далее — Пользователь) во время использования им любого из сайтов, сервисов, служб, программ и продуктов Сайта. Согласие Пользователя на предоставление персональной информации, данное им в соответствии с настоящим Соглашением и указанными в нем условиями обработки его персональной информации; в случае несогласия с этими условиями Пользователь должен воздержаться от использования Сервисов. Актуальная и действительная версия настоящего Соглашения располагается по адресу: https://panorama30.ru/
-          </p>
-          <ol>
-            <li>
-              Персональная информация (имя, фамилия, электронный адрес) Пользователей, которую получает и обрабатывает Администрация Сайта.
-              <ol>
-                <li>
-                  В рамках настоящего Соглашения под «персональной информацией пользователя» понимаются:
-                  <ol>
-                    <li>
-                      Персональная информация, которую Пользователь предоставляет о себе самостоятельно в процессе использования Сервисов, включая личные данные Пользователя.
-                    </li>
-                    <li>
-                      Иная информация о Пользователе, сбор и/или предоставление которой определено в документах отдельных Сервисов Сайта.
-                    </li>
-                  </ol>
-                </li>
-                <li>
-                  Настоящее Соглашение применимо только к Сервисам Сайта. Сайт не контролирует и не несет ответственность за страницы третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на Сайте. На таких страницах у Пользователя может собираться или запрашиваться иная персональная информация, а также могут совершаться иные действия.
-                </li>
-                <li>
-                  Пользователь обязуется предоставлять достоверную и достаточную персональную информацию по вопросам, предлагаемым в форме регистрации, и поддерживает эту информацию в актуальном состоянии.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Цели сбора и обработки персональной информации Пользователей.
-              <ol>
-                <li>
-                  Идентификация Пользователя в рамках соглашения и договора с Сайтом:
-                  <ol>
-                    <li>получение информации о деятельности компании «Панорама» и новостях компании</li>
-                    <li>заявка на получение консультации</li>
-                  </ol>
-                </li>
-                <li>
-                  Предоставление Пользователю обратной связи
-                </li>
-                <li>
-                  Связь с Пользователем в случае необходимости, в том числе направление уведомлений, запросов и информации, связанной с использованием Сервисов, оказанием услуг, а также обработкой запросов и заявок от пользователя на получение консультации и дополнительной информации о деятельности компании.
-                </li>
-                <li>
-                  Улучшение качества Сервисов, удобства их использования, разработка новых Сервисов и услуг.
-                </li>
-                <li>
-                  Проведение статистических и иных исследований на основе обезличенных данных.
-                </li>
-                <li>
-                  Идентификация Пользователя в рамках соглашения на хранение данных для рассылки информационных писем о новостях компании.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Условия обработки персональной информации Пользователя и её передачи третьим лицам
-              <ol>
-                <li>
-                  В отношении персональной информации пользователя сохраняется ее конфиденциальность, кроме случаев добровольного предоставления Пользователем информации о себе для общего доступа неограниченному кругу лиц.
-                </li>
-                <li>
-                  Сайт вправе передать персональную информацию пользователя третьим лицам в следующих случаях:
-                  <ol>
-                    <li>
-                      Пользователь выразил свое согласие на такие действия.
-                    </li>
-                    <li>
-                      Передача необходима в рамках использования Пользователем определенного Сервиса либо для оказания услуги Пользователю. При этом обеспечивается конфиденциальность персональной информации пользователя.
-                    </li>
-                    <li>
-                      Передача предусмотрена российским или иным применимым законодательством в рамках установленной законодательством процедуры.
-                    </li>
-                    <li>
-                      Такая передача происходит в рамках продажи или иной передачи предприятия (полностью или в части), при этом к приобретателю переходят все обязательства по соблюдению условий настоящей Политики применительно к полученной им персональной информации.
-                    </li>
-                    <li>
-                      В целях обеспечения возможности защиты прав и законных интересов Сайта или третьих лиц в случаях, когда Пользователь нарушает условия настоящего Пользовательского соглашения, расположенного на страничке https://panorama30.ru/
-                    </li>
-                  </ol>
-                </li>
-              </ol>
-            </li>
-            <li>
-              Меры, применяемые для защиты персональной информации Пользователей
-              <ol>
-                <li>
-                  Сайт принимает необходимые и достаточные организационные и технические меры для защиты персональной информации Пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий с ней третьих лиц.
-                </li>
-                <li>
-                  Сайт не несет ответственности за защиту информации, переданной Пользователем на страницах, расположенных вне Сайта.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Дата вступления в силу политики конфиденциальности
-              <ol>
-                <li>
-                  Данная политика конфиденциальности действует с «01» марта 2016 года. Мы оставляем за собой право в любое время вносить в нее изменения по своему усмотрению. Использование Вами услуг компании «Панорама» подразумевает Ваше согласие с изложенными выше пунктами.
-                </li>
-              </ol>
-            </li>
-          </ol>
-        </div>
+				<p>Политика конфиденциальности</p>
 				<p class="footer-info__sity">Ваш город: Астрахань</p>
 				<a class="footer-info__email" href="mailto:okna@panorama30.ru">okna@panorama30.ru</a>
 				<p class="phone">
@@ -1163,8 +981,7 @@
 		</div>
 	</footer>
   <div id="toTop"></div>
-  <div class="overlay-popup overlay-popup--hide"></div>
 	<script src="js/libs.min.js?8"></script>
-	<script src="js/script.js?8"></script>
+  <script src="js/script.js?8"></script>
 </body>
 </html>

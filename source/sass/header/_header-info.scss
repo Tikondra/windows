@@ -1,27 +1,6 @@
-.page-header {
-  background-image: url("../img/back.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -700px;
-
-  &--page2 {
-    background-image: url("../img/background-woodsWindow.jpg");
-  }
-
-  &--plastic {
-    background-image: url("../img/back_plastic.jpg");
-  }
-
-  &--al {
-    background-image: url("../img/back-al.png");
-  }
-
-  &--jaluzi {
-    background-image: url("../img/back-jaluzi.jpg");
-  }
-}
-
 .overlay {
+  position: relative;
+  z-index: 1;
   background-color: rgba(255,255,255,0.7);
 }
 

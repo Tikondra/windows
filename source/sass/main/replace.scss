@@ -23,7 +23,7 @@
 	width: 80%;
 	padding: 12px;
 	text-align: center;
-	color: #3a3a3a;	
+	color: #3a3a3a;
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -38,7 +38,7 @@
 .replace__text {
 	max-width: 585px;
 	margin: 5px 0;
-	padding: 0 10px 10px; 
+	padding: 0 10px 10px;
 	text-align: center;
 	color: #ffffff;
 	font-size: 19px;
@@ -59,18 +59,20 @@
 	color: #3a3a3a;
 }
 
+.replace__img-box {
+  margin-top: auto;
+}
+
 .replace__img2 {
 	margin-top: auto;
 }
 
 @media screen and (min-width: 768px) {
-	.replace__item2 {
-		padding-bottom: 50px;
-	}
+
 }
 
 @media screen and (min-width: 1024px) {
-	.replace {		
+	.replace {
 		flex-direction: row;
 	}
 
