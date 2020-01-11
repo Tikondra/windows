@@ -16,7 +16,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github-token: $travis
+  github-token: $panorama
   local_dir: build
   on:
     branch: master
