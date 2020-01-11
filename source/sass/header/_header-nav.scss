@@ -1,4 +1,6 @@
 .page-nav {
+  position: relative;
+  z-index: 1;
   box-shadow: 0 0 3px rgba(50, 50, 50, 0.2);
   background-color: #3a3a3a;
 }
