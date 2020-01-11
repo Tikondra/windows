@@ -1,11 +1,27 @@
 .banner {
+  height: 101%;
   padding: 30px 15px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 75%;
-  background-color: #ffffff8f;
+  background-image: url("../img/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--page2 {
+    background-image: url("../img/background-woodsWindow.jpg");
+  }
+
+  &--plastic {
+    background-image: url("../img/back_plastic.jpg");
+  }
+
+  &--al {
+    background-image: url("../img/back-al.png");
+  }
+
+  &--jaluzi {
+    background-image: url("../img/back-jaluzi.jpg");
+  }
 }
 
 .banner__title {
@@ -59,9 +75,13 @@
 
 @media screen and (min-width: 768px) {
   .banner {
+    height: 77%;
+    padding: 60px 15px;
+  }
+
+  .banner__content {
     max-width: 695px;
     margin: 0 auto;
-    background-color: transparent;
   }
 
   .banner__title {
@@ -86,6 +106,12 @@
 
 @media screen and (min-width: 1024px) {
   .banner {
+    height: 101%;
+    margin-top: -150px;
+    padding: 180px 15px 30px;
+  }
+
+  .banner__content {
     padding: 100px 0 80px;
     max-width: 705px;
   }
@@ -94,16 +120,9 @@
     font-size: 48px;
   }
 
-  .banner--page2 {
-    max-width: 930px;
-  }
-
-  .mouse {
-    display: block;
-    margin: auto;
+  .banner__btn:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   }
 }
 
-.banner__btn:hover {
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-}
+

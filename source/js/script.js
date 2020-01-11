@@ -19,7 +19,7 @@ $(function() {
 
 $(document).ready(function(){
     $(".page-nav__btn").click(function(){
-        $("#panel").slideToggle("slow");
+        $("#menu-top-menu").slideToggle("slow");
         $(this).toggleClass("active");
     });
 });
@@ -53,12 +53,13 @@ for (let anchor of anchors) {
     });
 }
 
+
 function catalogSlider() {
   let img = [
-      'img/full-img1.jpg',
-      'img/full-img22.jpg',
-      'img/full-img3.jpg',
-      'img/full-img2.jpg'];
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/full-img1.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/full-img22.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/full-img3.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/full-img2.jpg'];
   let catalog = document.querySelector('.catalog__box');
   let item = catalog.querySelectorAll('.catalog__item');
   let fullImg = catalog.querySelector('.catalog__full-img');
@@ -409,45 +410,45 @@ function material() {
 
 function portfolio() {
   let img = [
-      'img/porf/a1.jpg',
-      'img/porf/a2.jpg',
-      'img/porf/a3.jpg',
-      'img/porf/a4.jpeg',
-      'img/porf/a5.jpeg',
-      'img/porf/a6.jpeg',
-      'img/porf/a7.jpeg',
-      'img/porf/a8.jpg',
-      'img/porf/a9.jpg',
-      'img/porf/a10.jpg',
-      'img/porf/a11.jpeg',
-      'img/porf/a12.jpeg',
-      'img/porf/a13.jpeg',
-      'img/porf/a14.jpeg',
-      'img/porf/a15.jpeg',
-      'img/porf/a16.jpeg',
-      'img/porf/a17.jpg',
-      'img/porf/a18.jpg',
-      'img/porf/a19.jpg',
-      'img/porf/a20.jpg',
-      'img/porf/a21.jpg',
-      'img/porf/a22.jpg',
-      'img/porf/a23.jpg',
-      'img/porf/a24.jpg',
-      'img/porf/a25.jpg',
-      'img/porf/a26.jpg',
-      'img/porf/a27.jpg',
-      'img/porf/a28.jpg',
-      'img/porf/a29.jpg',
-      'img/porf/a30.jpg',
-      'img/porf/a31.jpg',
-      'img/porf/a32.jpg',
-      'img/porf/a33.jpg',
-      'img/porf/a34.jpg',
-      'img/porf/a35.jpg',
-      'img/porf/a36.jpeg',
-      'img/porf/a37.jpeg',
-      'img/porf/a38.jpeg',
-      'img/porf/a39.jpeg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a1.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a2.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a3.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a4.jpeg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a5.jpeg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a6.jpeg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a7.jpeg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a8.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a9.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a10.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a11.jpeg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a12.jpeg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a13.jpeg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a14.jpeg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a15.jpeg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a16.jpeg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a17.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a18.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a19.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a20.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a21.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a22.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a23.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a24.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a25.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a26.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a27.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a28.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a29.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a30.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a31.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a32.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a33.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a34.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a35.jpg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a36.jpeg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a37.jpeg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a38.jpeg',
+      'http://wp-panorama.bzcekh.ru/wp-content/themes/panorama/img/porf/a39.jpeg',
       ];
 
   let portfolio = document.querySelector('.portfolio');
@@ -505,30 +506,7 @@ function portfolio() {
   }
 };
 
-function popup () {
-  let open = document.querySelector('.footer__popup-btn');
-  let close = document.querySelector('.popup__close');
-  let popup = document.querySelector('.popup');
-  let overlay = document.querySelector('.overlay-popup')
-
-  open.addEventListener('click', function () {
-    popup.classList.toggle('popup--show');
-    overlay.classList.remove('overlay-popup--hide');
-  });
-
-  close.addEventListener('click', function () {
-    popup.classList.remove('popup--show');
-    overlay.classList.add('overlay-popup--hide');
-  });
-
-  overlay.addEventListener('click', function () {
-    popup.classList.remove('popup--show');
-    overlay.classList.add('overlay-popup--hide');
-  });
-};
-
 geo();
-popup();
 
 if (document.querySelector('.catalog__box')) {
 
@@ -555,4 +533,3 @@ if (document.querySelector('.material')) {
 if (document.querySelector('.portfolio')) {
   portfolio()
 };
-
