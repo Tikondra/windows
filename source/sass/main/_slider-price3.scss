@@ -68,6 +68,14 @@
   flex-shrink: 0;
   padding: 10px 20px;
   width: 70%;
+
+  &--error {
+    border: 1px solid red;
+  }
+
+  &:focus {
+    border: 1px solid rgb(169, 169, 169);
+  }
 }
 
 @media (max-width: 600px) {

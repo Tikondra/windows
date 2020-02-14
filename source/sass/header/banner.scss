@@ -22,6 +22,26 @@
   &--jaluzi {
     background-image: url("../img/back-jaluzi.jpg");
   }
+
+  &--glass {
+    padding: 0;
+    background-image: none;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 260px;
+      background-image: url("../img/glass-banner.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
+.banner__glass-text {
+  padding: 20px;
 }
 
 .banner__title {
@@ -77,11 +97,19 @@
   .banner {
     height: 77%;
     padding: 60px 15px;
+
+    &--glass {
+      padding: 0;
+    }
   }
 
   .banner__content {
     max-width: 695px;
     margin: 0 auto;
+
+    &--glass {
+      max-width: none;
+    }
   }
 
   .banner__title {
@@ -102,6 +130,10 @@
   .banner__text2 {
     font-size: 32px;
   }
+
+  .banner__glass-text {
+    padding: 60px 50px 20px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -109,11 +141,38 @@
     height: 101%;
     margin-top: -150px;
     padding: 180px 15px 30px;
+
+    &--glass {
+      padding: 0;
+      height: 640px;
+      max-width: 1230px;
+      margin: auto;
+      display: flex;
+      position: relative;
+      margin-bottom: 184px;
+
+      &::before {
+        height: auto;
+        position: absolute;
+        height: 100%;
+        left: 40%;
+      }
+    }
   }
 
   .banner__content {
     padding: 100px 0 80px;
     max-width: 705px;
+  }
+
+  .banner__glass-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    order: -1;
+    max-width: 460px;
+    margin-right: auto;
+    text-align: left;
   }
 
   .banner__title {
@@ -122,6 +181,13 @@
 
   .banner__btn:hover {
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .banner__btn {
+    &--glass {
+      margin: 30px 0;
+      max-width: 300px;
+    }
   }
 }
 

@@ -1,0 +1,76 @@
+.glass1 {
+  padding: 20px;
+
+  img {
+    display: block;
+  }
+}
+
+.glass1__title {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 34px;
+  background-color: #f0e707;
+}
+
+.glass1__text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.glass1__list {
+  @include list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.glass1__item {
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .glass1 {
+    padding: 0;
+    background-color: #fff;
+    background-image: url("../img/glass6.jpg");
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+
+  .glass1__wrap1 {
+    max-width: 1230px;
+    margin: auto;
+  }
+
+  .glass1__wrap2 {
+    max-width: 738px;
+    margin-left: auto;
+    padding: 55px 0 55px 55px;
+    background-color: #fff;
+  }
+
+  .glass1__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .glass1__text {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .glass1__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .glass1 {
+    margin-top: -184px;
+  }
+}
